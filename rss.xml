@@ -4,10 +4,22 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Wed, 11 Jan 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[System Test Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-01-13-system-test</link>
+            <guid>2023-01-13-system-test</guid>
+            <pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>During the last 2 weeks we did more improvements on our Test Framework, ran some sanity tests related to the <em>P2P Single
+Relay</em> functionality.</p><p>We also update the Node &amp; DB-Sync sync tets to build with Nix as the prebuilt files are no longer available at PR level.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="workstreams">Workstreams<a class="hash-link" href="#workstreams" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="framework-improvements">Framework improvements:<a class="hash-link" href="#framework-improvements" title="Direct link to heading">​</a></h3><ul><li>extended the <em>cardano-node-tests</em> with the ability for anybody to fork the repo and <a href="https://input-output-hk.github.io/cardano-node-tests/readme.html" target="_blank" rel="noopener noreferrer">run all our System Tests on GitHub Actions</a></li><li>added 2 new nightly pipelines - nightly-mixed and nightly-p2p - <a href="https://input-output-hk.github.io/cardano-node-tests/test_results/nightly_system_tests.html" target="_blank" rel="noopener noreferrer">details here</a></li><li>some optimizations on how our regression tests are scheduled on pytest workers and how cluster instances are assigned to the tests;</li></ul><p><code>  === 743 passed, 67 skipped, 24 xfailed in 9166.64s (2:32:46) ===
+  to
+  === 753 passed, 67 skipped, 14 xfailed in 4654.80s (1:17:34) ===</code></p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="node">Node:<a class="hash-link" href="#node" title="Direct link to heading">​</a></h3><ul><li>ran a couple of sanity runs of CLI a&amp; sync tests on a local branch with P2P Single Relay enabled</li><li>started the preparations for testing the next tag - <a href="https://github.com/input-output-hk/cardano-node-tests/blob/tag_test_1.35.5_rc1/src_docs/source/test_results/node/tag_1_35_5_rc1.rst" target="_blank" rel="noopener noreferrer">details here</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="db-sync">DB-Sync:<a class="hash-link" href="#db-sync" title="Direct link to heading">​</a></h3><ul><li>some improvements on db-sync sync tests</li></ul>]]></content:encoded>
+            <category>system-test</category>
+        </item>
         <item>
             <title><![CDATA[Consensus Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-01-11-consensus</link>
