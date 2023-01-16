@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-01-13T00:00:00.000Z</updated>
+    <updated>2023-01-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DB-sync Team Update]]></title>
+        <id>2023-01-14-db-sync</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-01-14-db-sync"/>
+        <updated>2023-01-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>After spending the last months on improving DBSync and releasing <code>13.1.0.0</code> the DBSync team focused
+the last weeks on integrating upstream changes and tech debt. This includes integrating CHaP, the
+new leger core and ghc-9.2.4</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><ul><li>Integrate CHaP
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1331" target="_blank" rel="noopener noreferrer">#1331</a></li><li>Integrate new ledger core <code>0.1.1.1</code> and ghc-9.2
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1332" target="_blank" rel="noopener noreferrer">#1332</a></li><li>Technical debt: Add code formatter fourmolu
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1334" target="_blank" rel="noopener noreferrer">#1334</a></li><li>Preparing and tracking Conway and UTxO integration</li></ul>]]></content>
+        <author>
+            <name>Kostas Dermentzis</name>
+            <uri>https://github.com/kderme</uri>
+        </author>
+        <category label="db-sync" term="db-sync"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2022-01-13-hydra</id>
