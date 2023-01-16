@@ -2,11 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/quarterly</id>
     <title>Cardano Development Updates Blog</title>
-    <updated>2022-11-15T00:00:00.000Z</updated>
+    <updated>2023-01-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/quarterly"/>
     <subtitle>Cardano Development Updates Blog</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Open-Source Update]]></title>
+        <id>2023-01-13-open-source</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/quarterly/2023-01-13-open-source"/>
+        <updated>2023-01-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Open Source Quarterly Update]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="open-source-quarterly-update">Open Source Quarterly Update<a class="hash-link" href="#open-source-quarterly-update" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2022-11---2023-01">2022-11 - 2023-01<a class="hash-link" href="#2022-11---2023-01" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a class="hash-link" href="#summary" title="Direct link to heading">​</a></h3><p>In the last quarter the open-source initiative delivered a comprehensive report
+on the state of our repositories.  As part of this work stream we
+identified the key open-source repositories for the cardano project across all
+the projects.  From a list of more than 500 repositories (some of which are
+forks) we identified key repositories which constitute the core of Cardano.
+20 of them were identified as to be transferred to the future MBO which will
+govern Cardano development.  Some where excluded (like <a href="https://github.com/input-output-hk/io-sim" target="_blank" rel="noopener noreferrer"><code>io-sim</code></a> and
+<a href="https://github.com/input-output-hk/typed-protocols" target="_blank" rel="noopener noreferrer"><code>typed-protocols</code></a>), to be govern by IOG, since they have a much broader
+application than Cardano itself, and thus we think their open-source future
+will be better outside of the Cardano umbrella.</p><p>Christian Taylor identified a number of ways we can improve our repositories to
+make them more attractive for open-source contributions by analysing each of
+them.  This includes adding or improving various documentation files, like
+<code>CONTRIBUTING</code> files, adding code of conduct, improving readme files, issue
+&amp; pull request templates etc.  Christian also computed various interesting
+metrics which gives a very good insight into the development practices: e.g.
+average merge ratio, average number of reviews, comments and many more!</p><p>We followed with work on the <a href="https://input-output-hk.github.io/cardano-engineering-handbook/" target="_blank" rel="noopener noreferrer">Cardano Engineering Handbook</a>.  We included
+a standard code of conduct which is now used by most important projects in the
+Cardano space.  We included <code>cardano-node</code>'s security policy and added
+a responsible disclosure policy.  We also described how roles and
+responsibilities should be clarified.  This progress was made by
+a collaborative effort of the Cardano Core, Plutus and Architecture teams, and
+it wouldn't be possible without Michael Peyton Jones, Arnaud Bailly, Kevin
+Hammond, Jared Corduan and Marcin Szamotulski.</p><p>We also improved the documentation of key repositories, by adding description,
+improving their <code>README</code> file &amp; <code>CONTRIBUTING</code> files, adding code of conducts
+following the <a href="https://input-output-hk.github.io/cardano-engineering-handbook/" target="_blank" rel="noopener noreferrer">Cardano Engineering Handbook</a>.  This includes improvements to:</p><ul><li><a href="https://github.com/input-output-hk/ouroboros-network" target="_blank" rel="noopener noreferrer"><code>ouroboros-network</code></a> (both <code>network</code> &amp; <code>consensus</code>)</li><li><a href="https://github.com/input-output-hk/cardano-ledger" target="_blank" rel="noopener noreferrer"><code>cardano-ledger</code></a></li><li><a href="https://github.com/input-output-hk/cardano-node" target="_blank" rel="noopener noreferrer"><code>cardano-node</code></a></li></ul><p>And also</p><ul><li><a href="https://github.com/input-output-hk/io-sim" target="_blank" rel="noopener noreferrer"><code>io-sim</code></a></li><li><a href="https://github.com/input-output-hk/typed-protocols" target="_blank" rel="noopener noreferrer"><code>typed-protocols</code></a></li><li><a href="https://github.com/input-output-hk/cardano-prelude" target="_blank" rel="noopener noreferrer"><code>cardano-prelude</code></a> (work in progress)</li></ul><p>The work was carried by Marcin Szamotulski, Addie Girouard and  Jared Corduan. </p><p>In this quarter we also identified a number of projects which can be published to
+<code>Hackage</code> (Haskell's package repository) or <code>crate</code> (Rust package repository).
+The list contains 21 packages, 2 of which (<a href="https://hackage.haskell.org/package/hedgehog-extras" target="_blank" rel="noopener noreferrer"><code>hedgehog-extras</code></a> and
+<a href="https://hackage.haskell.org/package/quickcheck-dynamic" target="_blank" rel="noopener noreferrer"><code>quickcheck-dynamic</code></a>) are already published on Hackage and another 5 (from
+the <a href="https://github.com/input-output-hk/io-sim" target="_blank" rel="noopener noreferrer"><code>io-sim</code></a> repository) are close to be published.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="detailed-log">Detailed log<a class="hash-link" href="#detailed-log" title="Direct link to heading">​</a></h3><p>The progress of the open-source project is tracked in <a href="https://github.com/orgs/input-output-hk/projects/60/views/1" target="_blank" rel="noopener noreferrer">this project</a>.</p>]]></content>
+        <author>
+            <name>Marcin Szamotulski</name>
+            <uri>https://github.com/coot</uri>
+        </author>
+        <category label="open-source" term="open-source"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Consensus Quarterly Update]]></title>
         <id>2022-11-15-consensus</id>
