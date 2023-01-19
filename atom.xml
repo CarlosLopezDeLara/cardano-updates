@@ -52,6 +52,21 @@ version in this repository</a>.</li><li>Add unique <code>headId</code> to API an
         <category label="hydra" term="hydra"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Node Release Team Update]]></title>
+        <id>2023-01-13-release</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-01-13-release"/>
+        <updated>2023-01-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Node Reelease Update]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="node-reelease-update">Node Reelease Update<a class="hash-link" href="#node-reelease-update" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2022-11-02---2023-01-13">2022-11-02 - 2023-01-13<a class="hash-link" href="#2022-11-02---2023-01-13" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="executive-summary">Executive Summary<a class="hash-link" href="#executive-summary" title="Direct link to heading">​</a></h3><p>A 1.35.5 release for single relay P2P is nearly completed and should be released this month. This release is based on
+<code>release/1.35</code> branch and does not bump cardano-ledger.</p><p>The team successfully integrated an interim release bump of ledger and consensus into cardano-node master.
+This work will not be released in a node version, but will be continued by the current dependency bump in progress.</p><p>We anticipate once this dependency bump is completed, regular 2 week releases will be feasible again.</p><p>The 1.35.4 release is being ran by more than 70% of stake pools. Planning for the mainnet hard fork date is in progress.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="completed">Completed<a class="hash-link" href="#completed" title="Direct link to heading">​</a></h3><ul><li><a href="https://github.com/input-output-hk/cardano-node/releases/tag/1.35.4" target="_blank" rel="noopener noreferrer">Release 1.35.4</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="in-progress">In Progress<a class="hash-link" href="#in-progress" title="Direct link to heading">​</a></h3><ul><li><p><a href="https://github.com/input-output-hk/cardano-node/commits/release/1.35" target="_blank" rel="noopener noreferrer">Release 1.35.5</a></p><ul><li><a href="https://github.com/input-output-hk/cardano-node-tests/blob/tag_test_1.35.5_rc1/src_docs/source/test_results/node/tag_1_35_5_rc1.rst" target="_blank" rel="noopener noreferrer">Test Status</a></li></ul></li></ul>]]></content>
+        <author>
+            <name>Samuel Leathers</name>
+            <uri>https://github.com/disassembler</uri>
+        </author>
+        <category label="release" term="release"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[System Test Team Update]]></title>
         <id>2023-01-13-system-test</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-01-13-system-test"/>
