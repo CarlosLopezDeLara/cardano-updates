@@ -18,6 +18,22 @@
             <category>crypto</category>
         </item>
         <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2022-01-20-hydra</link>
+            <guid>2022-01-20-hydra</guid>
+            <pubDate>Fri, 20 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team has been focusing on the write-up of the Hydra HeadV1
+specification. Of which a first version has been aggregated and is currently
+under review. They aligned the on-chain scripts of reimbursing funds on abort
+like defined in the specification, improved the mutation test framework to have
+more control when testing plutus scripts. The added HeadId in the API and the
+TUI example client make <code>hydra-node</code> easier to use and a first experiment of a
+Hydra Head explorer was showing the utility of this - see what Heads exist on
+the <code>preview</code> network <a href="http://explorer.hydra.family" target="_blank" rel="noopener noreferrer">here</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>HeadId to API and display in the TUI <a href="https://github.com/input-output-hk/hydra/pull/678" target="_blank" rel="noopener noreferrer">#678</a></li><li>Experiment of creating a hydra explorer, first result hosted <a href="http://explorer.hydra.family" target="_blank" rel="noopener noreferrer">here</a></li><li>Improved mutation framework allowing to fail for the right reason <a href="https://github.com/input-output-hk/hydra/pull/679" target="_blank" rel="noopener noreferrer">#679</a></li><li>Correctly reimburse funds in abort (matching the spec) <a href="https://github.com/input-output-hk/hydra/pull/670" target="_blank" rel="noopener noreferrer">#670</a></li><li>Finished a first write-up of the Hydra HeadV1 spec: <a href="https://www.overleaf.com/read/bbqzmptcxryj" target="_blank" rel="noopener noreferrer">Read it on overleaf</a> (<a href="https://github.com/input-output-hk/hydra/blob/master/SUPPORT.md" target="_blank" rel="noopener noreferrer">Communication channels</a> for feedback)</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Monthly review meeting with a broader audience</li><li>Groom &amp; plan actions required for a maintainable Head explorer</li><li>Break “align gaps” feature into smaller chunks (at least on- /off-chain) and groom it</li><li>Review the spec &amp; discuss individual aborts with researchers (a bigger open question)</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
+        <item>
             <title><![CDATA[Ledger Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-01-19-ledger</link>
             <guid>2023-01-19-ledger</guid>
