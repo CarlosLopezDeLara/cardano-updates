@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-01-20T00:00:00.000Z</updated>
+    <updated>2032-01-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[SRE Team Update]]></title>
+        <id>2022-01-20-sre</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2022-01-20-sre"/>
+        <updated>2032-01-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The SRE team continues work on Cicero, Tullia, and Bitte, as well as providing
+support for cardano-world.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cicero">Cicero<a class="hash-link" href="#cicero" title="Direct link to heading">​</a></h3><ul><li>Fixed various race conditions around transformers.</li><li>Brought our CI up to date.</li><li>Migrated to the Nomad exec driver with Nix support for many actions.</li><li>Moved Nix builds to the Nomad clients for much better cache locality.</li><li>Ongoing work on vastly improving the action matching and evaluation speed.</li><li></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tullia">Tullia<a class="hash-link" href="#tullia" title="Direct link to heading">​</a></h3><ul><li>Made it easier to support cloning from a PR's fork</li><li>Update to latest std</li><li>Add workaround for cgroup issue: <a href="https://github.com/hashicorp/nomad/issues/12877" target="_blank" rel="noopener noreferrer">nomad#12877</a></li><li>github preset: add <code>github.ci.remote</code> and <code>(read|get)Repository</code> functions</li><li>Fix various issues around CUE handling</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="bitte">Bitte<a class="hash-link" href="#bitte" title="Direct link to heading">​</a></h3><ul><li>Upgrade to NixOS 22.11</li><li>Prototype usage of <a href="https://colmena.cli.rs" target="_blank" rel="noopener noreferrer">Colmena</a> for deploys instead of <a href="https://github.com/serokell/deploy-rs" target="_blank" rel="noopener noreferrer">deploy-rs</a></li><li>Finalized work on Equinix Metal support</li><li>Prototype better secrets management with <a href="https://github.com/yaxitech/ragenix" target="_blank" rel="noopener noreferrer">ragenix</a> instead of <a href="https://github.com/Mic92/sops-nix" target="_blank" rel="noopener noreferrer">sops-nix</a></li><li>Improve CI and bring it up to date</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cardano-world">cardano-world<a class="hash-link" href="#cardano-world" title="Direct link to heading">​</a></h3><ul><li>Fixd various OOM issues on preview and preprod</li><li>Rotated KES keys on preview and preprod</li><li>Optimize mainnet db-sync to cope with higher load</li><li>Fix an issue where PostgreSQL would fail after a reboot</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="bitte-world">bitte-world<a class="hash-link" href="#bitte-world" title="Direct link to heading">​</a></h3><ul><li>Updated to NixOS 22.11</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ci-world">ci-world<a class="hash-link" href="#ci-world" title="Direct link to heading">​</a></h3><ul><li>Updated to NixOS 22.11</li><li>Added Equnix cluster</li><li>Improve caching of Nix builds</li></ul>]]></content>
+        <author>
+            <name>Michael Fellinger</name>
+            <uri>https://github.com/manveru</uri>
+        </author>
+        <category label="sre" term="sre"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Crypto Team Update]]></title>
         <id>2023-01-20-crypto</id>
