@@ -1115,6 +1115,22 @@
             "tags": [
                 "network"
             ]
+        },
+        {
+            "id": "2023-01-20-network",
+            "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>We have been working towards <code>cardano-node-1.35.5</code> release.  QA &amp; benchmarking\nteams gave a green light for the release, and we made decent progress with some\nCI problem which we encountered on the way (<a href=\"https://github.com/input-output-hk/cardano-node/pull/4612\" target=\"_blank\" rel=\"noopener noreferrer\">PR #4612</a>). We are also working on\npeer sharing, making improvements in our testing infrastructure, reducing\ntechnical debt and making progress towards <code>io-sim-1.0.0.0</code>. Galois is making\nprogress on Handshake improvements.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"low-level-summary\">Low level summary<a class=\"hash-link\" href=\"#low-level-summary\" title=\"Direct link to heading\">​</a></h2><p>Our diffusion simulation network now includes a mixed network of <code>initiator\nonly</code> and <code>initiator and responder</code> nodes. <a href=\"https://github.com/input-output-hk/ouroboros-network/issues/4222\" target=\"_blank\" rel=\"noopener noreferrer\">issue #4222</a></p><p>We are now reviewing the <a href=\"https://github.com/input-output-hk/ouroboros-network/pull/4019\" target=\"_blank\" rel=\"noopener noreferrer\">peer sharing pull request</a>.</p><p>We are also reviewing pull request which introduces handshake query flag. <a href=\"https://github.com/input-output-hk/ouroboros-network/pull/4256\" target=\"_blank\" rel=\"noopener noreferrer\">PR #4256</a></p><p>We fixed a bug in our network simulator.  The bug was triggered when a node\ndied when performing a simultaneous TCP open (a corner case of a corner case!). <a href=\"https://github.com/input-output-hk/ouroboros-network/pull/4265\" target=\"_blank\" rel=\"noopener noreferrer\">PR #4265</a></p><p>We also refactored <code>Snocket</code> interface and removed the bearer construction from\nits methods. <a href=\"https://github.com/input-output-hk/ouroboros-network/pull/4260\" target=\"_blank\" rel=\"noopener noreferrer\">PR #4260</a></p><p>We are working towards releasing <code>io-sim-1.0.0.0</code> on Hackage, which includes\nreviewing two PRs: <a href=\"https://github.com/input-output-hk/io-sim/pull/57\" target=\"_blank\" rel=\"noopener noreferrer\">PR #57</a> and <a href=\"https://github.com/input-output-hk/io-sim/pull/60\" target=\"_blank\" rel=\"noopener noreferrer\">PR #60</a> as well as writing an announcement\nblog post.  </p>",
+            "url": "https://input-output-hk.github.io/cardano-updates/2023-01-20-network",
+            "title": "Network Team Update",
+            "summary": "High level summary",
+            "date_modified": "2022-01-20T00:00:00.000Z",
+            "author": {
+                "name": "Marcin Szamotulski",
+                "url": "https://github.com/coot"
+            },
+            "tags": [
+                "network",
+                "release"
+            ]
         }
     ]
 }
