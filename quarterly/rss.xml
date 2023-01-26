@@ -4,10 +4,54 @@
         <title>Cardano Development Updates Blog</title>
         <link>https://input-output-hk.github.io/cardano-updates/quarterly</link>
         <description>Cardano Development Updates Blog</description>
-        <lastBuildDate>Fri, 13 Jan 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Quarterly Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/quarterly/2023-01-18-consensus</link>
+            <guid>2023-01-18-consensus</guid>
+            <pubDate>Wed, 18 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Consensus Quarterly Update]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="consensus-quarterly-update">Consensus Quarterly Update<a class="hash-link" href="#consensus-quarterly-update" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2022-12---2023-01">2022-12 - 2023-01<a class="hash-link" href="#2022-12---2023-01" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-achievements">Main achievements<a class="hash-link" href="#main-achievements" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd">UTxO HD<a class="hash-link" href="#utxo-hd" title="Direct link to heading">​</a></h4><p>The prototype is feature complete and thoroughly tested at the consensus level.
+In particular, we invested a lot of time in writing property-test for the
+mempool, and other crucial new parts of the prototype. Now we are ready to run
+integration tests and system-level benchmarks.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h4><p>We identified and fixed a slowdown in cross-era forecasting that was inhibiting
+our efforts to benchmark the ChainSync Jumping prototype. This resulted in a 7%
+speedup in full sync times in the baseline.</p><p>We also started prototyping a self-contained implementation of the Genesis
+dynamics (in particular of the parts intentionally not part of the ChainSync
+Jumping prototype) that furthered our understanding of subtleties and edge
+cases.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h4><ul><li>We worked on designing integration of new VRF and KES crypto into consensus.<ul><li><code>Crypto</code> class was split into two parts: <code>Crypto</code> and <code>HeaderCrypto</code>.</li><li>With the Ledger team's help, we refactored <code>cardano-ledger</code> to use a proxy
+type for VRF.</li></ul></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="conway-era">Conway era<a class="hash-link" href="#conway-era" title="Direct link to heading">​</a></h4><ul><li>PR went through its second review round. It is about to be merged, but it got
+delayed due to people's availability during Christmas break.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h4><ul><li>We improved the capabilities of our <code>io-sim</code> library, which is key for testing
+and simulating Cardano components.</li><li>We removed thunks from epoch translations in the ledger, which is important
+for reducing memory consumption of the Cardano node.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration">Fostering collaboration<a class="hash-link" href="#fostering-collaboration" title="Direct link to heading">​</a></h4><ul><li>We added a tutorial on how to instantiate the Consensus layer to run custom
+ledgers. This should be a valuable resource to people looking to roll their
+own custom blockchain (either for commercial or research purposes).</li><li>We added an overview of consensus to the <a href="https://input-output-hk.github.io/ouroboros-network/" target="_blank" rel="noopener noreferrer">top level
+documentation</a> of
+ouroboros-network. This overview describes the consensus components and adds a
+hyperlinked map to the modules documentation.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next steps<a class="hash-link" href="#next-steps" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-1">UTxO HD<a class="hash-link" href="#utxo-hd-1" title="Direct link to heading">​</a></h4><ul><li>Evaluate the extensibility of the prototype. Moving the UTxO to disk is only
+the first step towards reducing the memory requirements of Cardano node, and
+ensuring its long term sustainability. In the future, we plan on moving other
+large maps, such as delegation maps. The prototype should be able to
+accommodate these changes without any major modifications.</li><li>Start the integration with other downstream components, such as the wallet and
+db-sync. The idea is to identify and address any potential pain points that
+might arise during this integration.</li><li>Run integration tests and system-level benchmarks.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="genesis-1">Genesis<a class="hash-link" href="#genesis-1" title="Direct link to heading">​</a></h4><ul><li>Finish benchmarking and tuning the fast-path ChainSync Jumping prototype</li><li>Expand and optimize the self-contained implementation of the Disconnect Rule
+(including density comparisons and the LoE)</li><li>Develop documentation and smoke tests for these components.</li><li>Start modifying the ChainSync Client for the LoP and LoR.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="support-1">Support<a class="hash-link" href="#support-1" title="Direct link to heading">​</a></h4><ul><li>Help the Network team with diagnosing performance regression in block
+production.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="tech-debt">Tech debt<a class="hash-link" href="#tech-debt" title="Direct link to heading">​</a></h4><ul><li>Fix property-test failures concerning iterators (<a href="https://github.com/input-output-hk/ouroboros-network/issues/3999" target="_blank" rel="noopener noreferrer">#3999</a> and
+<a href="https://github.com/input-output-hk/ouroboros-network/issues/4183" target="_blank" rel="noopener noreferrer">#4183</a>).</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration-1">Fostering collaboration<a class="hash-link" href="#fostering-collaboration-1" title="Direct link to heading">​</a></h4><ul><li>Finish <a href="https://github.com/input-output-hk/ouroboros-network/issues/4145" target="_blank" rel="noopener noreferrer">mapping consensus</a>.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="risks">Risks<a class="hash-link" href="#risks" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-2">UTxO HD<a class="hash-link" href="#utxo-hd-2" title="Direct link to heading">​</a></h4><ul><li>Moving other parts of the ledger state to disk might require a major redesign
+of the prototype. For instance, if it turns out that the epoch change rules
+require access to the <em>full</em> ledger state. If this is the case, we might
+accept this risk and do the redesign after the initial release of UTxO-HD.</li><li>Integration with downstream clients might require more work than we
+anticipate.</li><li>Access to the benchmarking's team time and resources.</li><li>Benchmarking results might show significant performance degradation, which
+will require additional work if such performance degradation is not accepted
+by other stakeholders.</li><li>The prototype's performance might not be accepted by other stakeholders. Here
+we need to clearly communicate that this is necessary to ensure that as the
+blockchain size grows, the node can operate within reasonable memory
+constraints.</li></ul>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Network Quarterly Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/quarterly/2023-01-13-network</link>
