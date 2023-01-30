@@ -19,6 +19,23 @@ support for cardano-world.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id=
             <category>sre</category>
         </item>
         <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2022-01-27-hydra</link>
+            <guid>2022-01-27-hydra</guid>
+            <pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team had a monthly review meeting with their stakeholders,
+contributors and interested people from the community. The monthly repot for
+<a href="https://hydra.family/head-protocol/monthly/2023-01" target="_blank" rel="noopener noreferrer">January 2023</a> is a digest
+of the things presented and also includes a summary of the meeting. The Hydra
+specification was getting discussed and the team is incorporating suggested
+changes of reviewers. Last but not least, they compute and publish script
+information on every PR and also on the
+<a href="https://hydra.family/head-protocol/benchmarks/transaction-cost/#script-summary" target="_blank" rel="noopener noreferrer">website</a>
+now.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Had the monthly review meeting with a broader audience</li><li>Published the monthly report for <a href="https://hydra.family/head-protocol/monthly/2023-01" target="_blank" rel="noopener noreferrer">January 2023</a></li><li>Reviewed the spec and discussed individual aborts with researchers</li><li>Compute and publish script information along benchmarks on every PR and <a href="https://hydra.family/head-protocol/benchmarks/transaction-cost/#script-summary" target="_blank" rel="noopener noreferrer">website</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Add rollback section to Hydra spec, update pictures and publish it as part of repository</li><li>Discuss bigger spec findings (full minting policy, individual aborts, split fanout) as change/pull requests on the spec in the repository.</li><li>Groom &amp; plan actions required for a maintainable Head explorer + break down <!-- -->“<!-- -->align gaps<!-- -->”<!-- --> feature.</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
+        <item>
             <title><![CDATA[Mithril Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-01-26-mithril</link>
             <guid>2023-01-26-mithril</guid>
