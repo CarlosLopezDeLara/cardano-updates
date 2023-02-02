@@ -22,6 +22,30 @@ support for cardano-world.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id=
         <category label="sre" term="sre"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Ledger Team Update]]></title>
+        <id>2023-02-02-ledger</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-02-02-ledger"/>
+        <updated>2023-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>Much of the work the past two weeks involved integration efforts,
+cleaning up and debugging some serialization issues,
+adding tests, and work on large projects that are still ongoing.
+We also released a CIP this week that aims to make the ledger
+a registered CIP category.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ledger-evolution-cip">Ledger evolution CIP<a class="hash-link" href="#ledger-evolution-cip" title="Direct link to heading">​</a></h3><p>We published a
+<a href="https://github.com/cardano-foundation/CIPs/pull/456" target="_blank" rel="noopener noreferrer">CIP</a>
+that will make the Cardano ledger a registered category of the CIP process.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="serialization-issues">Serialization issues<a class="hash-link" href="#serialization-issues" title="Direct link to heading">​</a></h3><p>We had previously thought that we had found a serialization problem with the redeemers,
+but it turned out to just be particularly confusing code.
+We have now clarified the issue for the future.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3263" target="_blank" rel="noopener noreferrer">pull-3263</a>, <a href="https://github.com/input-output-hk/cardano-ledger/pull/3269" target="_blank" rel="noopener noreferrer">pull-3269</a>, and <a href="https://github.com/input-output-hk/cardano-ledger/pull/3268" target="_blank" rel="noopener noreferrer">pull-3268</a>.</p><p>Starting in protocol version 9, we will no longer accept duplicate keys in CBOR maps.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3277" target="_blank" rel="noopener noreferrer">pull-3277</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-tests">New tests<a class="hash-link" href="#new-tests" title="Direct link to heading">​</a></h3><p>We added a new property test suite for some of our custom containers.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3270" target="_blank" rel="noopener noreferrer">pull-3270</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="progress-on-a-better-cost-model-serialization-situation">Progress on a better cost model serialization situation.<a class="hash-link" href="#progress-on-a-better-cost-model-serialization-situation" title="Direct link to heading">​</a></h3><p>We are still working our way through <a href="https://github.com/input-output-hk/cardano-ledger/issues/2902" target="_blank" rel="noopener noreferrer">issue-2902</a>.
+Towards this end, we are now properly gating the new flexible encoders
+until version 9.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3274" target="_blank" rel="noopener noreferrer">pull-3274</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nightly-tests">Nightly tests<a class="hash-link" href="#nightly-tests" title="Direct link to heading">​</a></h3><p>We are still experimenting with moving more CI actions to GitHub actions.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3276" target="_blank" rel="noopener noreferrer">pull-3276</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="constraint-based-generators">Constraint based generators<a class="hash-link" href="#constraint-based-generators" title="Direct link to heading">​</a></h3><p>We continue to add to our proof of concept for constraint based generators.
+See the previous ledger update for more information about this project.</p>]]></content>
+        <author>
+            <name>Jared Corduan</name>
+            <uri>https://github.com/JaredCorduan</uri>
+        </author>
+        <category label="ledger" term="ledger"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2022-01-27-hydra</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2022-01-27-hydra"/>
