@@ -19,6 +19,22 @@ support for cardano-world.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id=
             <category>sre</category>
         </item>
         <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-02-03-hydra</link>
+            <guid>2023-02-03-hydra</guid>
+            <pubDate>Fri, 03 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team completed the Hydra specification with a section about
+rollbacks and updated graphs
+(<a href="https://github.com/input-output-hk/hydra/issues/448" target="_blank" rel="noopener noreferrer">#448</a>). In a next step,
+the specification will be made more approachable and an open standard. They
+improved their <code>hydra-cluster</code> tool to launch a local <code>--devnet</code> sandbox
+environment and continued aligning the <code>hydra-plutus</code> scripts with the
+specification by hardening the checks on <code>close</code> and <code>contest</code> transactions.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Completed the specification with a section about rollbacks and updated graphs
+<a href="https://github.com/input-output-hk/hydra/issues/448" target="_blank" rel="noopener noreferrer">#448</a>, with a follow-up on making it more approachable and an open standard.</li><li>Continued spec review with internal auditor and incorporated changes.</li><li>Talked to TxPipe about how Demeter and Hydra could work together</li><li>The <code>hydra-cluster</code> executable can be used to launch a local <code>--devnet</code> sandbox environment.</li><li>Reproduced the “head being stuck on network outage” bug<ul><li>relates to what liveness guarantees we can / want to give on the protocol level and needs to be discussed.</li></ul></li><li>Progressed with higher velocity by addressing more and more gaps <a href="https://github.com/input-output-hk/hydra/pull/677" target="_blank" rel="noopener noreferrer">#677</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Upstream our JSON instances to the ledger</li><li>Close all transaction security related on-chain gaps</li><li>Ideally release 0.9.0 with updated scripts</li><li>Groom &amp; plan (or not) protocol changes yielded from specification discussions -&gt; updated roadmap</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
+        <item>
             <title><![CDATA[Ledger Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-02-02-ledger</link>
             <guid>2023-02-02-ledger</guid>
@@ -40,8 +56,8 @@ See the previous ledger update for more information about this project.</p>]]></
         </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
-            <link>https://input-output-hk.github.io/cardano-updates/2022-01-27-hydra</link>
-            <guid>2022-01-27-hydra</guid>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-01-27-hydra</link>
+            <guid>2023-01-27-hydra</guid>
             <pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[High-level summary]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team had a monthly review meeting with their stakeholders,
@@ -113,8 +129,8 @@ request</a> to facilitate compiling consensus.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
-            <link>https://input-output-hk.github.io/cardano-updates/2022-01-20-hydra</link>
-            <guid>2022-01-20-hydra</guid>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-01-20-hydra</link>
+            <guid>2023-01-20-hydra</guid>
             <pubDate>Fri, 20 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[High-level summary]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team has been focusing on the write-up of the Hydra HeadV1
@@ -176,8 +192,8 @@ new leger core and ghc-9.2.4</p><h2 class="anchor anchorWithStickyNavbar_LWe7" i
         </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
-            <link>https://input-output-hk.github.io/cardano-updates/2022-01-13-hydra</link>
-            <guid>2022-01-13-hydra</guid>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-01-13-hydra</link>
+            <guid>2023-01-13-hydra</guid>
             <pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[High-level summary]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>Since last weekly update before christmas, the Hydra team worked on the
