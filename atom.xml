@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-02-03T00:00:00.000Z</updated>
+    <updated>2023-02-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-02-08-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-02-08-consensus"/>
+        <updated>2023-02-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We continue refactoring the UTxO HD prototype while we wait for the system level
+benchmarks. We have created a new repository that contains the <code>anti-diff</code>
+packages used in this prototype.</p><p>On the Genesis front, we are preparing another meeting with the researchers to
+audit the implementation design, and we continued working on basic tests and
+simplifications.</p><p>During the past two weeks we also introduced two new tools. One for dumping CBOR
+encoded blocks to JSON, and another to serve a local immutable DB.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="workstreams">Workstreams<a class="hash-link" href="#workstreams" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-prototype">UTxO HD Prototype<a class="hash-link" href="#utxo-hd-prototype" title="Direct link to heading">​</a></h3><p>We are in the process of refactoring the UTxO HD prototype, while we wait for
+the system level benchmarks to confirm if the performance of the prototype is
+satisfactory.</p><p>We also set up a repository for the <a href="https://github.com/input-output-hk/anti-diffs" target="_blank" rel="noopener noreferrer"><code>anti-diff</code></a> package, which
+required us to refactor the code, write documentation, and prepare a release to
+<a href="https://github.com/input-output-hk/cardano-haskell-packages" target="_blank" rel="noopener noreferrer">CHaP</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h3><p>We worked on <a href="https://github.com/input-output-hk/ouroboros-network/issues/4347" target="_blank" rel="noopener noreferrer">basic tests</a> for the <em>Limit on Eagerness</em> property of
+Genesis. We also introduced further robustness and simplifications in the
+Genesis Density governor. Finally, we developed a presentation to engage again
+with the researchers on our Genesis implementation design.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration">Fostering collaboration<a class="hash-link" href="#fostering-collaboration" title="Direct link to heading">​</a></h3><p>We are in the process of <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/6" target="_blank" rel="noopener noreferrer">polishing</a> the <code>ouroboros-consensus</code>
+documentation site, which we will use a the entry point for Consensus related
+documentation. The first version will not be complete, but we plan on
+systematically improving it.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h3><p>We <a href="https://github.com/input-output-hk/ouroboros-network/pull/4335" target="_blank" rel="noopener noreferrer">added a tool</a> to <code>ouroboros-consensus-cardano-tools</code> which allows
+to dump the Chain DB blocks or any given CBOR encoded blocks as JSON.</p><p>We also added <a href="https://github.com/input-output-hk/ouroboros-network/pull/4339" target="_blank" rel="noopener noreferrer">another tool</a> that serves an existing immutable DB via
+BlockFetch and ChainSync. This tool can help in assisting our local benchmarking
+efforts (for instance Genesis' ChainSync jumping prototype).</p>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Crypto Team Update]]></title>
         <id>2023-02-03-crypto</id>
