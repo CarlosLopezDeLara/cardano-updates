@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-02-09T00:00:00.000Z</updated>
+    <updated>2023-02-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-02-10-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-02-10-hydra"/>
+        <updated>2023-02-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team closed several gaps to align the Hydra scripts
+implementation further with the specification. This also resulted in a slight
+improvement on Hydra script size and costs. They consequently analysed the
+asymptotic complexity of collect and fanout and how they relate. Also plutus-tx
+profiling toolchain was evaluated and set up for future improvements on Hydra
+on-chain performance. In discussions with researchers and internal auditors,
+they also uncovered next steps on further securing the Head protocl using a
+"full" minting policy.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Closed several gaps to align script implementation with specification <a href="https://github.com/input-output-hk/hydra/issues/452" target="_blank" rel="noopener noreferrer">#452</a><ul><li>Allow contest only once <a href="https://github.com/input-output-hk/hydra/pull/680" target="_blank" rel="noopener noreferrer">#680</a></li><li>Optimization through head output at index 0 <a href="https://github.com/input-output-hk/hydra/pull/700" target="_blank" rel="noopener noreferrer">#700</a></li><li>Value is preserved <a href="https://github.com/input-output-hk/hydra/pull/702" target="_blank" rel="noopener noreferrer">#702</a> + optimized exact value equality <a href="https://github.com/input-output-hk/hydra/pull/709" target="_blank" rel="noopener noreferrer">#709</a></li></ul></li><li>Analysed asymptotic complexity of some of our scripts and set up profiling toolchain to <a href="https://github.com/input-output-hk/hydra/pull/721" target="_blank" rel="noopener noreferrer">#721</a><img loading="lazy" src="https://user-images.githubusercontent.com/2621189/218124686-7a85b40d-12f7-4b00-ad16-128c99f5b707.png" class="img_ev3q"></li><li>Fixed our tooling around the Haskell language server</li><li>Discussed full minting policy with researchers</li><li>Started grooming “what we need for mainnet” on <a href="https://github.com/input-output-hk/hydra/issues/713" target="_blank" rel="noopener noreferrer">this</a> idea ticket and <a href="https://github.com/input-output-hk/hydra/milestone/8" target="_blank" rel="noopener noreferrer">milestone</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Implement full minting policy</li><li>All remaining protocol discrepancies are implemented or groomed as individual features</li><li>Ideally release 0.9.0 with updated scripts</li><li>Discuss what we need for mainnet (milestone planning)</li><li>Redraw transaction graphs for specification (upon feedback)</li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mithril Team Update]]></title>
         <id>2023-02-09-mithril</id>
