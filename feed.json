@@ -80,6 +80,21 @@
             ]
         },
         {
+            "id": "2023-02-03-goedel",
+            "content_html": "<p>The team works on applied research and consulting in formal methods\nthat is directly applicable to evidence based engineering in Core Tech\nand beyond.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>This sprint the team has been preparing several papers for peer review\nand knowledge sharing and consulting within IO and the community.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"details\">Details<a class=\"hash-link\" href=\"#details\" title=\"Direct link to heading\">​</a></h2><ul><li>R&amp;D Seminar on experience participating in a member based organisation</li><li>Full day tutorial on performance engineering presented at HiPEAC\n2023 conference</li><li>Finished preparing and submitted a paper on performance engineering\nto an ACM workshop</li><li>Preparing a draft paper for future submission about verifying design\nrefinements for distributed system design</li><li>Consulting on performance design of other IO projects</li></ul>",
+            "url": "https://input-output-hk.github.io/cardano-updates/2023-02-03-goedel",
+            "title": "Goedel Team Update",
+            "summary": "The team works on applied research and consulting in formal methods",
+            "date_modified": "2023-02-03T00:00:00.000Z",
+            "author": {
+                "name": "James Chapman",
+                "url": "https://github.com/jmchapman"
+            },
+            "tags": [
+                "goedel"
+            ]
+        },
+        {
             "id": "2023-02-03-hydra",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High-level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>This week, the Hydra team completed the Hydra specification with a section about\nrollbacks and updated graphs\n(<a href=\"https://github.com/input-output-hk/hydra/issues/448\" target=\"_blank\" rel=\"noopener noreferrer\">#448</a>). In a next step,\nthe specification will be made more approachable and an open standard. They\nimproved their <code>hydra-cluster</code> tool to launch a local <code>--devnet</code> sandbox\nenvironment and continued aligning the <code>hydra-plutus</code> scripts with the\nspecification by hardening the checks on <code>close</code> and <code>contest</code> transactions.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"what-did-the-team-achieve-this-week\">What did the team achieve this week<a class=\"hash-link\" href=\"#what-did-the-team-achieve-this-week\" title=\"Direct link to heading\">​</a></h2><ul><li>Completed the specification with a section about rollbacks and updated graphs\n<a href=\"https://github.com/input-output-hk/hydra/issues/448\" target=\"_blank\" rel=\"noopener noreferrer\">#448</a>, with a follow-up on making it more approachable and an open standard.</li><li>Continued spec review with internal auditor and incorporated changes.</li><li>Talked to TxPipe about how Demeter and Hydra could work together</li><li>The <code>hydra-cluster</code> executable can be used to launch a local <code>--devnet</code> sandbox environment.</li><li>Reproduced the “head being stuck on network outage” bug<ul><li>relates to what liveness guarantees we can / want to give on the protocol level and needs to be discussed.</li></ul></li><li>Progressed with higher velocity by addressing more and more gaps <a href=\"https://github.com/input-output-hk/hydra/pull/677\" target=\"_blank\" rel=\"noopener noreferrer\">#677</a></li></ul><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"what-are-the-goals-of-next-week\">What are the goals of next week<a class=\"hash-link\" href=\"#what-are-the-goals-of-next-week\" title=\"Direct link to heading\">​</a></h2><ul><li>Upstream our JSON instances to the ledger</li><li>Close all transaction security related on-chain gaps</li><li>Ideally release 0.9.0 with updated scripts</li><li>Groom &amp; plan (or not) protocol changes yielded from specification discussions -&gt; updated roadmap</li></ul>",
             "url": "https://input-output-hk.github.io/cardano-updates/2023-02-03-hydra",
