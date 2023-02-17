@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-02-10T00:00:00.000Z</updated>
+    <updated>2023-02-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Network Team Update]]></title>
+        <id>2023-02-17-network</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-02-17-network"/>
+        <updated>2023-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>Recently QA found a bug in P2P code, which results in busy loops.  We added one
+fix to <code>1.35.6</code> release, another one will likely be part of next release.  The
+first one is already included in <code>ouroboros-network-0.3.0.1</code> release.  These
+bugs could only affect nodes which are out of sync and thus should not impose
+risk on well maintained nodes on mainnet.  We also advertise to deploy at most
+one of the relays as a P2P node, which shields from possible consequences.</p><p>We recently finished design phase of eclipse evasion and we started
+implementing it (see <a href="https://github.com/orgs/input-output-hk/projects/19/views/16?pane=issue&amp;itemId=19819205" target="_blank" rel="noopener noreferrer">issue #3886</a> for progress).</p><p>Galois finished implementing Handshake extension which will allow to query
+network protocol versions (see <a href="https://github.com/input-output-hk/ouroboros-network/pull/4256" target="_blank" rel="noopener noreferrer">pr #4256</a>).</p><p>We also recently released a newer set of network packages to be integrated with
+<code>cardano-node</code> <code>master</code> branch, this includes:</p><div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">* monoidal-synchronisation-0.1.0.2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* cardano-client-0.1.0.2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* network-mux-0.3.0.0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* ouroboros-network-api-0.1.0.0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* ouroboros-network-protocols-0.2.0.0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* ouroboros-network-testing-0.2.0.1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* ouroboros-network-mock-0.1.0.0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* ouroboros-network-framework-0.3.0.0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">* ouroboros-network-0.4.0.0 (it doesn't not yet include the fix we included</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  in `0.3.0.1`)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
+        <author>
+            <name>Marcin Szamotulski</name>
+            <uri>https://github.com/coot</uri>
+        </author>
+        <category label="network" term="network"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-02-10-hydra</id>
@@ -268,6 +289,30 @@ the <code>preview</code> network <a href="http://explorer.hydra.family" target="
             <uri>https://github.com/ch1bo</uri>
         </author>
         <category label="hydra" term="hydra"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Network Team Update]]></title>
+        <id>2023-01-20-network</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-01-20-network"/>
+        <updated>2023-01-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We have been working towards <code>cardano-node-1.35.5</code> release.  QA &amp; benchmarking
+teams gave a green light for the release, and we made decent progress with some
+CI problem which we encountered on the way (<a href="https://github.com/input-output-hk/cardano-node/pull/4612" target="_blank" rel="noopener noreferrer">PR #4612</a>). We are also working on
+peer sharing, making improvements in our testing infrastructure, reducing
+technical debt and making progress towards <code>io-sim-1.0.0.0</code>. Galois is making
+progress on Handshake improvements.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><p>Our diffusion simulation network now includes a mixed network of <code>initiator
+only</code> and <code>initiator and responder</code> nodes. <a href="https://github.com/input-output-hk/ouroboros-network/issues/4222" target="_blank" rel="noopener noreferrer">issue #4222</a></p><p>We are now reviewing the <a href="https://github.com/input-output-hk/ouroboros-network/pull/4019" target="_blank" rel="noopener noreferrer">peer sharing pull request</a>.</p><p>We are also reviewing pull request which introduces handshake query flag. <a href="https://github.com/input-output-hk/ouroboros-network/pull/4256" target="_blank" rel="noopener noreferrer">PR #4256</a></p><p>We fixed a bug in our network simulator.  The bug was triggered when a node
+died when performing a simultaneous TCP open (a corner case of a corner case!). <a href="https://github.com/input-output-hk/ouroboros-network/pull/4265" target="_blank" rel="noopener noreferrer">PR #4265</a></p><p>We also refactored <code>Snocket</code> interface and removed the bearer construction from
+its methods. <a href="https://github.com/input-output-hk/ouroboros-network/pull/4260" target="_blank" rel="noopener noreferrer">PR #4260</a></p><p>We are working towards releasing <code>io-sim-1.0.0.0</code> on Hackage, which includes
+reviewing two PRs: <a href="https://github.com/input-output-hk/io-sim/pull/57" target="_blank" rel="noopener noreferrer">PR #57</a> and <a href="https://github.com/input-output-hk/io-sim/pull/60" target="_blank" rel="noopener noreferrer">PR #60</a> as well as writing an announcement
+blog post.  </p>]]></content>
+        <author>
+            <name>Marcin Szamotulski</name>
+            <uri>https://github.com/coot</uri>
+        </author>
+        <category label="network" term="network"/>
+        <category label="release" term="release"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[SRE Team Update]]></title>
@@ -2225,29 +2270,5 @@ a TCP connection with fully open TCP window.</p></li></ul><div style="width:640p
             <uri>https://github.com/coot</uri>
         </author>
         <category label="network" term="network"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Network Team Update]]></title>
-        <id>2023-01-20-network</id>
-        <link href="https://input-output-hk.github.io/cardano-updates/2023-01-20-network"/>
-        <updated>2022-01-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[High level summary]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We have been working towards <code>cardano-node-1.35.5</code> release.  QA &amp; benchmarking
-teams gave a green light for the release, and we made decent progress with some
-CI problem which we encountered on the way (<a href="https://github.com/input-output-hk/cardano-node/pull/4612" target="_blank" rel="noopener noreferrer">PR #4612</a>). We are also working on
-peer sharing, making improvements in our testing infrastructure, reducing
-technical debt and making progress towards <code>io-sim-1.0.0.0</code>. Galois is making
-progress on Handshake improvements.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><p>Our diffusion simulation network now includes a mixed network of <code>initiator
-only</code> and <code>initiator and responder</code> nodes. <a href="https://github.com/input-output-hk/ouroboros-network/issues/4222" target="_blank" rel="noopener noreferrer">issue #4222</a></p><p>We are now reviewing the <a href="https://github.com/input-output-hk/ouroboros-network/pull/4019" target="_blank" rel="noopener noreferrer">peer sharing pull request</a>.</p><p>We are also reviewing pull request which introduces handshake query flag. <a href="https://github.com/input-output-hk/ouroboros-network/pull/4256" target="_blank" rel="noopener noreferrer">PR #4256</a></p><p>We fixed a bug in our network simulator.  The bug was triggered when a node
-died when performing a simultaneous TCP open (a corner case of a corner case!). <a href="https://github.com/input-output-hk/ouroboros-network/pull/4265" target="_blank" rel="noopener noreferrer">PR #4265</a></p><p>We also refactored <code>Snocket</code> interface and removed the bearer construction from
-its methods. <a href="https://github.com/input-output-hk/ouroboros-network/pull/4260" target="_blank" rel="noopener noreferrer">PR #4260</a></p><p>We are working towards releasing <code>io-sim-1.0.0.0</code> on Hackage, which includes
-reviewing two PRs: <a href="https://github.com/input-output-hk/io-sim/pull/57" target="_blank" rel="noopener noreferrer">PR #57</a> and <a href="https://github.com/input-output-hk/io-sim/pull/60" target="_blank" rel="noopener noreferrer">PR #60</a> as well as writing an announcement
-blog post.  </p>]]></content>
-        <author>
-            <name>Marcin Szamotulski</name>
-            <uri>https://github.com/coot</uri>
-        </author>
-        <category label="network" term="network"/>
-        <category label="release" term="release"/>
     </entry>
 </feed>
