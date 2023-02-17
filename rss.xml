@@ -18,6 +18,38 @@
             <category>crypto</category>
         </item>
         <item>
+            <title><![CDATA[Ledger Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-02-17-ledger</link>
+            <guid>2023-02-17-ledger</guid>
+            <pubDate>Fri, 17 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This past two weeks saw many months worth of ledger changes integrated with the <code>cardano-base</code>
+and <code>ouroboros-network</code> repositories.
+The vast majority of the effort involved all the changes to the ledger serialization libraries
+(and the interplay with <code>cardano-base</code>) which now support proper versioning.
+Supporting the conway ledger era, and in particular allowing the ledger state to transition
+to a whole new system of governance, also played a noticeable part in the integration.</p><p>Besides the integration work, the team continues to address technical debt, improve the
+documentation, make our testing infrastructure better (such as experimenting with better
+nightly tests), and formally specifying more parts of CIP-1694.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="integration-work">Integration work<a class="hash-link" href="#integration-work" title="Direct link to heading">​</a></h3><p>Below is all the integration work completed, which will enable a release to node from
+the current ledger master. Many thanks to
+<a href="https://github.com/lehins" target="_blank" rel="noopener noreferrer">Alexey</a> for this colossal undertaking!</p><ul><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3303" target="_blank" rel="noopener noreferrer">pull-3303</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3302" target="_blank" rel="noopener noreferrer">pull-3302</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3300" target="_blank" rel="noopener noreferrer">pull-3300</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3299" target="_blank" rel="noopener noreferrer">pull-3299</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3298" target="_blank" rel="noopener noreferrer">pull-3298</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3297" target="_blank" rel="noopener noreferrer">pull-3297</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3292" target="_blank" rel="noopener noreferrer">pull-3292</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3289" target="_blank" rel="noopener noreferrer">pull-3289</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3288" target="_blank" rel="noopener noreferrer">pull-3288</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3279" target="_blank" rel="noopener noreferrer">pull-3279</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3282" target="_blank" rel="noopener noreferrer">pull-3282</a></li><li><a href="https://github.com/input-output-hk/ouroboros-network/pull/4349" target="_blank" rel="noopener noreferrer">pull-4349</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h3><p>Starting in major protocol version 9, zero-valued multi-assets will no longer be permitted
+in the CBOR specification. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3241" target="_blank" rel="noopener noreferrer">pull-3241</a>.</p><p>We now have our <code>.cabal</code> files being checked for a consistent formatting given by
+<code>cabal format</code> in our CI. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3286" target="_blank" rel="noopener noreferrer">pull-3286</a>.</p><p>We are still experimenting with better nightly tests for our long running
+property based tests. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3276" target="_blank" rel="noopener noreferrer">pull-3276</a> and <a href="https://github.com/input-output-hk/cardano-ledger/pull/3296" target="_blank" rel="noopener noreferrer">pull-3296</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="small-documentation-improvements">Small documentation improvements<a class="hash-link" href="#small-documentation-improvements" title="Direct link to heading">​</a></h3><p>The hand proofs of the preservation ADA property have been added back to the
+Shelley ledger specification. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3295" target="_blank" rel="noopener noreferrer">pull-3295</a>.</p><p>We have clarified how the script integrity hash is computed in the CDDL description.
+See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3290" target="_blank" rel="noopener noreferrer">pull-3290</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="specifying-cip-1694">Specifying CIP-1694<a class="hash-link" href="#specifying-cip-1694" title="Direct link to heading">​</a></h3><p>Our new formal specifications backed by Agda have seen a lot of progress!
+Upgrading to Agda 2.6.3 fixed our main build infrastructure problems,
+and we no longer have to rely on our custom fork. See <a href="https://github.com/input-output-hk/formal-ledger-specifications/pull/50" target="_blank" rel="noopener noreferrer">pull-50</a>.</p><p>Our progress on formally specifying CIP-1694 can be followed here:</p><ul><li>in Agda: <a href="https://github.com/input-output-hk/formal-ledger-specifications/pull/40" target="_blank" rel="noopener noreferrer">pull-40</a></li><li>the corresponding Haskell: <a href="https://github.com/input-output-hk/cardano-ledger/pull/3291" target="_blank" rel="noopener noreferrer">pull-3291</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="constraint-based-testing">Constraint based testing<a class="hash-link" href="#constraint-based-testing" title="Direct link to heading">​</a></h3><p>We are still actively working on our new constraint based property testing framework.
+We have nearly all of the constraints for an entire ledger state
+hooked into generators, and tests that the generators do indeed obey the constraints.
+The variable count in the constraints is over 100!
+There is still much work to do on shrinking, making the generators faster,
+and writing actual property tests for the ledger, but the approach still seems viable and
+we are hopeful that it could replace our trace generators.
+The WIP can be followed here: <a href="https://github.com/input-output-hk/cardano-ledger/pull/3219" target="_blank" rel="noopener noreferrer">pull-3219</a>.</p>]]></content:encoded>
+            <category>ledger</category>
+        </item>
+        <item>
             <title><![CDATA[Network Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-02-17-network</link>
             <guid>2023-02-17-network</guid>
