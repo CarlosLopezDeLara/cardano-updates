@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-02-17T00:00:00.000Z</updated>
+    <updated>2023-02-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DB-sync Team Update]]></title>
+        <id>2023-02-21-db-sync</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-02-21-db-sync"/>
+        <updated>2023-02-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The db-sync team created a new tag <code>13.1.0.2</code> which is ready to release.
+We also investigated and had the first working UTxO-HD integration which is one
+of the potential future risks for db-sync.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><ul><li>Integrated the UTxO-HD feauture branch in <code>kderme/utxo-hd-1</code>. This doesn't
+use the full on disk storage but keeps things in memory and the plan is to keep
+it this way for the first iteration. The integration still has some performance
+issues which we investigate</li><li>Created tag <code>13.1.0.2</code> which upgrades the dependencies of db-sync</li><li>Fixed an issue related to errors appearing in SMASH
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1353" target="_blank" rel="noopener noreferrer">#1353</a></li><li>Continued with ghc-9.2 integration
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1339" target="_blank" rel="noopener noreferrer">#1339</a></li><li>Worked on an new fixing procedure for
+<a href="https://github.com/input-output-hk/cardano-db-sync/issues/1348" target="_blank" rel="noopener noreferrer">#1348</a>.
+We try to make these procedures work also on older schema version, without the
+need to migrate to newer schema, which can be very useful for fixing existing
+snapshots.</li></ul>]]></content>
+        <author>
+            <name>Kostas Dermentzis</name>
+            <uri>https://github.com/kderme</uri>
+        </author>
+        <category label="db-sync" term="db-sync"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Crypto Team Update]]></title>
         <id>2023-02-17-crypto</id>
