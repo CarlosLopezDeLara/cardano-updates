@@ -2,11 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-02-21T00:00:00.000Z</updated>
+    <updated>2023-02-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-02-22-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-02-22-consensus"/>
+        <updated>2023-02-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>During the past two weeks we got the results from the system level benchmarks
+for UTxO HD. They showed a substantial performance regression, so we spent some
+time analyzing the results. We found out the frequency at which ledger snapshots
+were taken was too high, so we requested the benchmarking team a new run with a
+more realistic snapshotting policy. We continued refactoring and improving the
+prototype, and we released UTxO-HD related packages to CHaP.</p><p>We met with IOG researchers and networking specialists to discuss the Genesis
+design, which was well received. We continued working on testing and
+benchmarking different Genesis prototypes.</p><p>We are also working on solving a test failure related to iterators. This work
+derived in several improvements such as better documentation, a framework for
+writing unit (and regression) tests, and the possibility of debugging
+<code>QuickCheck</code> counter examples in the REPL.</p><p>Finally, we released <code>ouroboros-consensus</code> 0.2.0.0 and
+<code>ouroboros-consensus-cardano</code> 0.3.0.0 to CHaP</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="workstreams">Workstreams<a class="hash-link" href="#workstreams" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-prototype">UTxO HD Prototype<a class="hash-link" href="#utxo-hd-prototype" title="Direct link to heading">​</a></h3><p>We got the results of the first system level benchmarks for UTxO HD. They seemed
+to indicate a significant regression in performance. After looking into the
+benchmark logs we found that the benchmark runs took ledger state snapshots too
+often, due to the default snapshotting policy depending on <code>k</code>, and <code>k</code> being so
+small in the benchmark runs. Therefore, the next step is to re-run the
+benchmarks with a snapshotting policy that more closely resembles the one from
+mainnet.</p><p>At the same time, we continued refactoring and cleaning up the prototype. </p><p>Also, we prepared the <code>anti-diff</code> packages (<code>fingertree-rm</code>, <code>diff-containers</code>,
+<code>simple-semigroupoids</code>) and the <code>lmdb</code> related packages (<code>cardano-lmdb</code> and
+<code>cardano-lmdb-simple</code>) to <a href="https://github.com/input-output-hk/cardano-haskell-packages" target="_blank" rel="noopener noreferrer">CHaP</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h3><p>The Genesis design was presented to the IOG researchers and Peter Thompson from
+NSol. It was well received. They pointed out one blindspot, but we think it'll
+be relatively simple to mitigate.</p><p>In parallel, we continued developing test and benchmarks for the Genesis
+prototypes. I particular we tested and implemented a potential fix for
+<a href="https://github.com/input-output-hk/ouroboros-network/issues/4037#issuecomment-1439708022" target="_blank" rel="noopener noreferrer">increased ChainDB dequeue timings</a>, which partly
+behaved as we expected, but still needs further investigation. Also we obtained
+<a href="https://github.com/input-output-hk/ouroboros-network/issues/4037#issuecomment-1434745031" target="_blank" rel="noopener noreferrer">new benchmarking data</a> for the prototype.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h3><p>Related to <a href="https://github.com/input-output-hk/ouroboros-network/issues/4183" target="_blank" rel="noopener noreferrer">#4183</a>, we developed a <a href="https://github.com/input-output-hk/ouroboros-network/pull/4379" target="_blank" rel="noopener noreferrer">DSL</a> for specifying
+<code>ChainDB</code> unit tests. This will allow us to better understand the
+counter-examples returned by QuickCheck tests, and to write <a href="https://github.com/input-output-hk/ouroboros-network/pull/4383" target="_blank" rel="noopener noreferrer">regression
+tests</a> for them. Also, we <a href="https://github.com/input-output-hk/ouroboros-network/pull/4358" target="_blank" rel="noopener noreferrer">added a module</a> to enable
+QuickCheck counter-examples to be run on the REPL, allowing for faster debugging
+feedback. Also, we improved the documentation related to followers
+(<a href="https://github.com/input-output-hk/ouroboros-network/pull/4372" target="_blank" rel="noopener noreferrer">#4372</a>).</p><p>We are also working on a design for optimizing the way we handle blocks from the
+future.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h3><p>We released <code>ouroboros-consensus</code> 0.2.0.0 and <code>ouroboros-consensus-cardano</code>
+0.3.0.0 to CHaP. Remember that we decided to split the packages related to
+Consensus into two bundles, one with the core functionality, Cardano-agnostic
+code, and another bundle with instantiations specific to Cardano.</p>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DB-sync Team Update]]></title>
         <id>2023-02-21-db-sync</id>
