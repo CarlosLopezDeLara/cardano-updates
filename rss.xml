@@ -4,10 +4,39 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 24 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Network Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-02-network</link>
+            <guid>2023-03-02-network</guid>
+            <pubDate>Thu, 02 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>In the current sprint the networking team focused on fixing bugs and pushing
+forward implementation of eclipse evasion.  We also found a bug in our
+simulation testing setup (in integration of test node).  We also overviewed the
+work on extending handshake protocol which is delivered by Galois Inc.</p><p>We published <code>ouroboros-netork-0.4.0.1</code> and
+<code>ouroboros-network-protocols-0.3.0.0</code> to <a href="https://github.com/input-output-hk/cardano-haskell-packages/pull/147" target="_blank" rel="noopener noreferrer">CHaP</a>.</p><p>We also fixed a bug in <code>cardano-node</code> which results in not being able to
+configure inbound connection limits, see <a href="https://github.com/input-output-hk/cardano-node/pull/4902" target="_blank" rel="noopener noreferrer">PR #4902</a>.</p><p>Together with Karl Knutsson (CF) we realised an issue in <code>cardano-cli</code>: it's
+validation of DNS names, IP address &amp; ports when registering a stake pool
+should be more strict to protect against common mistakes which we identified on
+the chain.  See <a href="https://github.com/input-output-hk/cardano-node/issues/4929" target="_blank" rel="noopener noreferrer">issue #4929</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="detailed-work-log">Detailed work log<a class="hash-link" href="#detailed-work-log" title="Direct link to heading">​</a></h2><p>In <a href="https://github.com/input-output-hk/ouroboros-network/pull/4385" target="_blank" rel="noopener noreferrer">PR #4385</a> we fixed two bugs in peer state actions.  First one results in
+a busy loop if demotion from hot to warm times outs.  This busy loop is
+eventually exited when mux exits (we reported this in our previous report).
+This fix made it to <code>1.35.6</code> release as well.</p><p>In addition the <a href="https://github.com/input-output-hk/ouroboros-network/pull/4385" target="_blank" rel="noopener noreferrer">PR #4385</a> also fixes another bug which results in <code>hot -&gt; warm
+-&gt; hot</code> demotion / promotion busy loop.</p><p>The <a href="https://github.com/input-output-hk/ouroboros-network/pull/4385" target="_blank" rel="noopener noreferrer">PR #4385</a> also fixed a bug in a node only used in simulation which
+resulted in not using <code>chain-sync</code> or <code>block-fetch</code> mini-protocols.  In the
+review process, we realised that the header-body split in the simulated node
+requires further work (see <a href="https://github.com/input-output-hk/ouroboros-network/pull/4419" target="_blank" rel="noopener noreferrer">PR #4419</a>, which is under review).</p><p>The <a href="https://github.com/input-output-hk/ouroboros-network/pull/4385" target="_blank" rel="noopener noreferrer">PR #4385</a> also extend our generators, which together with the above fix,
+cover the <code>hot -&gt; warm -&gt; hot</code> demotion / promotion busy loop.</p><p>In <a href="https://github.com/input-output-hk/ouroboros-network/pull/4419" target="_blank" rel="noopener noreferrer">PR #4419</a> we introduce a <code>ChainDB</code> for our simulation node, which plays
+similar role to <code>ChainDB</code> in the <code>ouroboros-consensus</code>: a persistent (across
+simulated restarts) store of blocks which does chain selection.  This ensures
+that the simulated node is using <code>block-fetch</code> to download blocks announced by
+<code>chain-sync</code> mini-protocol.</p><p>We also made progress with reviewing <a href="https://github.com/input-output-hk/ouroboros-network/pull/4019" target="_blank" rel="noopener noreferrer">PR #4019</a> - peer sharing.</p><p>We also fixed <a href="https://github.com/input-output-hk/ouroboros-network/issues/4370" target="_blank" rel="noopener noreferrer">issue #4370</a> - a connection manager test failure, see <a href="https://github.com/input-output-hk/ouroboros-network/pull/4384" target="_blank" rel="noopener noreferrer">PR #4384</a>.</p>]]></content:encoded>
+            <category>network</category>
+        </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-02-24-hydra</link>
