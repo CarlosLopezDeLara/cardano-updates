@@ -53,6 +53,30 @@ months, stay tuned!</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-d
         <category label="hydra" term="hydra"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Ledger Team Update]]></title>
+        <id>2023-03-03-ledger</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-03-03-ledger"/>
+        <updated>2023-03-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We have focused the last two weeks on CIP-1694, integration of the last several months of ledger
+work into consensus and node, and testing infrastrutcture that we will use in the conway ledger era.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="conway-rules">Conway rules<a class="hash-link" href="#conway-rules" title="Direct link to heading">​</a></h3><p>We made a major update to the conway era so that the implementation is now in sync with the spec
+with respect to the ratification and enactment logic.</p><p>See the notes in <a href="https://github.com/input-output-hk/cardano-ledger/pull/3291" target="_blank" rel="noopener noreferrer">pull-3291</a> for more details.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="constraint-based-generators">Constraint based generators<a class="hash-link" href="#constraint-based-generators" title="Direct link to heading">​</a></h3><p>This week we hit a major milestone in our efforts to build out better property based testing
+support for the main ledger properties.
+The new constraint based generators can now generate full ledger states with what is probably
+very close to the real constraints (if anything, it is under constrained).
+Next we will work on generating a transaction in the context of a ledger state, which would allow
+us to actually start using these generators for real tests.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3219" target="_blank" rel="noopener noreferrer">pull-3219</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="preparing-a-release-now-with-proper-versioning">Preparing a release, now with proper versioning<a class="hash-link" href="#preparing-a-release-now-with-proper-versioning" title="Direct link to heading">​</a></h3><p>After quite some time, we are ready to release a version of ledger that will work with a new
+version of consensus, using CHaPs.</p><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3308" target="_blank" rel="noopener noreferrer">pull-3308</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h3><ul><li>We cleaned up the redeemer serialization code (to prevent future mistakes). See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3269" target="_blank" rel="noopener noreferrer">pull-3269</a>.</li><li>We added a note to the Alonzo spec, specifying that the transaction inputs are
+lexicographically ordered in the Plutus script context. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3306" target="_blank" rel="noopener noreferrer">pull-3306</a>.</li><li>We fixed a problem with the address deserialiazation
+(we mistakenly fixed a bug in the Babbage era which cannot be fixed until Conway).
+See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3307" target="_blank" rel="noopener noreferrer">pull-3307</a>.</li><li>We fixed a problem with our nix build. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3311" target="_blank" rel="noopener noreferrer">pull-3311</a>.</li><li>We fixed a problem with our <code>NoThunks</code> tests. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3310" target="_blank" rel="noopener noreferrer">pull-3310</a>.</li><li>We improved our nightly tests. See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3316" target="_blank" rel="noopener noreferrer">pull-3316</a>.</li></ul>]]></content>
+        <author>
+            <name>Jared Corduan</name>
+            <uri>https://github.com/JaredCorduan</uri>
+        </author>
+        <category label="ledger" term="ledger"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Network Team Update]]></title>
         <id>2023-03-02-network</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-03-02-network"/>
