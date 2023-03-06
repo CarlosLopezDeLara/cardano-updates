@@ -18,7 +18,7 @@ that is directly applicable to evidence based engineering in Core Tech
 and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team has been working on drafts of two papers and one
 technical report, improving the deltaQ tutorial, consulting on
 performance design with MELD, and the Djed paper has been accepted for
-publication.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Preparing draft of DeltaQSD algebra paper for FORTE 2023</p></li><li><p>Extending the technical report on which the above paper is based</p></li><li><p>Consulting with MELD on performance engineering of Plutus contracts</p></li><li><p>Planning improvements and collecting material for the deltaQ
+publication.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Preparing draft of DeltaQSD algebra paper for FORTE 2023</p></li><li><p>Extending the technical report on which the above paper is based</p></li><li><p>Consulting with an external company on performance engineering of Plutus contracts</p></li><li><p>Planning improvements and collecting material for the deltaQ
 tutorial based on experience with systems that manage risk at
 multiple timescales</p></li><li><p>Preparing sections on the communication language and idempontency
 laws for draft paper about verifying design refinements for
