@@ -8,6 +8,19 @@
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[Crypto Team Update]]></title>
+        <id>2023-03-03-crypto</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-03-03-crypto"/>
+        <updated>2023-03-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The open fronts that the crypto team is working on are:</p><ul><li>Mithril: Updated KES crate to force user to allocate buffer of bytes for the key. Include proper testing for batch mtree opening and STM batch verify. Progressed with RFP for audit.</li><li>cardano-base: BLS branch is now ready for review. We are workign forward its merge. </li><li>KES agent: time off of part of the team, but in general continuing with the adaptation of the KES agent with consensus codebase.</li><li>Sidechains: We are exploring and starting discussion on how sidechains could leverage BLS12-381 bindings for SNARKs</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mithril">Mithril<a class="hash-link" href="#mithril" title="Direct link to heading">​</a></h3><ul><li>Bumped to version <a href="https://crates.io/crates/kes-summed-ed25519/0.2.0" target="_blank" rel="noopener noreferrer">0.2.0</a> the implementation of KES. Redesigned the representation of the secret key to allow user to allocate a buffer using <code>mlock</code>.</li><li>Opened <a href="https://github.com/input-output-hk/mithril/pull/783" target="_blank" rel="noopener noreferrer">PR#783</a> to update dependency</li><li>Improved testing for batch opening of mtree, <a href="https://github.com/input-output-hk/mithril/pull/773" target="_blank" rel="noopener noreferrer">PR#773</a></li><li>Improved testing for batch verification of STM sigs <a href="https://github.com/input-output-hk/mithril/pull/774" target="_blank" rel="noopener noreferrer">PR#774</a></li><li>RFP for crypto audit almost ready.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cardano-base">cardano-base<a class="hash-link" href="#cardano-base" title="Direct link to heading">​</a></h3><ul><li>BLS12-381 branch finally ready for review <a href="https://github.com/input-output-hk/cardano-base/pull/266" target="_blank" rel="noopener noreferrer">PR#266</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kes-agent">KES agent<a class="hash-link" href="#kes-agent" title="Direct link to heading">​</a></h3><p>Team off for one week. Other progress:</p><ul><li>Learning about raw direct-bearer abstraction. An interface for sockets in consensus.</li><li>use that for direct ser/deser</li><li>written those syntaxes for ouroboros (coming PR)</li><li>the kes agent will depend on that. 	</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sidechains">Sidechains<a class="hash-link" href="#sidechains" title="Direct link to heading">​</a></h3><p>Progress with familiarisation of Halo2 library to write circuits.</p>]]></content>
+        <author>
+            <name>Iñigo Querejeta Azurmendi</name>
+            <uri>https://github.com/iquerejeta</uri>
+        </author>
+        <category label="crypto" term="crypto"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Goedel Team Update]]></title>
         <id>2023-03-03-goedel</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-03-03-goedel"/>
