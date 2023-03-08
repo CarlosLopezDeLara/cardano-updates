@@ -4,10 +4,48 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 03 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-08-consensus</link>
+            <guid>2023-03-08-consensus</guid>
+            <pubDate>Wed, 08 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The Consensus team continued working on refactoring and improving the UTxO-HD
+prototype, and introducing improvements to the <code>lmdb</code> related packages. In
+particular we identified an opportunity to gain performance by handling locks in
+a more optimal way.</p><p>On the Genesis front, we sketched a mitigation for an issue that <code>PNSol</code> and
+Researchers caught. We also came op with a road map for not only testing the
+Genesis prototypes, but also for enriching the tests we already have.</p><p>Regarding technical debt, next to some minor improvements, we created
+component-level micro-benchmarks for adding transactions to the mempool. The
+results of these benchmarks will be published in the <code>ouroboros-consensus</code> <!-- -->[web
+page][https://input-output-hk.github.io/ouroboros-consensus/]<!-- -->.</p><p>We also finished moving the Consensus documentation to the <code>ouroboros-consensus</code>
+repository, released <code>ouroboros-consensus</code> <code>0.3.0.0</code>, and reduced the time
+GitHub actions take in <code>ouroboros-network</code>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="workstreams">Workstreams<a class="hash-link" href="#workstreams" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-prototype">UTxO HD Prototype<a class="hash-link" href="#utxo-hd-prototype" title="Direct link to heading">​</a></h3><p>We continued working on refactoring and improving the UTxO-HD prototype. As a
+result of the first round of sytem-level benchmarks, we identified an
+opportunity to optimise the way we handle locks to improve performance
+(<a href="https://github.com/input-output-hk/ouroboros-network/issues/4393" target="_blank" rel="noopener noreferrer">#4393</a>).</p><p>Also, we introduced several improvements to the <code>lmdb</code> related packages:</p><ul><li><a href="https://github.com/input-output-hk/lmdb-simple/pull/19" target="_blank" rel="noopener noreferrer">New tests</a> for read-only transaction handles.</li><li><a href="https://github.com/input-output-hk/lmdb-simple/pull/18" target="_blank" rel="noopener noreferrer">New functions</a> and <a href="https://github.com/input-output-hk/lmdb-simple/pull/13" target="_blank" rel="noopener noreferrer">data types</a>.</li><li><a href="https://github.com/input-output-hk/lmdb-simple/pull/11" target="_blank" rel="noopener noreferrer">Updates</a> to support improved type safety and smaller constraints in
+the UTxO HD prototype.</li><li>Windows and MacOS <a href="https://github.com/input-output-hk/haskell-lmdb/pull/8" target="_blank" rel="noopener noreferrer">CI support</a>.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h3><p>We sketched out a mitigation of the issue that <code>PNSol</code> and Researchers caught in
+the Genesis design.</p><p>We came up with a road map for testing the Genesis prototypes, including early
+milestones that are applicable to today's master branch, ie tests that are
+useful before Genesis, and that will be nicely enriched when we do add Genesis.</p><p>We developed the aforementioned tests, specifically a <code>QuickCheck</code> generator for
+the Honest leader schedule and one as-aggressive-as-possible Adversarial
+leader schedule that together satisfy the Praos properties that the Consensus
+design takes as invariants.</p><p>We investigated why the improved <code>ChainDB</code> queueing implementation behaves
+differently in the baseline compared to the prototype, and we are close to
+having a full picture of how the Consensus components interact during bulk sync.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h3><p>We <a href="https://github.com/input-output-hk/ouroboros-network/pull/4400" target="_blank" rel="noopener noreferrer">created</a> component-level micro-benchmarks for adding transactions
+to the mempool. We plan on extending this to more mempool actions and different
+types of blocks. We <a href="https://github.com/input-output-hk/ouroboros-network/pull/4422" target="_blank" rel="noopener noreferrer">store</a> the benchmark data to make it available
+to the GitHub action that <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/12" target="_blank" rel="noopener noreferrer">publishes</a> the benchmarks results.</p><p>Other minor improvements include:</p><ul><li><a href="https://github.com/input-output-hk/ouroboros-network/pull/4429" target="_blank" rel="noopener noreferrer">Removal</a> of <code>Test.Util.Classify</code> in favour of <code>Test.StateMachine.Labelling</code>.</li><li><a href="https://github.com/input-output-hk/ouroboros-network/pull/4423" target="_blank" rel="noopener noreferrer">Addition</a> of <code>-Wunused-packages</code> to the default <code>ghc-options</code> for Consensus
+packages.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration">Fostering collaboration<a class="hash-link" href="#fostering-collaboration" title="Direct link to heading">​</a></h3><p>We finished moving the Consensus documentation <a href="https://github.com/input-output-hk/ouroboros-network/pull/4374" target="_blank" rel="noopener noreferrer">from</a>
+<code>ouroboros-network</code> <a href="https://github.com/input-output-hk/haskell-lmdb/pull/8" target="_blank" rel="noopener noreferrer">to</a> <code>ouroboros-consensus</code>, in preparation for
+migrating the code to the latter repository.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h3><p>We <a href="https://github.com/input-output-hk/ouroboros-network/pull/4412" target="_blank" rel="noopener noreferrer">released</a> ouroboros-consensus 0.3.0.0.</p><p>We <a href="https://github.com/input-output-hk/ouroboros-network/pull/4421" target="_blank" rel="noopener noreferrer">reduced</a> the load in the <code>ouroboros-network</code> GitHub actions,
+thereby reducing the time CI jobs take.</p>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Crypto Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-03-crypto</link>
