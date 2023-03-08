@@ -21,8 +21,8 @@ a more optimal way.</p><p>On the Genesis front, we sketched a mitigation for an 
 Researchers caught. We also came op with a road map for not only testing the
 Genesis prototypes, but also for enriching the tests we already have.</p><p>Regarding technical debt, next to some minor improvements, we created
 component-level micro-benchmarks for adding transactions to the mempool. The
-results of these benchmarks will be published in the <code>ouroboros-consensus</code> <!-- -->[web
-page][https://input-output-hk.github.io/ouroboros-consensus/]<!-- -->.</p><p>We also finished moving the Consensus documentation to the <code>ouroboros-consensus</code>
+results of these benchmarks will be published in the <code>ouroboros-consensus</code> <a href="https://input-output-hk.github.io/ouroboros-consensus/" target="_blank" rel="noopener noreferrer">web
+page</a>.</p><p>We also finished moving the Consensus documentation to the <code>ouroboros-consensus</code>
 repository, released <code>ouroboros-consensus</code> <code>0.3.0.0</code>, and reduced the time
 GitHub actions take in <code>ouroboros-network</code>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="workstreams">Workstreams<a class="hash-link" href="#workstreams" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-prototype">UTxO HD Prototype<a class="hash-link" href="#utxo-hd-prototype" title="Direct link to heading">​</a></h3><p>We continued working on refactoring and improving the UTxO-HD prototype. As a
 result of the first round of sytem-level benchmarks, we identified an
