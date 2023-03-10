@@ -4,10 +4,23 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 09 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-10-hydra</link>
+            <guid>2023-03-10-hydra</guid>
+            <pubDate>Fri, 10 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team addressed issues with committing complex UTxOs into a
+Hydra Head, prepared the <code>hydra-node</code> to be run on mainnet (soon) and improved
+the test suite of the <code>hydra-plutus</code> scripts. The specification is constantly
+getting improved upon reviewer feedback on overleaf - this week the graphical
+notation was refined to be more transaction-focused.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Clarified <!-- -->“<!-- -->bug<!-- -->”<!-- --> of committing UTxOs with reference scripts to a Hydra head <a href="https://github.com/input-output-hk/hydra/issues/737" target="_blank" rel="noopener noreferrer">#737</a></li><li>Prepare usage of <code>hydra-node</code> on mainnet by updating command line options <a href="https://github.com/input-output-hk/hydra/pull/715" target="_blank" rel="noopener noreferrer">#715</a></li><li>Improved our mutation test suite to all expected errors <a href="https://github.com/input-output-hk/hydra/issues/705" target="_blank" rel="noopener noreferrer">#705</a></li><li>Re-opened our persistent hydraw demo head on <code>preprod</code> using version <code>0.9.0</code></li><li>Updated on-chain graphs to be more transaction-focused in the specification</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Complete mainnet compatibility feature</li><li>Prepare the Hydra workshop</li><li>Address all todo’s in the Hydra specification</li><li>Unblock the auctions project with <!-- -->“<!-- -->commit from script<!-- -->”<!-- --> a solution</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
         <item>
             <title><![CDATA[Mithril Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-09-mithril</link>
