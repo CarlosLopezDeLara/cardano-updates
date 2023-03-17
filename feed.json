@@ -5,6 +5,21 @@
     "description": "Regular updates from Cardano Development Teams",
     "items": [
         {
+            "id": "2023-03-16-goedel",
+            "content_html": "<p>The team works on applied research and consulting in formal methods\nthat is directly applicable to evidence based engineering in Core Tech\nand beyond.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>This sprint the team has been working on drafts of two papers\nimproving the deltaQ tutorial, consulting on performance design, and\nthe final version of the Djed paper.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"details\">Details<a class=\"hash-link\" href=\"#details\" title=\"Direct link to heading\">​</a></h2><ul><li><p>Preparing draft of DeltaQSD algebra paper for ICE 2023</p></li><li><p>Successful outcome of Marlowe consultancy leading to substantial\nimprovement in performance</p></li><li><p>Preparing sections on the communication language and bisimulation\nproofs for draft paper about verifying design refinements for\ndistributed system design</p></li><li><p>Camera ready version of Djed paper under preparation</p></li></ul>",
+            "url": "https://input-output-hk.github.io/cardano-updates/2023-03-16-goedel",
+            "title": "Goedel Team Update",
+            "summary": "The team works on applied research and consulting in formal methods",
+            "date_modified": "2023-03-16T00:00:00.000Z",
+            "author": {
+                "name": "James Chapman",
+                "url": "https://github.com/jmchapman"
+            },
+            "tags": [
+                "goedel"
+            ]
+        },
+        {
             "id": "2023-03-10-hydra",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High-level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>This week, the Hydra team addressed issues with committing complex UTxOs into a\nHydra Head, prepared the <code>hydra-node</code> to be run on mainnet (soon) and improved\nthe test suite of the <code>hydra-plutus</code> scripts. The specification is constantly\ngetting improved upon reviewer feedback on overleaf - this week the graphical\nnotation was refined to be more transaction-focused.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"what-did-the-team-achieve-this-week\">What did the team achieve this week<a class=\"hash-link\" href=\"#what-did-the-team-achieve-this-week\" title=\"Direct link to heading\">​</a></h2><ul><li>Clarified <!-- -->“<!-- -->bug<!-- -->”<!-- --> of committing UTxOs with reference scripts to a Hydra head <a href=\"https://github.com/input-output-hk/hydra/issues/737\" target=\"_blank\" rel=\"noopener noreferrer\">#737</a></li><li>Prepare usage of <code>hydra-node</code> on mainnet by updating command line options <a href=\"https://github.com/input-output-hk/hydra/pull/715\" target=\"_blank\" rel=\"noopener noreferrer\">#715</a></li><li>Improved our mutation test suite to all expected errors <a href=\"https://github.com/input-output-hk/hydra/issues/705\" target=\"_blank\" rel=\"noopener noreferrer\">#705</a></li><li>Re-opened our persistent hydraw demo head on <code>preprod</code> using version <code>0.9.0</code></li><li>Updated on-chain graphs to be more transaction-focused in the specification</li></ul><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"what-are-the-goals-of-next-week\">What are the goals of next week<a class=\"hash-link\" href=\"#what-are-the-goals-of-next-week\" title=\"Direct link to heading\">​</a></h2><ul><li>Complete mainnet compatibility feature</li><li>Prepare the Hydra workshop</li><li>Address all todo’s in the Hydra specification</li><li>Unblock the auctions project with <!-- -->“<!-- -->commit from script<!-- -->”<!-- --> a solution</li></ul>",
             "url": "https://input-output-hk.github.io/cardano-updates/2023-03-10-hydra",

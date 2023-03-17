@@ -4,10 +4,26 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 10 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Goedel Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-16-goedel</link>
+            <guid>2023-03-16-goedel</guid>
+            <pubDate>Thu, 16 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The team works on applied research and consulting in formal methods]]></description>
+            <content:encoded><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team has been working on drafts of two papers
+improving the deltaQ tutorial, consulting on performance design, and
+the final version of the Djed paper.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Preparing draft of DeltaQSD algebra paper for ICE 2023</p></li><li><p>Successful outcome of Marlowe consultancy leading to substantial
+improvement in performance</p></li><li><p>Preparing sections on the communication language and bisimulation
+proofs for draft paper about verifying design refinements for
+distributed system design</p></li><li><p>Camera ready version of Djed paper under preparation</p></li></ul>]]></content:encoded>
+            <category>goedel</category>
+        </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-10-hydra</link>
