@@ -4,10 +4,31 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 16 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-17-hydra</link>
+            <guid>2023-03-17-hydra</guid>
+            <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team has continued work on the mainnet compatibility of the
+hydra-node. They added a golden test suite for <code>hydra-plutus</code> scripts, added
+some detection of <code>hydra-node</code> misconfiguration, established a limit of 100 ADA
+per commit and other smaller tasks to prepare for a mainnet beta release.</p><p>Next week there will be a small team workshop to push for demonstrating a Hydra
+Head on the Cardano mainnet, ideally just in time for the monthly review
+meeting. See the hydra channels on the IOG Technical Community discord server
+for details.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Implement a 100 ADA hard-coded commit limit in the hydra-node
+<a href="https://github.com/input-output-hk/hydra/pull/763" target="_blank" rel="noopener noreferrer">#763</a></li><li>Pay back funds to faucet after smoke-test run
+<a href="https://github.com/input-output-hk/hydra/pull/773" target="_blank" rel="noopener noreferrer">#773</a></li><li>Setup custom github runner for smoke-tests on mainnet
+<a href="https://github.com/input-output-hk/hydra/pull/775" target="_blank" rel="noopener noreferrer">#775</a></li><li>Created golden tests to assure the script hash stays the same between
+changes <a href="https://github.com/input-output-hk/hydra/pull/772" target="_blank" rel="noopener noreferrer">#772</a></li><li>Removed hardcoded error codes in plutus scripts
+<a href="https://github.com/input-output-hk/hydra/pull/768" target="_blank" rel="noopener noreferrer">#768</a></li><li>Detect misconfiguration of a hydra-node given persistent state
+<a href="https://github.com/input-output-hk/hydra/pull/767" target="_blank" rel="noopener noreferrer">#767</a></li><li>Met with potential users for hydra-pay</li><li>Prepared hydra workshop</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Hydra monthly meeting</li><li>Open a multi-party head on mainnet</li><li>Complete mainnet compatibility feature</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
         <item>
             <title><![CDATA[Goedel Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-16-goedel</link>
