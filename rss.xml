@@ -30,6 +30,24 @@ changes <a href="https://github.com/input-output-hk/hydra/pull/772" target="_bla
             <category>hydra</category>
         </item>
         <item>
+            <title><![CDATA[Ledger Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-17-ledger</link>
+            <guid>2023-03-17-ledger</guid>
+            <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We made further progress on the conway ledger era.
+In particular, we expanded the ledger API significantly, including lots of governance features.
+We also made progress on the specification and corresponding work in the Haskell implementation.</p><p>We also continued to integrate the latest ledger packages into cardano node and addressed
+technical debt.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-ledger-api">Expanded ledger API<a class="hash-link" href="#expanded-ledger-api" title="Direct link to heading">​</a></h3><p>The ledger API was significantly expanded to include:</p><ul><li>a lot of protocol parameter support</li><li>versioning support (type level ledger eras and protocol versions)</li><li>auxiliary data support</li><li>many new lenses</li><li>support for witnesses</li><li>support for conway governance</li></ul><p>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3328" target="_blank" rel="noopener noreferrer">pull-3328</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="conway-ledger-rules">Conway ledger rules<a class="hash-link" href="#conway-ledger-rules" title="Direct link to heading">​</a></h3><p>We have made progress on the formal ledger specification for the Conway era.
+Moreover, the corresponding Haskell updates were also completed:</p><ul><li>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3339" target="_blank" rel="noopener noreferrer">pull-3339</a></li><li>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3326" target="_blank" rel="noopener noreferrer">pull-3326</a></li><li>See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3330" target="_blank" rel="noopener noreferrer">pull-3330</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="incremental-spodrep-stake-distribution-computation">Incremental SPO/DRep stake distribution computation<a class="hash-link" href="#incremental-spodrep-stake-distribution-computation" title="Direct link to heading">​</a></h3><p>We have a working (and correct) proof of concept for how to use the incremental lambda calculus
+to maintain several of the stake distributions incrementally.
+For the per-SPO distribution, this is a performance improvement.
+For the (conway) per-DRep distribution, this is will allow those who have delegated their votes
+to a DRep to have time to react to any votes that they disapprove of.
+(Sorry, no code to share just yet, more to come.)</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h3><ul><li>Improved CBOR testing facilities <a href="https://github.com/input-output-hk/cardano-ledger/pull/3332" target="_blank" rel="noopener noreferrer">pull-3332</a></li><li>GitHub actions improvement <a href="https://github.com/input-output-hk/cardano-ledger/pull/3320" target="_blank" rel="noopener noreferrer">pull-3320</a></li><li>Move ToJSON orphans from cardano-node <a href="https://github.com/input-output-hk/cardano-ledger/pull/3338" target="_blank" rel="noopener noreferrer">pull-3323</a></li><li>Minor OCert improvements <a href="https://github.com/input-output-hk/cardano-ledger/pull/3327" target="_blank" rel="noopener noreferrer">pull-3327</a></li><li>Remove duplication <a href="https://github.com/input-output-hk/cardano-ledger/pull/3341" target="_blank" rel="noopener noreferrer">pull-3341</a></li><li>Enforce unique elements in CBOR sets <a href="https://github.com/input-output-hk/cardano-ledger/pull/3331" target="_blank" rel="noopener noreferrer">pull-3331</a> </li></ul>]]></content:encoded>
+            <category>ledger</category>
+        </item>
+        <item>
             <title><![CDATA[Goedel Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-16-goedel</link>
             <guid>2023-03-16-goedel</guid>
