@@ -28,7 +28,9 @@ peers to the outbound governor, implemented tests and fixed found issues
 (<a href="https://github.com/input-output-hk/ouroboros-network/pull/4462" target="_blank" rel="noopener noreferrer">#4462</a>).  We also made the information if a given peer plays the role of
 a big ledger peer to the mini-protocols.  This will allow to modify
 mini-protocol applications for such peers.   As part of this functionality we
-refactored some core types in the network code which simplifies exposed API.</p>]]></content>
+refactored some core types in the network code which simplifies exposed API.</p><p>Together with Moritz Angerman we started to update <code>io-sim</code> to <code>ghc-9.6.1</code> (see
+<a href="https://github.com/input-output-hk/io-sim/pull/73" target="_blank" rel="noopener noreferrer">#73</a>).</p><p>We merged a fix of configuration of accepted connections limit in
+<code>cardano-node</code> (see <a href="https://github.com/input-output-hk/cardano-node/pull/4902" target="_blank" rel="noopener noreferrer">#4902</a>).</p>]]></content>
         <author>
             <name>Marcin Szamotulski</name>
             <uri>https://github.com/coot</uri>
