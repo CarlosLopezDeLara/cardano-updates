@@ -4,10 +4,27 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 17 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Network Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-21-network</link>
+            <guid>2023-03-21-network</guid>
+            <pubDate>Tue, 21 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>In the last spring we released <code>cardano-node-1.35.6</code> with dynamic P2P
+functionality.</p><p>We released <code>cardano-ping-0.1.0.0</code> package to <code>CHaP</code>.  <code>cardano-ping</code> is no
+longer available as a standalone binary, but instead it will become part of
+<code>cardano-cli</code> (see <a href="https://github.com/input-output-hk/cardano-node/pull/4664" target="_blank" rel="noopener noreferrer">#4664</a>)</p><p>We are testing <code>cardano-node</code> with peer sharing functionality (<a href="https://github.com/input-output-hk/ouroboros-network/pull/4019" target="_blank" rel="noopener noreferrer">#4019</a>).</p><p>We are working on <em>eclipse evasion</em>.  We added new class of peers: big ledger
+peers to the outbound governor, implemented tests and fixed found issues
+(<a href="https://github.com/input-output-hk/ouroboros-network/pull/4462" target="_blank" rel="noopener noreferrer">#4462</a>).  We also made the information if a given peer plays the role of
+a big ledger peer to the mini-protocols.  This will allow to modify
+mini-protocol applications for such peers.   As part of this functionality we
+refactored some core types in the network code which simplifies exposed API.</p>]]></content:encoded>
+            <category>network</category>
+        </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-17-hydra</link>
