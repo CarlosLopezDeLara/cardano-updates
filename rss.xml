@@ -15,7 +15,14 @@
             <pubDate>Tue, 21 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[High level summary]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>In the last spring we released <code>cardano-node-1.35.6</code> with dynamic P2P
-functionality.</p><p>We released <code>cardano-ping-0.1.0.0</code> package to <code>CHaP</code>.  <code>cardano-ping</code> is no
+functionality.</p><p>We received reports from some SPOs who encountered problems with their non
+P2P block producing nodes not being able to connect to their P2P relay.  Karl
+Knutsson (from Cardano Foundation) reproduced this issue between two nodes (a
+non P2P and a P2P one) on mainnet.  Karl and the IOG Networking Team analysed
+it and found a bug in the legacy non p2p code.  The bug is only possible to
+trigger with a P2P node which is binding its outbound connection port to
+a fixed IP address and port (default in p2p).  A possible solution was found.
+For more information see <a href="https://github.com/input-output-hk/ouroboros-network/issues/4465" target="_blank" rel="noopener noreferrer">#4465</a>.</p><p>We released <code>cardano-ping-0.1.0.0</code> package to <code>CHaP</code>.  <code>cardano-ping</code> is no
 longer available as a standalone binary, but instead it will become part of
 <code>cardano-cli</code> (see <a href="https://github.com/input-output-hk/cardano-node/pull/4664" target="_blank" rel="noopener noreferrer">#4664</a>)</p><p>We are testing <code>cardano-node</code> with peer sharing functionality (<a href="https://github.com/input-output-hk/ouroboros-network/pull/4019" target="_blank" rel="noopener noreferrer">#4019</a>).</p><p>We are working on <em>eclipse evasion</em>.  We added new class of peers: big ledger
 peers to the outbound governor, implemented tests and fixed found issues
