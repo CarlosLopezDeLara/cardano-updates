@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-03-22T00:00:00.000Z</updated>
+    <updated>2023-03-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DB-sync Team Update]]></title>
+        <id>2023-03-23-db-sync</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-03-23-db-sync"/>
+        <updated>2023-03-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The DBSync team worked in performance enhancements issues, on providing new db-sync options and on
+technical debt and bug fixing. The DBSync team also on boarded a new member.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><ul><li>Worked on an issue which causes <code>ada_pots</code> tables to include the values related not only to an
+epoch, but also the first epoch of the last epoch.
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1367" target="_blank" rel="noopener noreferrer">#1367</a></li><li>Fixed an issue where the <code>epoch</code> table didn't rollback and caused wrong values
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1370" target="_blank" rel="noopener noreferrer">#1370</a></li><li>Fixed an issue were users with <code>disable-ledger</code> option had to provide the state dir option, even
+though it was never used. Also refactored the no ledger part of the codebase.
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1378" target="_blank" rel="noopener noreferrer">#1378</a></li><li>Improved the perforance by using the cache more. Also provided many new options which enables or
+disables parts of db-sync. In addition a new <code>--turbo</code> mode is enables which allows db-sync to sync
+mainnet in hours.
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1379" target="_blank" rel="noopener noreferrer">#1379</a></li></ul>]]></content>
+        <author>
+            <name>Kostas Dermentzis</name>
+            <uri>https://github.com/kderme</uri>
+        </author>
+        <category label="db-sync" term="db-sync"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Consensus Team Update]]></title>
         <id>2023-03-22-consensus</id>
