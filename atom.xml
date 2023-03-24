@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-03-23T00:00:00.000Z</updated>
+    <updated>2023-03-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-03-24-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-03-24-hydra"/>
+        <updated>2023-03-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra had a team workshop and conducted the monthly review
+meeting for March. They demonstrated a Hydra Head on mainnet, which was running
+the hydraw demo application. While this marks an important milestone, they also
+emphasized that more features are still to be added as needed for applications
+to run on Hydra. Besides this, the roadmap is getting cleaned up to encourage
+discussions and provide more space for user requests.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Monthly review meeting <a href="https://docs.google.com/presentation/d/1yZ4AqUQ8OBMG9ARMYvj3IOjaIAqglf7kZei4vsLMrbs/edit#slide=id.g1f87a7454a5_0_1392" target="_blank" rel="noopener noreferrer">slides</a>/<a href="https://drive.google.com/file/d/1krzM8VN-gpKTtpVdC2JQx-lGti-4gKQS/view?ts=641b3c1c" target="_blank" rel="noopener noreferrer">recording</a>, full report of March next week<ul><li>Opened a head on mainnet with hydraw demonstration</li><li>Hydra pay updates</li></ul></li><li>Team workshop in Austria<ul><li>Hydra presentation at the Cardano Foundation in Zurich</li><li>In-person grooming session, marked many items as candidates to be rather :idea: dicussions</li><li>Improved head protocol <a href="https://github.com/input-output-hk/hydra/pull/786" target="_blank" rel="noopener noreferrer">#786</a> and investigated a potential bug in rollback handling <a href="https://github.com/input-output-hk/hydra/issues/784" target="_blank" rel="noopener noreferrer">#784</a></li><li>Team building and retrospective</li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Follow-up on backlog and roadmap clean-up</li><li>Complete mainnet compatibility feature (documentation updates)</li><li>Make API more configurable <a href="https://github.com/input-output-hk/hydra/issues/380" target="_blank" rel="noopener noreferrer">#380</a></li><li>Integrate Hydra specification into repository <a href="https://github.com/input-output-hk/hydra/issues/693" target="_blank" rel="noopener noreferrer">#693</a></li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DB-sync Team Update]]></title>
         <id>2023-03-23-db-sync</id>
