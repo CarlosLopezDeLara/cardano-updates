@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-03-24T00:00:00.000Z</updated>
+    <updated>2023-03-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[System Test Team Update]]></title>
+        <id>2023-03-27-system-test</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-03-27-system-test"/>
+        <updated>2023-03-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>Since the last update (2023-1-13) we did more improvements on our Test Framework, added more automated tests, kept analyzing and fixing nightly jobs failures, tested the <em>1.35.5</em> and <em>1.35.6</em> releases (and their predecessing release candidates) and ran tests on branch with the <em>UTxO-HD</em> functionality.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="workstreams">Workstreams<a class="hash-link" href="#workstreams" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="framework-improvements">Framework improvements:<a class="hash-link" href="#framework-improvements" title="Direct link to heading">​</a></h3><ul><li>improvements in searching for unexpected error messages in log files during test run</li><li>added support for UTxO-HD testing</li><li>added support for the new P2P topology format</li><li>added local cluster variant that has the same properties as mainnet (epoch length, fees, etc.)</li><li>added preliminary support for the Conway era</li><li>added support for running tests on the <em>Preview</em> testnet</li></ul><p><a href="https://github.com/input-output-hk/cardano-node-tests/pulls?q=is%3Apr+is%3Aclosed+updated%3A2023-01-13..2023-03-26" target="_blank" rel="noopener noreferrer">Full list of closed PRs</a></p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="node">Node:<a class="hash-link" href="#node" title="Direct link to heading">​</a></h3><ul><li>ran tests on node branch with the UTxO-HD functionality</li><li>tested the <a href="https://input-output-hk.github.io/cardano-node-tests/test_results/node/tag_1_35_5.html" target="_blank" rel="noopener noreferrer">1.35.5</a> release</li><li>tested the <a href="https://input-output-hk.github.io/cardano-node-tests/test_results/node/tag_1_35_6.html" target="_blank" rel="noopener noreferrer">1.35.6</a> release</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="db-sync">DB-Sync:<a class="hash-link" href="#db-sync" title="Direct link to heading">​</a></h3><ul><li>improvements in db-sync sync tests</li><li>improvements in db-sync functional tests</li></ul>]]></content>
+        <author>
+            <name>Martin Kourim</name>
+            <uri>https://github.com/mkoura</uri>
+        </author>
+        <category label="system-test" term="system-test"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-03-24-hydra</id>
