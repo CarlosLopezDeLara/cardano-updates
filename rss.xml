@@ -18,6 +18,20 @@
             <category>crypto</category>
         </item>
         <item>
+            <title><![CDATA[Goedel Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-03-31-goedel</link>
+            <guid>2023-03-31-goedel</guid>
+            <pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The team works on applied research and consulting in formal methods]]></description>
+            <content:encoded><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team has been working on final drafts of two papers
+for internal review and planning next steps of analysis of consensus
+design refiniments.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Preparing final draft of DeltaQSD algebra paper for internal review</p></li><li><p>Preparing final draft of verifying design refinements for
+distributed system design for internal review</p></li><li><p>Planning next phase of consensus design refinement analysis</p></li></ul>]]></content:encoded>
+            <category>goedel</category>
+        </item>
+        <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-31-hydra</link>
             <guid>2023-03-31-hydra</guid>
