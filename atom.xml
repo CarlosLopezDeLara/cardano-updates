@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-03-31T00:00:00.000Z</updated>
+    <updated>2023-04-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-04-05-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-04-05-consensus"/>
+        <updated>2023-04-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the consensus team finished the UTxO-HD prototype refactoring. We are
+now working on improving the DB lock mechanism to improve performance. We also
+introduced several improvements to the file system abstraction and simulation
+layer (<code>fs-sim</code>), which culminated in the release of <code>fs-sim-0.1.0.0</code> and
+<code>fs-api-0.1.0.0</code> to <code>CHaP</code>.</p><p>On the Genesis front we distributed the updated Genesis design document,
+soliciting feedback from Networking Team and IOG Researchers. We also opened up
+a PR for the adversarial leader schedule <code>QuickCheck</code> generator, which is being
+reviewed.</p><p>On the support front, we got a new Consensus version that can use different
+fundamental VRF crypto primitives for Babbage and Conway eras.</p><p>On the tech debt front we fixed an bug in the followers logic, which was
+discovered by our <code>QuickCheck</code> property tests.</p>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Crypto Team Update]]></title>
         <id>2023-03-31-crypto</id>

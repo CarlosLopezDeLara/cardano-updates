@@ -4,10 +4,28 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 31 Mar 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 05 Apr 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-04-05-consensus</link>
+            <guid>2023-04-05-consensus</guid>
+            <pubDate>Wed, 05 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the consensus team finished the UTxO-HD prototype refactoring. We are
+now working on improving the DB lock mechanism to improve performance. We also
+introduced several improvements to the file system abstraction and simulation
+layer (<code>fs-sim</code>), which culminated in the release of <code>fs-sim-0.1.0.0</code> and
+<code>fs-api-0.1.0.0</code> to <code>CHaP</code>.</p><p>On the Genesis front we distributed the updated Genesis design document,
+soliciting feedback from Networking Team and IOG Researchers. We also opened up
+a PR for the adversarial leader schedule <code>QuickCheck</code> generator, which is being
+reviewed.</p><p>On the support front, we got a new Consensus version that can use different
+fundamental VRF crypto primitives for Babbage and Conway eras.</p><p>On the tech debt front we fixed an bug in the followers logic, which was
+discovered by our <code>QuickCheck</code> property tests.</p>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Crypto Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-03-31-crypto</link>
