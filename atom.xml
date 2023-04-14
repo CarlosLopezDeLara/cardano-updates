@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-04-07T00:00:00.000Z</updated>
+    <updated>2023-04-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-04-14-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-04-14-hydra"/>
+        <updated>2023-04-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team focused on improving the smoke test, fixing developer
+tooling, and improving the API for voting use cases. They reviewed progress on
+auction, payments, and voting projects and made worked on reproducing a bug with
+handling rollbacks. Moving forward, the team plans to update dependencies,
+implement a dirt road fix for the rollbacks bug, and explore adding Hydra
+support to kupo.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Reviewed progress on auction, payments and voting projects</li><li>Improved smoke tests so they can run on mainnet</li><li>Fixed a regression in the development environment and updated cardano-node
+used in tests</li><li>Improved API with more configurability to unblock voting use case<ul><li>Exclude utxo in <code>SnapshotConfirmed</code> outputs <a href="https://github.com/input-output-hk/hydra/pull/808" target="_blank" rel="noopener noreferrer">#808</a></li><li>Addressed a user request by only sending <code>Greetings</code> once <a href="https://github.com/input-output-hk/hydra/issues/813" target="_blank" rel="noopener noreferrer">#813</a></li></ul></li><li>Reproduced the rollback bug by improving our model-based test suite <a href="https://github.com/input-output-hk/hydra/issues/784" target="_blank" rel="noopener noreferrer">#784</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Update dependencies to match <code>cardano-node</code> master</li><li>Dirt road fix for rollbacks <a href="https://github.com/input-output-hk/hydra/issues/784" target="_blank" rel="noopener noreferrer">#784</a></li><li>Update Hydraw to maintain state locally</li><li>Explore adding Hydra support to kupo</li><li>Put disclaimer texts and closing mainnet compatibility feature <a href="https://github.com/input-output-hk/hydra/issues/713" target="_blank" rel="noopener noreferrer">#713</a></li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-04-07-hydra</id>
