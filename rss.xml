@@ -9,6 +9,18 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Goedel Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-04-14-goedel</link>
+            <guid>2023-04-14-goedel</guid>
+            <pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The team works on applied research and consulting in formal methods]]></description>
+            <content:encoded><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team has submitted two papers for publication, carried
+out consultancy with other teams and has an opening for an intern.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Finalised and submitted two papers to ICE 2023</p></li><li><p>Studying Praos paper.</p></li><li><p>The team is hiring a performance engineering intern - <a href="https://apply.workable.com/io-global/j/BFEC5B0AFF/" target="_blank" rel="noopener noreferrer">https://apply.workable.com/io-global/j/BFEC5B0AFF/</a></p></li><li><p>Design exploration for congestion management.</p></li></ul>]]></content:encoded>
+            <category>goedel</category>
+        </item>
+        <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-04-14-hydra</link>
             <guid>2023-04-14-hydra</guid>
