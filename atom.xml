@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-04-17T00:00:00.000Z</updated>
+    <updated>2023-04-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-04-19-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-04-19-consensus"/>
+        <updated>2023-04-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the consensus team continued working on the improved DB lock mechanism
+for UTxO-HD, and modifications to the mempool benchmarks that this prototype
+requires.</p><p>On the Genesis front we validated that the fragment size calculation in
+<code>BlockFetch</code> is a major performance sink for ChainSync Jumping. By removing it
+we will get performance that is acceptably close to that of the baseline. We
+also started investigating a performance fix that does not alter the existing
+baseline behavior too much. In addition we reviewed our Genesis attack vector
+calculations.</p><p>On the support front we released Consensus 0.4, and we are working on improving
+our release process, to support the Cardano-wide efforts in this area. We also
+performed an analysis on the number of file descriptors that consensus use. This
+information can be used be the node operators to check if the number of file
+descriptors they want to support are enough.</p>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Incident Report]]></title>
         <id>2023-04-17-ledger</id>

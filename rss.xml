@@ -4,10 +4,30 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Mon, 17 Apr 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Apr 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-04-19-consensus</link>
+            <guid>2023-04-19-consensus</guid>
+            <pubDate>Wed, 19 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the consensus team continued working on the improved DB lock mechanism
+for UTxO-HD, and modifications to the mempool benchmarks that this prototype
+requires.</p><p>On the Genesis front we validated that the fragment size calculation in
+<code>BlockFetch</code> is a major performance sink for ChainSync Jumping. By removing it
+we will get performance that is acceptably close to that of the baseline. We
+also started investigating a performance fix that does not alter the existing
+baseline behavior too much. In addition we reviewed our Genesis attack vector
+calculations.</p><p>On the support front we released Consensus 0.4, and we are working on improving
+our release process, to support the Cardano-wide efforts in this area. We also
+performed an analysis on the number of file descriptors that consensus use. This
+information can be used be the node operators to check if the number of file
+descriptors they want to support are enough.</p>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Incident Report]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-04-17-ledger</link>
