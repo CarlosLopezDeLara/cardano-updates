@@ -2,11 +2,164 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/quarterly</id>
     <title>Cardano Development Updates Blog</title>
-    <updated>2023-01-18T00:00:00.000Z</updated>
+    <updated>2023-04-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/quarterly"/>
     <subtitle>Cardano Development Updates Blog</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Ledger Team Update]]></title>
+        <id>2023-04-03-ledger</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/quarterly/2023-04-03-ledger"/>
+        <updated>2023-04-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Ledger Quarterly Update]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ledger-quarterly-update">Ledger Quarterly Update<a class="hash-link" href="#ledger-quarterly-update" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2023-01---2023-03">2023-01 - 2023-03<a class="hash-link" href="#2023-01---2023-03" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-achievements">Main achievements<a class="hash-link" href="#main-achievements" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="cips">CIPs<a class="hash-link" href="#cips" title="Direct link to heading">​</a></h4><ul><li><strong>Entering the Voltaire phase</strong> -
+CIP-1694 received a major update after participation in the design has expanded to
+more and more people, including those who attended the Colorado workshop.
+See <a href="https://github.com/cardano-foundation/CIPs/pull/380" target="_blank" rel="noopener noreferrer">CIP-1694</a>.</li><li><strong>Ledger CIP category</strong> -
+The ledger team continues to embrace the CIP process, and has begun the process of
+registering the ledger as an official CIP category.
+See <a href="https://github.com/cardano-foundation/CIPs/pull/456" target="_blank" rel="noopener noreferrer">CIP-84</a>.</li><li><strong>Ledger serialization</strong> -
+A CIP for the ledger serialization deprecation cycle has been accepted.
+See <a href="https://github.com/cardano-foundation/CIPs/tree/master/CIP-0080" target="_blank" rel="noopener noreferrer">CIP-80</a>.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="formal-ledger-model">Formal ledger model<a class="hash-link" href="#formal-ledger-model" title="Direct link to heading">​</a></h4><p>Our new formal specifications backed by Agda have seen a lot of progress.
+The majority of the ideas in CIP-1694 are now present, and we have made enough progress
+that we can now safely say that the PDF produced by the Agda model will be the
+official ledger specification for the Conway ledger era.
+See <a href="https://github.com/input-output-hk/formal-ledger-specifications" target="_blank" rel="noopener noreferrer">the repository</a>.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="conway-ledger-era">Conway ledger era<a class="hash-link" href="#conway-ledger-era" title="Direct link to heading">​</a></h4><p>Progress on the Haskell implementation of CIP-1694 has gone hand in hand with the formal model.
+The major component still missing is the DRep stake distribution, which still presents some
+technical challenges.</p><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3176" target="_blank" rel="noopener noreferrer">pull-3176</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3216" target="_blank" rel="noopener noreferrer">pull-3216</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3226" target="_blank" rel="noopener noreferrer">pull-3226</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3291" target="_blank" rel="noopener noreferrer">pull-3291</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3326" target="_blank" rel="noopener noreferrer">pull-3326</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3330" target="_blank" rel="noopener noreferrer">pull-3330</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3339" target="_blank" rel="noopener noreferrer">pull-3339</a>]</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="drep-stake-distribution-computation">DRep stake distribution computation<a class="hash-link" href="#drep-stake-distribution-computation" title="Direct link to heading">​</a></h4><p>Adding another large stake distribution to the ledger state must proceed with caution.
+We do not want the memory used by the node to increase too much,
+and performance problems can lead to reduced block production.
+We have prototyped, tested, and benchmarked several approaches that could give us
+the current DRep stake distribution at each epoch boundary.
+This has very important implications, since we want every ADA holder to be able to at any
+time (such as during a contentious vote) register themselves as a DRep and still have time
+to vote themselves on the issue.</p><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3344" target="_blank" rel="noopener noreferrer">pull-3344</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3353" target="_blank" rel="noopener noreferrer">pull-3353</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3364" target="_blank" rel="noopener noreferrer">pull-3364</a>]</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="integration-work">Integration work<a class="hash-link" href="#integration-work" title="Direct link to heading">​</a></h4><p>The ledger has made some wonderful improvements over the past six months,
+but which entail a significant amount of integration efforts:</p><ul><li>Our new versioned CBOR schemes</li><li>Individual deposit tracking</li><li>An improved cross-era interface utilizing lenses</li><li>A new ledger API</li><li>Re-arranging the ledger stake in preparation for CIP-1694</li><li>Versioning our Haskell packages
+using <a href="https://github.com/input-output-hk/cardano-haskell-packages" target="_blank" rel="noopener noreferrer">CHaPs</a>.</li><li>Consistent conventions for variable names</li></ul><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3279" target="_blank" rel="noopener noreferrer">pull-3279</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3282" target="_blank" rel="noopener noreferrer">pull-3282</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3288" target="_blank" rel="noopener noreferrer">pull-3288</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3289" target="_blank" rel="noopener noreferrer">pull-3289</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3292" target="_blank" rel="noopener noreferrer">pull-3292</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3297" target="_blank" rel="noopener noreferrer">pull-3297</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3298" target="_blank" rel="noopener noreferrer">pull-3298</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3299" target="_blank" rel="noopener noreferrer">pull-3299</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3300" target="_blank" rel="noopener noreferrer">pull-3300</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3302" target="_blank" rel="noopener noreferrer">pull-3302</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3303" target="_blank" rel="noopener noreferrer">pull-3303</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3308" target="_blank" rel="noopener noreferrer">pull-3308</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3342" target="_blank" rel="noopener noreferrer">pull-3342</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3345" target="_blank" rel="noopener noreferrer">pull-3345</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3356" target="_blank" rel="noopener noreferrer">pull-3356</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3357" target="_blank" rel="noopener noreferrer">pull-3357</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3360" target="_blank" rel="noopener noreferrer">pull-3360</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3361" target="_blank" rel="noopener noreferrer">pull-3361</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3363" target="_blank" rel="noopener noreferrer">pull-3363</a>]
+[<a href="https://github.com/input-output-hk/ouroboros-network/pull/4349" target="_blank" rel="noopener noreferrer">pull-4349</a>]
+[<a href="https://github.com/input-output-hk/cardano-base/pull/378" target="_blank" rel="noopener noreferrer">pull-378</a>]
+[<a href="https://github.com/input-output-hk/cardano-base/pull/376" target="_blank" rel="noopener noreferrer">pull-376</a>]
+[<a href="https://github.com/input-output-hk/cardano-base/pull/373" target="_blank" rel="noopener noreferrer">pull-373</a>]
+[<a href="https://github.com/input-output-hk/cardano-base/pull/370" target="_blank" rel="noopener noreferrer">pull-370</a>]
+[<a href="https://github.com/input-output-hk/cardano-base/pull/361" target="_blank" rel="noopener noreferrer">pull-361</a>]
+[<a href="https://github.com/input-output-hk/cardano-node/pull/4976" target="_blank" rel="noopener noreferrer">pull-4976</a>]
+[<a href="https://github.com/input-output-hk/cardano-node/pull/5013" target="_blank" rel="noopener noreferrer">pull-5013</a>]</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="deposit-tracking">Deposit tracking<a class="hash-link" href="#deposit-tracking" title="Direct link to heading">​</a></h4><p>Individual deposits (for stake credential and stake pool registrations) were not tracked by the ledger.
+Deposits were returned according to the current protocol parameters.
+When the values of these two protocol parameters change, the deposit pot
+is adjusted by adding to, or removing from, the reserves.</p><p>This has several problems:</p><ul><li>Most people expect a deposit to be paid back exactly.</li><li>We cannot increase the deposit amount once the reserves hits zero.</li><li>If it becomes known that the deposit amount is going to be increased, free Lovelace can be earned by registering credentials.</li><li>Because of the problems above, it is going to be incredibly hard to ever change the values.</li><li>There is a serious issue involving hard forks.
+The consensus layer makes the decision about whether or not to enact a hard fork based on
+the protocol parameter update state two stability windows before the end of the epoch.
+However, the ledger will reject a protocol parameter update on the epoch boundary
+if the deposit pot adjustments cannot be reconciled with the reseve pot.
+This means that if quorum is met regarding changing the major protocol version,
+but the update is rejected on the epoch boundary, consensus will change the era but the
+ledger will not change the major protocol version, leaving the ledger in a split-brain state.</li></ul><p>Because we never actually changed the values of the two deposits amounts in the protocol parameters
+on mainnet, we were able to retroactively change the behavior.
+We made the following changes:</p><ul><li>Individual deposits are tracked in the <code>DState</code>.</li><li>The amount deposited is always returned.</li></ul><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3195" target="_blank" rel="noopener noreferrer">pull-3195</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3202" target="_blank" rel="noopener noreferrer">pull-3202</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3217" target="_blank" rel="noopener noreferrer">pull-3217</a>]</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="new-ledger-api">New ledger API<a class="hash-link" href="#new-ledger-api" title="Direct link to heading">​</a></h4><p>We have significantly built up the ledger API.
+We will eventually replace much of the <code>cardano-api</code> in the node repository with this ledger API.</p><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3242" target="_blank" rel="noopener noreferrer">pull-3242</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3248" target="_blank" rel="noopener noreferrer">pull-3248</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3328" target="_blank" rel="noopener noreferrer">pull-3328</a>]</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="constraint-based-generators">Constraint-based generators<a class="hash-link" href="#constraint-based-generators" title="Direct link to heading">​</a></h4><p>Our largest scale property tests generate an initial ledger state and a long sequence of valid blocks
+which span several epochs, mimicking a real network.
+These tests are, in theory, excellent for checking properties.
+They are, however, very difficult to maintain and are not as random as we would like
+(a lot of bias has to be introduced to keep the ledger state in enough order to keep generating blocks).</p><p>We have a new declaritive infrastructure for building constraint-based generators,
+which instead generate a random ledger state representative of not just an initial state,
+but also those representative of the end result of a long sequence of valid blocks.
+Moreover, these generators are very fast and are much more random than our old generators.
+Before we can start using them for our existing property tests, however, we still need to
+expand them to generate a valid block for a given ledger state.</p><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3219" target="_blank" rel="noopener noreferrer">pull-3219</a>]</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h4><p>We continued to address technical debt as much as we can.</p><p>[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3167" target="_blank" rel="noopener noreferrer">pull-3167</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3170" target="_blank" rel="noopener noreferrer">pull-3170</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3172" target="_blank" rel="noopener noreferrer">pull-3172</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3175" target="_blank" rel="noopener noreferrer">pull-3175</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3184" target="_blank" rel="noopener noreferrer">pull-3184</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3205" target="_blank" rel="noopener noreferrer">pull-3205</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3208" target="_blank" rel="noopener noreferrer">pull-3208</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3210" target="_blank" rel="noopener noreferrer">pull-3210</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3212" target="_blank" rel="noopener noreferrer">pull-3212</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3218" target="_blank" rel="noopener noreferrer">pull-3218</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3222" target="_blank" rel="noopener noreferrer">pull-3222</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3223" target="_blank" rel="noopener noreferrer">pull-3223</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3224" target="_blank" rel="noopener noreferrer">pull-3224</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3225" target="_blank" rel="noopener noreferrer">pull-3225</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3229" target="_blank" rel="noopener noreferrer">pull-3229</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3239" target="_blank" rel="noopener noreferrer">pull-3239</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3241" target="_blank" rel="noopener noreferrer">pull-3241</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3244" target="_blank" rel="noopener noreferrer">pull-3244</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3245" target="_blank" rel="noopener noreferrer">pull-3245</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3249" target="_blank" rel="noopener noreferrer">pull-3249</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3260" target="_blank" rel="noopener noreferrer">pull-3260</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3263" target="_blank" rel="noopener noreferrer">pull-3263</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3264" target="_blank" rel="noopener noreferrer">pull-3264</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3268" target="_blank" rel="noopener noreferrer">pull-3268</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3269" target="_blank" rel="noopener noreferrer">pull-3269</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3270" target="_blank" rel="noopener noreferrer">pull-3270</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3274" target="_blank" rel="noopener noreferrer">pull-3274</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3276" target="_blank" rel="noopener noreferrer">pull-3276</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3277" target="_blank" rel="noopener noreferrer">pull-3277</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3286" target="_blank" rel="noopener noreferrer">pull-3286</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3290" target="_blank" rel="noopener noreferrer">pull-3290</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3295" target="_blank" rel="noopener noreferrer">pull-3295</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3296" target="_blank" rel="noopener noreferrer">pull-3296</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3306" target="_blank" rel="noopener noreferrer">pull-3306</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3307" target="_blank" rel="noopener noreferrer">pull-3307</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3310" target="_blank" rel="noopener noreferrer">pull-3310</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3311" target="_blank" rel="noopener noreferrer">pull-3311</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3316" target="_blank" rel="noopener noreferrer">pull-3316</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3320" target="_blank" rel="noopener noreferrer">pull-3320</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3323" target="_blank" rel="noopener noreferrer">pull-3323</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3327" target="_blank" rel="noopener noreferrer">pull-3327</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3331" target="_blank" rel="noopener noreferrer">pull-3331</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3332" target="_blank" rel="noopener noreferrer">pull-3332</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3333" target="_blank" rel="noopener noreferrer">pull-3333</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3338" target="_blank" rel="noopener noreferrer">pull-3338</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3341" target="_blank" rel="noopener noreferrer">pull-3341</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3347" target="_blank" rel="noopener noreferrer">pull-3347</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3350" target="_blank" rel="noopener noreferrer">pull-3350</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3351" target="_blank" rel="noopener noreferrer">pull-3351</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3352" target="_blank" rel="noopener noreferrer">pull-3352</a>]
+[<a href="https://github.com/input-output-hk/cardano-ledger/pull/3354" target="_blank" rel="noopener noreferrer">pull-3354</a>]</p><h5 class="anchor anchorWithStickyNavbar_LWe7" id="critical-fixes">Critical fixes<a class="hash-link" href="#critical-fixes" title="Direct link to heading">​</a></h5><p>We fixed two critical issues:</p><ul><li>Growing block production delay on the epoch boundary: [<a href="https://github.com/input-output-hk/cardano-ledger/pull/3209" target="_blank" rel="noopener noreferrer">pull-3209</a>]</li><li>Unexpected node shutdown from <code>balanceR</code>: [<a href="https://github.com/input-output-hk/cardano-ledger/pull/3343" target="_blank" rel="noopener noreferrer">pull-3343</a>]</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next steps<a class="hash-link" href="#next-steps" title="Direct link to heading">​</a></h3><ul><li><strong>Conway spec</strong> -
+Complete the first version of the conway formal specification.</li><li><strong>DRep stake distribution</strong> -
+Have the ledger compute the DRep stake distribution with acceptible performance.</li><li><strong>Devnet ready</strong> -
+Have the Haskell implementation of the conway era in sync with the formal specification,
+and integrate the changes with consensus and node.
+All the details might not be finalized, but the wire specification and the API should
+be stable so that conway can be placed on a devnet for tool builders to start integrating with.</li><li><strong>Plutus V3</strong> -
+Integrate Plutus V3 into the ledger, including a new script context which supports DReps.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="more-details">More details<a class="hash-link" href="#more-details" title="Direct link to heading">​</a></h3><p>This quarterly report was based off of the following fortnightly ones:</p><ul><li><a href="/cardano-updates/quarterly/2023-01-05-ledger">2023-01-05</a></li><li><a href="/cardano-updates/quarterly/2023-01-19-ledger">2023-01-19</a></li><li><a href="/cardano-updates/quarterly/2023-02-02-ledger">2023-02-02</a></li><li><a href="/cardano-updates/quarterly/2023-02-17-ledger">2023-02-17</a></li><li><a href="/cardano-updates/quarterly/2023-03-03-ledger">2023-03-03</a></li><li><a href="/cardano-updates/quarterly/2023-03-17-ledger">2023-03-17</a></li><li><a href="/cardano-updates/quarterly/2023-03-31-ledger">2023-03-31</a></li></ul>]]></content>
+        <author>
+            <name>Jared Corduan</name>
+            <uri>https://github.com/JaredCorduan</uri>
+        </author>
+        <category label="ledger" term="ledger"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Consensus Quarterly Update]]></title>
         <id>2023-01-18-consensus</id>
