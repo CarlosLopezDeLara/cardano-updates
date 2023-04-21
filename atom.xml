@@ -702,7 +702,7 @@ See <a href="https://github.com/input-output-hk/cardano-ledger/pull/3307" target
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>In the current sprint the networking team focused on fixing bugs and pushing
 forward implementation of eclipse evasion.  We also found a bug in our
 simulation testing setup (in integration of test node).  We also overviewed the
-work on extending handshake protocol which is delivered by Galois Inc.</p><p>We published <code>ouroboros-netork-0.4.0.1</code> and
+work on extending handshake protocol which is delivered by Galois Inc.</p><p>We published <code>ouroboros-network-0.4.0.1</code> and
 <code>ouroboros-network-protocols-0.3.0.0</code> to <a href="https://github.com/input-output-hk/cardano-haskell-packages/pull/147" target="_blank" rel="noopener noreferrer">CHaP</a>.</p><p>We also fixed a bug in <code>cardano-node</code> which results in not being able to
 configure inbound connection limits, see <a href="https://github.com/input-output-hk/cardano-node/pull/4902" target="_blank" rel="noopener noreferrer">PR #4902</a>.</p><p>Together with Karl Knutsson (CF) we realised an issue in <code>cardano-cli</code>: it's
 validation of DNS names, IP address &amp; ports when registering a stake pool
