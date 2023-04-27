@@ -2,11 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-04-21T00:00:00.000Z</updated>
+    <updated>2023-04-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-04-27-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-04-27-hydra"/>
+        <updated>2023-04-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team held their Monthly review meeting and drafted the
+report which likely is published next week. They put the spec into the
+repository and website, addressed a user issue and fixed the TUI peer list.
+Furthermore, they updated dependencies, conducted a Twitter space on Auctions
+use cases, covered the rollback bug with tests and implemented a solution.
+Looking ahead, their goals for next week include releasing 0.10.0, implementing
+timed transactions support, writing a Query API ADR, and grooming work items
+like off-chain benchmarks.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Held the Monthly review meeting and drafted the report (to be published next week)</li><li>Added the spec into the repository
+<a href="https://github.com/input-output-hk/hydra/issues/693" target="_blank" rel="noopener noreferrer">#693</a> and published on
+<a href="https://hydra.family/head-protocol/unstable/core-concepts/specification" target="_blank" rel="noopener noreferrer">the
+website</a></li><li>Groom and addressed user issue <a href="https://github.com/input-output-hk/hydra/issues/823" target="_blank" rel="noopener noreferrer">#823</a></li><li>Covered the rollback bug with tests and implemented a solution (to be reviewed) <a href="https://github.com/input-output-hk/hydra/issues/784" target="_blank" rel="noopener noreferrer">#784</a></li><li>Fixed the TUI peer list</li><li>Updated dependencies to match <code>cardano-node</code> master</li><li>Conducted a twitter space on Auctions use cases</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Release 0.10.0</li><li>Support timed transactions solution drafted and validated API with users</li><li>Write Query API ADR and groom a concrete step</li><li>Groom and solve <code>PostTxOnChainFailed</code> UX problem <a href="https://github.com/input-output-hk/hydra/issues/832" target="_blank" rel="noopener noreferrer">#832</a></li><li>Groom off-chain benchmarks idea <a href="https://github.com/input-output-hk/hydra/issues/186" target="_blank" rel="noopener noreferrer">#186</a> and turn it into a <!-- -->“<!-- -->feature<!-- -->”</li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-04-21-hydra</id>
