@@ -2,11 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/quarterly</id>
     <title>Cardano Development Updates Blog</title>
-    <updated>2023-04-04T00:00:00.000Z</updated>
+    <updated>2023-04-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/quarterly"/>
     <subtitle>Cardano Development Updates Blog</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Quarterly Update]]></title>
+        <id>2023-04-25-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/quarterly/2023-04-25-consensus"/>
+        <updated>2023-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Consensus Quarterly Update]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="consensus-quarterly-update">Consensus Quarterly Update<a class="hash-link" href="#consensus-quarterly-update" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="2023-01---2023-03">2023-01 - 2023-03<a class="hash-link" href="#2023-01---2023-03" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="main-achievements">Main achievements<a class="hash-link" href="#main-achievements" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd">UTxO HD<a class="hash-link" href="#utxo-hd" title="Direct link to heading">​</a></h4><ul><li>We finished the testing activities for the prototype, which involved adding
+new tests, and fixing and enabling temporarily disabled tests.</li><li>We spent a substantial amount of effort refactoring and cleaning the
+prototype.</li><li>We audited the UTxO HD prototype to make sure it can accommodate the migration
+of other tables (eg stake-keys registration) from memory to disk. The result
+of the audit was positive.</li><li>We ran ad-hoc benchmarks for reading keys and flushing values to disk. No
+unexpected costs found.</li><li>We ran the first system level benchmarks. The performance regressions reported
+were due to an unrealistic snapshotting rate. We need to re-run them again
+after we design a more fine grained locking mechanism.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h4><ul><li>We elaborated a roadmap of the remaining work for Genesis.</li><li>We presented the design to the IOG Researchers and PNSol on February 20. The
+design was well received. We updated the Genesis design with the researcher's
+feedback.<ul><li>We plugged the new DoS vector identified during the aforementioned
+presentation.</li></ul></li><li>We developed a generator for adversarial leader schedules that satisfy key
+Ouroboros properties, which will be used to test the Genesis design.<ul><li>The generator enables use of smaller Ouroboros parameters, which makes
+extrema more likely and counterxamples easier interpret.</li></ul></li><li>We wrote up the latest design iteration.</li><li>We continued benchmarking the Chain Sync Jumping prototype. In particular:<ul><li>We debugged the prototype's performance regression, and unmasked the
+actual cause by patching our initial theory (bad queuing behavior)</li><li>We identified and validated the actual cause (a pathological case in
+BlockFetch tiebreaker).</li></ul></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h4><ul><li>We created two new tools. One for dumping CBOR encoded blocks to JSON. Ahother
+to serve a local immutable DB.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="conway-era">Conway era<a class="hash-link" href="#conway-era" title="Direct link to heading">​</a></h4><ul><li>We integrated the Conway era into consensus.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h4><ul><li>We fixed a bug with followers, which was discovered by property tests.</li><li>We developed a DSL for specifying and running ChainDB test cases.</li><li>We fixed failing tests with iterators.</li><li>We created micro-benchmarks for adding transactions to the mempool.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration">Fostering collaboration<a class="hash-link" href="#fostering-collaboration" title="Direct link to heading">​</a></h4><ul><li>We released a new technical documentation site for consensus.</li><li>We factored out several packages to external repositories. Some of this work
+originated in the UTxO HD workstream.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next steps<a class="hash-link" href="#next-steps" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd-1">UTxO HD<a class="hash-link" href="#utxo-hd-1" title="Direct link to heading">​</a></h4><ul><li><a href="https://github.com/input-output-hk/ouroboros-consensus/issues/28" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/ouroboros-consensus/issues/28</a></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="genesis-1">Genesis<a class="hash-link" href="#genesis-1" title="Direct link to heading">​</a></h4><ul><li><a href="https://github.com/input-output-hk/ouroboros-consensus/issues/33" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/ouroboros-consensus/issues/33</a></li><li><a href="https://github.com/input-output-hk/ouroboros-consensus/issues/32" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/ouroboros-consensus/issues/32</a></li><li><a href="https://github.com/input-output-hk/ouroboros-consensus/issues/31" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/ouroboros-consensus/issues/31</a></li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="support-1">Support<a class="hash-link" href="#support-1" title="Direct link to heading">​</a></h4><ul><li>Design Consensus side of hardfork-enactment in the Voltaire phase
+(<a href="https://github.com/input-output-hk/ouroboros-network/issues/4180" target="_blank" rel="noopener noreferrer">#4180</a>).</li><li>Estimate the number of file descriptors Consensus needs
+<a href="https://github.com/input-output-hk/ouroboros-consensus/issues/20" target="_blank" rel="noopener noreferrer">#20</a>.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="tech-debt">Tech debt<a class="hash-link" href="#tech-debt" title="Direct link to heading">​</a></h4><ul><li>Identify Quantitative Timeliness Agreements (QTAs) metrics that we can define
+for consensus. Pick one and implement benchmarks for it.</li></ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration-1">Fostering collaboration<a class="hash-link" href="#fostering-collaboration-1" title="Direct link to heading">​</a></h4><ul><li>Onboard a new team member.</li></ul>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Network Team Update]]></title>
         <id>2023-04-04-network</id>
