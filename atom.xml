@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-04-28T00:00:00.000Z</updated>
+    <updated>2023-05-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DB-sync Team Update]]></title>
+        <id>2023-05-01-db-sync</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-01-db-sync"/>
+        <updated>2023-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><ul><li>Prepared a schema change which is expected to speed up queries and help clients
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1389" target="_blank" rel="noopener noreferrer">#1389</a>.</li><li>Ran a big number of benchmarks on the above to evaluate if this change is reasonable.</li><li>Performance optimization related to rewards
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1382" target="_blank" rel="noopener noreferrer">#1382</a></li><li>Using the cache in more places to reduce recourses usage
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1380" target="_blank" rel="noopener noreferrer">#1380</a></li><li>Evaluated risks related to UTXO-HD integration</li><li>Worked on a feauture request to split the <code>tx_out</code> to an address table
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1396" target="_blank" rel="noopener noreferrer">#1396</a></li><li>Worked on another feauture request to prune the consumed entries from the <code>tx_out</code> table
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1398" target="_blank" rel="noopener noreferrer">#1398</a></li><li>Prepared for CIP-1694 integration</li></ul>]]></content>
+        <author>
+            <name>Kostas Dermentzis</name>
+            <uri>https://github.com/kderme</uri>
+        </author>
+        <category label="db-sync" term="db-sync"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Crypto Team Update]]></title>
         <id>2023-04-28-crypto</id>
