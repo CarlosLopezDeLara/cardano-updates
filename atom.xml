@@ -2,11 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-05-01T00:00:00.000Z</updated>
+    <updated>2023-05-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-05-03-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-03-consensus"/>
+        <updated>2023-05-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>During the past two weeks we made some important progress in the Genesis design.
+It seems the <code>BlockFetch</code> logic need not be modified for Genesis, although this
+needs to be confirmed. We started a DoS mitigation handbook and updated our
+conceptual component diagram to guide the Genesis design. We engaged with the
+IOG researchers to work on the Limit on Patience attack vector, work in this
+area is still ongoing. We sketched a design to decouple the CPU load of the node
+from its responsiveness to the socket. Finally, we discussed with Networking our
+approach to lower the performance impact of the BlockFetch decision logic, and
+got green light from them.</p><p>We migrated the consensus code to a <a href="https://github.com/input-output-hk/ouroboros-consensus" target="_blank" rel="noopener noreferrer">new
+repository</a>, splitting
+it from the <code>ouroboros-network</code> repository, and released version 0.6 of
+Consensus.</p><p>We also merged the mempool fairness improvement to main branch.</p><p>Another significant enhancement to our documentation was the addition of an
+explanation of the hardfork combinator forecast horizon.</p><p>See the sections below for more details.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h2><p>We reviewed the <code>BlockFetch</code> design documentation, and added some source-code
+comments that emphasize certain properties of the decisions the <code>BlockFetch</code>
+logic makes that are helping us confirm that Genesis does not require any
+changes to <code>BlockFetch</code>. We are waiting on input from our former system
+architect to verify this.</p><p>We migrated and updated the conceptual component diagram in the <code>ouroboros-consensus</code>
+repository which helps us situate the Genesis design and argument.</p><p>We engaged with the IOG researchers about the Genesis design. We sketched out a
+way to address the concern that the Limit on Patiente (LoP) attack vector duty
+cycle is indeed low, but it's still non-trivial to ultimately conclude it's
+sufficiently low.</p><p>We also sketched a design to decouple the CPU load of the node from its
+responsiveness to the socket, since the LoP is a relatively tight timeout, and
+node performance bugs inducing seconds-worth of latency are unfortunately
+familiar phenomena.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="fostering-collaboration">Fostering collaboration<a class="hash-link" href="#fostering-collaboration" title="Direct link to heading">​</a></h2><p>We <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/62" target="_blank" rel="noopener noreferrer">added an
+explanation</a> of
+a question that we had to explain many times about the exact behavior of the
+hardfork combinator forecast horizon.</p>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[DB-sync Team Update]]></title>
         <id>2023-05-01-db-sync</id>
