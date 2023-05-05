@@ -4,10 +4,31 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 04 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Ledger Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-05-05-ledger</link>
+            <guid>2023-05-05-ledger</guid>
+            <pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The ledger team focused mainly on the conway ledger era and node integration.
+For conway, we completed a large structural change that now allows
+for delegation certificates to be parameterized by era, and introducing
+new certificates for the first time since Shelley.
+We also continue to build out our contraint based generators that we will
+use to property test the conway era.
+In particular, we can now generate an entire ledger state and a
+transaction which is balanced with respect to the ledger state.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="conway-certificates">Conway certificates<a class="hash-link" href="#conway-certificates" title="Direct link to heading">​</a></h2><p>Certificiates are now abstracted as a type family in the ledger codebase.
+Moreover, there are new certificates in the Conway era to support CIP-1694,
+and MIR certificates have been removed.</p><ul><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3387" target="_blank" rel="noopener noreferrer">pull-3387</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="constraint-based-testing">Constraint based testing<a class="hash-link" href="#constraint-based-testing" title="Direct link to heading">​</a></h2><p>Our plan for property testing in the conway era is to no longer use the trace generators,
+but instead generate ledger states and transactions based on constraints.
+We hit a milestone this week, namely the ability to generate a balanced transaction in the context
+of a ledger state, all based on our ever growing constaint language.</p><ul><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3374" target="_blank" rel="noopener noreferrer">pull-3374</a></li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3386" target="_blank" rel="noopener noreferrer">pull-3386</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-work">Integration work<a class="hash-link" href="#integration-work" title="Direct link to heading">​</a></h2><ul><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3393" target="_blank" rel="noopener noreferrer">pull-3393</a> - Performance improvements</li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3395" target="_blank" rel="noopener noreferrer">pull-3395</a> - Conway instances</li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3398" target="_blank" rel="noopener noreferrer">pull-3398</a> - Fix mint translation in the script context</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="technical-debt">Technical debt<a class="hash-link" href="#technical-debt" title="Direct link to heading">​</a></h2><ul><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3389" target="_blank" rel="noopener noreferrer">pull-3389</a> - Reduce github pages size</li><li><a href="https://github.com/input-output-hk/cardano-ledger/pull/3390" target="_blank" rel="noopener noreferrer">pull-3390</a> - Reinstate the tickf optimizations</li></ul>]]></content:encoded>
+            <category>ledger</category>
+        </item>
         <item>
             <title><![CDATA[Mithril Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-05-04-mithril</link>
