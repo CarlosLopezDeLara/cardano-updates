@@ -4,10 +4,19 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 12 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-05-17-consensus</link>
+            <guid>2023-05-17-consensus</guid>
+            <pubDate>Wed, 17 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>During the past two weeks we brought further improvements into the Genesis design in collaboration with the IO Research and Networking teams. These improvements concern the Genesis selection rule, candidate rule, and root peers usage. See the <!-- -->[Genesis][#genesis]<!-- --> section for more details.</p><p>Regarding our UTxO-HD prototype, during the past two weeks we put together a pull-request that improves the DB locking mechanism, started porting the mempool fairness improvements from our <code>main</code> branch, and integrated a new open source library (that implements cancellative monoids) that allowed us to simplify our code and get a small performance gain.</p><p>We improved our tooling by releasing an <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/68" target="_blank" rel="noopener noreferrer">immutable DB server</a>, which can be used for testing and benchmarking purposes, and a <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/70" target="_blank" rel="noopener noreferrer"><code>db-truncater</code></a> program, which can be used in disaster recovery and benchmarking scenarios.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h2><p>The consensus team working on Genesis:</p><ul><li>Improved the genesis selection rule as a result of our interaction with IO Research.</li><li>Studied how the hard-fork combinator handles forecasting at era transitions, and <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/89" target="_blank" rel="noopener noreferrer">improved our documentation</a>.</li><li>Determined that the simplest candidate rule we had considered will work for the Genesis window at era transitions, at least for the MVP.</li><li>Elaborated concrete proposal for the Genesis State Machine.</li><li>Met with the Networking Team and advised/co-designed how to implement the stop gap usage of public trusted root peers before Genesis is released (it's similar to the Genesis State Machine).</li></ul><p>The team is currently re-analyzing the Limit on Patience, which can be less aggressive now that we've re-introduced the Genesis State Machine.</p>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Crypto Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-05-12-crypto</link>
