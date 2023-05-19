@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-05-17T00:00:00.000Z</updated>
+    <updated>2023-05-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-05-19-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-19-hydra"/>
+        <updated>2023-05-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team has worked on several fronts, including improvements of their CI speed, logs, documentation pages and adding the support for timed transactions. They also updated the "Coding Standards" for the project, improved the troubleshooting page on their website and wrote a section about how to operate a hydra node. Finally the team completed a feature request that allows clients to submit and validate transactions to their hydra nodes using time validity ranges, ensuring isomorphism with L1.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Complete validation of timed transactions feature <a href="https://github.com/input-output-hk/hydra/issues/196" target="_blank" rel="noopener noreferrer">#196</a>.</li><li>Write <!-- -->“<!-- -->ops<!-- -->”<!-- --> instructions and troubleshooting <a href="https://github.com/input-output-hk/hydra/issues/569" target="_blank" rel="noopener noreferrer">#569</a> and improve logs.</li><li>Remove <code>--ledger-genesis</code> argument to hydra-node options <a href="https://github.com/input-output-hk/hydra/pull/863" target="_blank" rel="noopener noreferrer">#863</a>.</li><li>Fix issue with garbage collected caches by using a new cardano-scaling.cachix in more workflows <a href="https://github.com/input-output-hk/hydra/pull/877" target="_blank" rel="noopener noreferrer">#877</a>.</li><li>Use nix to build test binaries to increase CI speed <a href="https://github.com/input-output-hk/hydra/pull/867" target="_blank" rel="noopener noreferrer">#867</a>.</li><li>Updated our <a href="https://github.com/input-output-hk/hydra/wiki/Coding-Standards" target="_blank" rel="noopener noreferrer">Coding Standards</a>.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Monthly report &amp; review meeting.</li><li>Have a first end-to-end journey for external commits implementing "Option A" <a href="https://github.com/input-output-hk/hydra/issues/215" target="_blank" rel="noopener noreferrer">#215</a>.</li><li>Integrate spanish translation <a href="https://github.com/input-output-hk/hydra/pull/866" target="_blank" rel="noopener noreferrer">#866</a>.</li><li>Improve and provide regular benchmarks for Hydra <a href="https://github.com/input-output-hk/hydra/issues/186" target="_blank" rel="noopener noreferrer">#186</a>.</li><li>Allow commit transactions with multiple UTxO <a href="https://github.com/input-output-hk/hydra/pull/774" target="_blank" rel="noopener noreferrer">#774</a>.</li><li>Explored stateless observation and refined hydra explorer ticket <a href="https://github.com/input-output-hk/hydra/issues/696" target="_blank" rel="noopener noreferrer">#696</a>.</li></ul>]]></content>
+        <author>
+            <name>Franco Testagrossa</name>
+            <uri>https://github.com/ffakenz</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Consensus Team Update]]></title>
         <id>2023-05-17-consensus</id>
@@ -73,6 +86,28 @@ of team structure, and responsabilities of team members for specific tasks. Serg
         <category label="crypto" term="crypto"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-05-12-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-12-hydra"/>
+        <updated>2023-05-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team achieved a number of milestones, including the release
+of the first mainnet compatible version. Besides this they also addressed
+inconsistencies in rollback handling, added an architecture page to the website,
+reducing the size of logs using event IDs. They also had productive discussions
+with researchers on plans for incremental commits/decommits and had a whiteboard
+session on DeFi and lending protocols. The goals for next week include
+completing the validation of the timed transactions feature, exploring stateless
+observation, refining the Hydra explorer ticket, writing ops instructions and
+troubleshooting, and implementing the first end-to-end journey for external
+commits.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Released first mainnnet compatible version <a href="https://github.com/input-output-hk/hydra/releases/tag/0.10.0" target="_blank" rel="noopener noreferrer">0.10.0</a></li><li>Addressed inconsist handling of rollbacks <a href="https://github.com/input-output-hk/hydra/issues/784" target="_blank" rel="noopener noreferrer">#784</a></li><li>Added <a href="https://hydra.family/head-protocol/core-concepts/architecture/" target="_blank" rel="noopener noreferrer">architecture page</a> and fixed haddock links on our website <a href="https://github.com/input-output-hk/hydra/pull/838" target="_blank" rel="noopener noreferrer">#838</a></li><li>Opened a new hydra head on mainnet</li><li>Talked with researchers on initial plan for incremental commits/decommits</li><li>Had a Whiteboard session on DeFi and lending protocols</li><li>Reduced size of logs using event ids <a href="https://github.com/input-output-hk/hydra/pull/859" target="_blank" rel="noopener noreferrer">#859</a></li><li>Published the <a href="https://hydra.family/head-protocol/monthly/2023-04" target="_blank" rel="noopener noreferrer">monthly report for April</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Complete validation of timed transactions feature <a href="https://github.com/input-output-hk/hydra/issues/196" target="_blank" rel="noopener noreferrer">#196</a></li><li>Explored stateless observation and refined hydra explorer ticket <a href="https://github.com/input-output-hk/hydra/issues/696" target="_blank" rel="noopener noreferrer">#696</a></li><li>Write <!-- -->“<!-- -->ops<!-- -->”<!-- --> instructions and troubleshooting <a href="https://github.com/input-output-hk/hydra/issues/569" target="_blank" rel="noopener noreferrer">#569</a> and improve logs</li><li>Have a first end-to-end journey for external commits implemented <a href="https://github.com/input-output-hk/hydra/issues/215" target="_blank" rel="noopener noreferrer">#215</a></li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Network Team Update]]></title>
         <id>2023-05-12-network</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-05-12-network"/>
@@ -101,28 +136,6 @@ to a new repo;</li><li>[#4546]<!-- -->: we switched to use <a href="https://docs
             <uri>https://github.com/coot</uri>
         </author>
         <category label="network" term="network"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hydra Team Update]]></title>
-        <id>2023-05-12-hydra</id>
-        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-12-hydra"/>
-        <updated>2023-05-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[High-level summary]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team achieved a number of milestones, including the release
-of the first mainnet compatible version. Besides this they also addressed
-inconsistencies in rollback handling, added an architecture page to the website,
-reducing the size of logs using event IDs. They also had productive discussions
-with researchers on plans for incremental commits/decommits and had a whiteboard
-session on DeFi and lending protocols. The goals for next week include
-completing the validation of the timed transactions feature, exploring stateless
-observation, refining the Hydra explorer ticket, writing ops instructions and
-troubleshooting, and implementing the first end-to-end journey for external
-commits.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Released first mainnnet compatible version <a href="https://github.com/input-output-hk/hydra/releases/tag/0.10.0" target="_blank" rel="noopener noreferrer">0.10.0</a></li><li>Addressed inconsist handling of rollbacks <a href="https://github.com/input-output-hk/hydra/issues/784" target="_blank" rel="noopener noreferrer">#784</a></li><li>Added <a href="https://hydra.family/head-protocol/core-concepts/architecture/" target="_blank" rel="noopener noreferrer">architecture page</a> and fixed haddock links on our website <a href="https://github.com/input-output-hk/hydra/pull/838" target="_blank" rel="noopener noreferrer">#838</a></li><li>Opened a new hydra head on mainnet</li><li>Talked with researchers on initial plan for incremental commits/decommits</li><li>Had a Whiteboard session on DeFi and lending protocols</li><li>Reduced size of logs using event ids <a href="https://github.com/input-output-hk/hydra/pull/859" target="_blank" rel="noopener noreferrer">#859</a></li><li>Published the <a href="https://hydra.family/head-protocol/monthly/2023-04" target="_blank" rel="noopener noreferrer">monthly report for April</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Complete validation of timed transactions feature <a href="https://github.com/input-output-hk/hydra/issues/196" target="_blank" rel="noopener noreferrer">#196</a></li><li>Explored stateless observation and refined hydra explorer ticket <a href="https://github.com/input-output-hk/hydra/issues/696" target="_blank" rel="noopener noreferrer">#696</a></li><li>Write <!-- -->“<!-- -->ops<!-- -->”<!-- --> instructions and troubleshooting <a href="https://github.com/input-output-hk/hydra/issues/569" target="_blank" rel="noopener noreferrer">#569</a> and improve logs</li><li>Have a first end-to-end journey for external commits implemented <a href="https://github.com/input-output-hk/hydra/issues/215" target="_blank" rel="noopener noreferrer">#215</a></li></ul>]]></content>
-        <author>
-            <name>Sebastian Nagel</name>
-            <uri>https://github.com/ch1bo</uri>
-        </author>
-        <category label="hydra" term="hydra"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Ledger Team Update]]></title>
