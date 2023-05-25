@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcardano_updates=self.webpackChunkcardano_updates||[]).push([[7923],{40294:a=>{a.exports=JSON.parse('{"label":"cli-api","permalink":"/cardano-updates/tags/cli-api","allTagsPath":"/cardano-updates/tags","count":14}')}}]);
