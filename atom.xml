@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-05-19T00:00:00.000Z</updated>
+    <updated>2023-05-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-05-26-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-26-hydra"/>
+        <updated>2023-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team accomplished several important tasks. They held their
+monthly review meeting and drafted the report for May. They made progress on
+implementing the first end-to-end journey for external commits using "Option A"
+for normal UTxOs, while still considering "Option B". The team also integrated a
+Spanish translation contributed by the community, created micro-benchmarks for
+transaction validation and deserialization, and made improvements to
+hydra-node's version reporting. Last but not least, they implemented the ability
+to commit multiple UTxOs to a head at once.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Held the monthly review meeting (<a href="https://drive.google.com/file/d/1_N6b4RDe579TgLawiJzbE0NLofD3ljE6/view" target="_blank" rel="noopener noreferrer">recording</a> + <a href="https://docs.google.com/presentation/d/1anUC3Z1idloyR6uwiSHLZtV6-LQvUcByHPMUgCBOVIA" target="_blank" rel="noopener noreferrer">slides</a>) &amp; drafted the report for May.</li><li>Have a first end-to-end journey for external commits implementing <!-- -->“<!-- -->Option A<!-- -->”<!-- -->
+for normal UTxOs <a href="https://github.com/input-output-hk/hydra/pull/887" target="_blank" rel="noopener noreferrer">#887</a> (still considering <!-- -->“<!-- -->Option B<!-- -->”<!-- -->).</li><li>Integrated the spanish translation <a href="https://github.com/input-output-hk/hydra/pull/866" target="_blank" rel="noopener noreferrer">#866</a>.</li><li>Created micro-benchmarks for transaction validation and deserialization <a href="https://github.com/input-output-hk/hydra/pull/884" target="_blank" rel="noopener noreferrer">#884</a>.</li><li>Improve hydra-node <!-- -->–<!-- -->version reporting on non-released builds <a href="https://github.com/input-output-hk/hydra/issues/849" target="_blank" rel="noopener noreferrer">#849</a></li><li>Some minor CI improvements following up last weeks changes.</li><li>Allow commit transactions with multiple UTxO <a href="https://github.com/input-output-hk/hydra/pull/774" target="_blank" rel="noopener noreferrer">#774</a>.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Investigate and re-open our team-internal head on mainnet.</li><li>Improve and provide regular benchmarks for Hydra <a href="https://github.com/input-output-hk/hydra/issues/186" target="_blank" rel="noopener noreferrer">#186</a>.</li><li>Complete external commits with script UTxOs <a href="https://github.com/input-output-hk/hydra/issues/215" target="_blank" rel="noopener noreferrer">#215</a>.</li><li>Authenticate network messages <a href="https://github.com/input-output-hk/hydra/issues/727" target="_blank" rel="noopener noreferrer">#727</a>.</li><li>Add hydra as tool to developr platform <a href="https://github.com/input-output-hk/hydra/issues/872" target="_blank" rel="noopener noreferrer">#872</a>.</li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-05-19-hydra</id>
