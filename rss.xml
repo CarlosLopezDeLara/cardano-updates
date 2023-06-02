@@ -77,6 +77,19 @@ And, as always, we continue to address technical debt.</p><h2 class="anchor anch
             <category>ledger</category>
         </item>
         <item>
+            <title><![CDATA[Network Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-05-26-network</link>
+            <guid>2023-05-26-network</guid>
+            <pubDate>Fri, 26 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We continued working on <code>eclipse-evasion</code>.  We also analysed and fixed a bug
+when using DNS names in local root peers.  We continued working on engineering
+blog post about P2P. We released a new version of packages for
+<code>cardano-node-8.1.0</code> release.</p><p>We improved our CI, removed obsolete scripts add extra validation which checks
+if <code>CHANGELOG.md</code> files were updated.</p><p>We also improved release scripts.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="detailed-summary">Detailed summary<a class="hash-link" href="#detailed-summary" title="Direct link to heading">​</a></h2><ul><li>Eclipse evasion: <a href="https://github.com/input-output-hk/ouroboros-network/pull/4462" target="_blank" rel="noopener noreferrer">#4462</a></li><li>Local root peers bug fix: <a href="https://github.com/input-output-hk/ouroboros-network/pull/4559" target="_blank" rel="noopener noreferrer">#4559</a></li><li>Release to CHaP: <a href="https://github.com/input-output-hk/ouroboros-network/pull/4573" target="_blank" rel="noopener noreferrer">#4573</a></li><li>CI improvements: <a href="https://github.com/input-output-hk/ouroboros-network/pull/4572" target="_blank" rel="noopener noreferrer">#4572</a></li><li>Release script improvements: <a href="https://github.com/input-output-hk/ouroboros-network/pull/4573" target="_blank" rel="noopener noreferrer">#4573</a></li></ul>]]></content:encoded>
+            <category>network</category>
+        </item>
+        <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-05-19-hydra</link>
             <guid>2023-05-19-hydra</guid>
