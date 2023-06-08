@@ -80,6 +80,22 @@ very specific conditions for an ongoing run to be considered healthy, and offer 
         <category label="performance-tracing" term="performance-tracing"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Goedel Team Update]]></title>
+        <id>2023-05-26-goedel</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-26-goedel"/>
+        <updated>2023-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The team works on applied research and consulting in formal methods]]></summary>
+        <content type="html"><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team has been working on final revisions for the
+pre-proceedings versions of two ICE 2023 papers.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Porting Ouroboros Praos formalisation to new application layer.</p></li><li><p>Preparing pre-proceedings version of two ICE 2023 papers.</p></li><li><p>The team is hiring a performance engineering intern - <a href="https://apply.workable.com/io-global/j/BFEC5B0AFF/" target="_blank" rel="noopener noreferrer">https://apply.workable.com/io-global/j/BFEC5B0AFF/</a></p></li></ul>]]></content>
+        <author>
+            <name>James Chapman</name>
+            <uri>https://github.com/jmchapman</uri>
+        </author>
+        <category label="goedel" term="goedel"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-05-26-hydra</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-05-26-hydra"/>
@@ -211,6 +227,23 @@ of team structure, and responsabilities of team members for specific tasks. Serg
             <uri>https://github.com/iquerejeta</uri>
         </author>
         <category label="crypto" term="crypto"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goedel Team Update]]></title>
+        <id>2023-05-12-goedel</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-05-12-goedel"/>
+        <updated>2023-05-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The team works on applied research and consulting in formal methods]]></summary>
+        <content type="html"><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team had two paper accepted for ICE 2023
+(<a href="https://www.discotec.org/2023/ice" target="_blank" rel="noopener noreferrer">https://www.discotec.org/2023/ice</a>). The event will be held in Lisbon
+on 19th June 2023. The papers will be published in EPTCS.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Application layer for Praos formalisation in review.</p></li><li><p>Participating in interactive peer review process for ICE 2023.</p></li><li><p>The team is hiring a performance engineering intern - <a href="https://apply.workable.com/io-global/j/BFEC5B0AFF/" target="_blank" rel="noopener noreferrer">https://apply.workable.com/io-global/j/BFEC5B0AFF/</a></p></li></ul>]]></content>
+        <author>
+            <name>James Chapman</name>
+            <uri>https://github.com/jmchapman</uri>
+        </author>
+        <category label="goedel" term="goedel"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
@@ -405,6 +438,22 @@ with various quality-of-life improvements, has been merged to <code>master</code
             <uri>https://github.com/iquerejeta</uri>
         </author>
         <category label="crypto" term="crypto"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goedel Team Update]]></title>
+        <id>2023-04-28-goedel</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-04-28-goedel"/>
+        <updated>2023-04-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The team works on applied research and consulting in formal methods]]></summary>
+        <content type="html"><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The team is working on porting an existing formalisation of Ouroboros
+Praos to a newer foundation.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>The team worked on documentation.</p></li><li><p>The team worked on an application layer for the Praos formalisation.</p></li><li><p>The team is hiring a performance engineering intern - <a href="https://apply.workable.com/io-global/j/BFEC5B0AFF/" target="_blank" rel="noopener noreferrer">https://apply.workable.com/io-global/j/BFEC5B0AFF/</a></p></li></ul>]]></content>
+        <author>
+            <name>James Chapman</name>
+            <uri>https://github.com/jmchapman</uri>
+        </author>
+        <category label="goedel" term="goedel"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Network Team Update]]></title>
