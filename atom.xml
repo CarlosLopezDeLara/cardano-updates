@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-06-02T00:00:00.000Z</updated>
+    <updated>2023-06-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Goedel Team Update]]></title>
+        <id>2023-06-08-goedel</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-06-08-goedel"/>
+        <updated>2023-06-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The team works on applied research and consulting in formal methods]]></summary>
+        <content type="html"><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the team has been working on giving and preparing public
+talks, also on preparing final versions of their ICE 2023 papers, and
+on analysing chain selection.</p><p>This sprint the team has been working on final revisions for the
+pre-proceedings versions of two ICE 2023 papers.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Lambda Days keynote by Kevin Hammond:
+<a href="https://www.lambdadays.org/lambdadays2023" target="_blank" rel="noopener noreferrer">https://www.lambdadays.org/lambdadays2023</a></p></li><li><p>Codebeam keynote by Peter Van Roy: <a href="https://www.youtube.com/watch?v=h8sE3Ai8Dsk" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=h8sE3Ai8Dsk</a>; <a href="https://www.youtube.com/watch?v=h8sE3Ai8Dsk" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=h8sE3Ai8Dsk</a></p></li><li><p>Preparing talks and final versions for two ICE 2023 contributions:
+<a href="https://www.discotec.org/2023/ice" target="_blank" rel="noopener noreferrer">https://www.discotec.org/2023/ice</a></p></li><li><p>Analysing chain selection.</p></li><li><p>The team is hiring a performance engineering intern - <a href="https://apply.workable.com/io-global/j/BFEC5B0AFF/" target="_blank" rel="noopener noreferrer">https://apply.workable.com/io-global/j/BFEC5B0AFF/</a></p></li></ul>]]></content>
+        <author>
+            <name>James Chapman</name>
+            <uri>https://github.com/jmchapman</uri>
+        </author>
+        <category label="goedel" term="goedel"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-06-02-hydra</id>
