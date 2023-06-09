@@ -4,10 +4,19 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 08 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Crypto Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-06-09-crypto</link>
+            <guid>2023-06-09-crypto</guid>
+            <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The open fronts that the crypto team is working on are:</p><ul><li>cardano-base: E2E tests for BLS bindings and KES agent </li><li>Sidechains: Implement ECC chip and Rescue hash primitives for ATMS</li><li>mithril: Full node verifier</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cardano-base">cardano-base<a class="hash-link" href="#cardano-base" title="Direct link to heading">​</a></h3><ul><li>RawBearer API in ouroboros-network-framework (<a href="https://github.com/input-output-hk/ouroboros-network/pull/4395)" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/ouroboros-network/pull/4395)</a>; blocked due to issue with windows' localSnocket. Trying to resolve.</li><li>Adapting cardano-base for direct memory transfers between mlocked RAM and file descriptors <a href="https://github.com/input-output-hk/cardano-base/pull/317" target="_blank" rel="noopener noreferrer">#317</a>.</li><li>Above, blocked by the simplification of typeclasses <a href="https://github.com/input-output-hk/cardano-base/pull/404" target="_blank" rel="noopener noreferrer">#404</a>.</li><li>Provided e2e test cases to the testing team with aggregated signatures and schnorr signatures for the BLS bindings</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mithril">Mithril<a class="hash-link" href="#mithril" title="Direct link to heading">​</a></h3><ul><li>Implementation of Full Node Verifier <a href="https://github.com/input-output-hk/mithril/pull/939" target="_blank" rel="noopener noreferrer">#939</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sidechains">Sidechains<a class="hash-link" href="#sidechains" title="Direct link to heading">​</a></h3><ul><li><a href="https://github.com/input-output-hk/sidechains-zk/tree/master/prover/src/ecc" target="_blank" rel="noopener noreferrer">ECC chip</a> implemented for JubJub over BLS12-381</li><li><a href="https://github.com/input-output-hk/sidechains-zk/tree/master/prover/src/rescue" target="_blank" rel="noopener noreferrer">Rescue chip</a> implemented for hashing.</li><li>Currently working on Schnorr signature (which uses the above constraints)</li></ul>]]></content:encoded>
+            <category>crypto</category>
+        </item>
         <item>
             <title><![CDATA[DB-sync Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-06-08-db-sync</link>
