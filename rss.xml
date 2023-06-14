@@ -4,10 +4,22 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Mon, 12 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-06-14-consensus</link>
+            <guid>2023-06-14-consensus</guid>
+            <pubDate>Wed, 14 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The Consensus team had a very productive meeting with IOG Researchers. We now seem to be in alignment in regards to a strong argument that the <code>Byron</code> and <code>TPraos</code> eras do not need to be checkpointed for an MVP.
+There is one remaining question (which applies also to the <code>Praos</code> era): how to assess the threat that short forks pose against historical windows that underperformed? We are currently collaborating on that. We also drafted an argument that the updated "Limit on Patience" timeout sufficiently bounds how long the adversary can inflate a victim's overall sync time.</p><p>On the UTxO-HD front, the prototype branch was rebased on top of the latest <code>ouroboros-consensus</code> <code>main</code> branch and integrated on top of <code>cardano-node 8.1.1-pre</code>. As a result, the mempool fairness fix that was released recently is now integrated into UTxO-HD.
+We managed to run a node again with UTxO-HD enabled.
+We also identified a race condition in the UTxO-HD prototype and fixed it. In addition, we started performing UTxO-HD ad-hoc benchmarks for <code>cardano-node</code>, which uncovered a performance regression on the Network component when using <code>GHC-9.2/9.4</code>. This is being addressed.</p><p>Regarding our support activities, we Released <code>fs-sim-0.2.0.0</code> and are in the process of preparing the 8.2 release of <code>cardano-node</code>. We also identified and started fixing incorrectly-unevaluated thunks in preparation for enabling CI NoThunks tests.</p>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Network Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-06-12-network</link>
