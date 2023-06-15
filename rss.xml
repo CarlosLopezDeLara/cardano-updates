@@ -21,6 +21,21 @@ We also identified a race condition in the UTxO-HD prototype and fixed it. In ad
             <category>consensus</category>
         </item>
         <item>
+            <title><![CDATA[Performance & tracing update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-06-14-performance-and-tracing</link>
+            <guid>2023-06-14-performance-and-tracing</guid>
+            <pubDate>Wed, 14 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><ul><li>Benchmarking: We've continued release benchmarking and established a new baseline for <code>8.0.0</code>.</li><li>New tracing: Our benchmarking profile for measuring new vs. legacy tracing performance has been refined.</li><li>Nomad backend: The healthcheck system for the the nomad cloud has been completed. We've performed the first full runs on the new backend.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-overview">Low level overview<a class="hash-link" href="#low-level-overview" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="benchmarking">Benchmarking<a class="hash-link" href="#benchmarking" title="Direct link to heading">​</a></h3><p>In our release benchmarking cycle, we established a new performance baseline for <code>8.0.0</code>. Additionally, we've measured
+performance under various workloads for <code>8.1.1-pre</code>; the results look promising and validate the optimization efforts
+done on several system components.  </p><p>In the meantime, we've finalized a build plan with GHC9.2 that matches the current one with GHC8.10; a requirement for
+benchmarking as a large amount of differences in the dependency graph can confound the results for the application code proper.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tracing">Tracing<a class="hash-link" href="#tracing" title="Direct link to heading">​</a></h3><p>The legacy and the new tracing system differ fundamentally in design, implementation and handling. So for metrics to be
+meaningful in a comparison, benchmarking profiles have to be tuned such that not only log line frequency but frequency of specific
+trace messages are closely aligned. We've found that higher granularity in this regard was necessary, and done additional work on our dedicated profiles.  </p><p>Additionally, we've had a first glance of what additional traces could be valuable in the context of benchmarking UTxO-HD.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nomad-backend">Nomad backend<a class="hash-link" href="#nomad-backend" title="Direct link to heading">​</a></h3><p>As the new backend's healthcheck system in its first iteration can now serve as a guardrail to ensure sanity of a full-length run, we've performed our first 52-node cluster runs on nomad cloud. We're currently smoothing the edges around cluster deployment, and analysing the metrics gathered from those runs.  </p><p>This means the backend is entering validation phase, where we systematically compare all metrics taken from the new
+infrastructure to the existing ones, including determining reproducibility and variance.</p>]]></content:encoded>
+            <category>performance-tracing</category>
+        </item>
+        <item>
             <title><![CDATA[Network Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-06-12-network</link>
             <guid>2023-06-12-network</guid>
