@@ -4,10 +4,22 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 15 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-06-16-hydra</link>
+            <guid>2023-06-16-hydra</guid>
+            <pubDate>Fri, 16 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team focused their efforts on continuing to investigate and
+experiment operating a head on mainnet. They collected several bugs and issues
+and worked on fixing them. Now the team is soon to release a new version,
+0.11.0, which comes with a lot of improvements and bug fixes.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Restored and fixed a bug which stalled our head on mainnet <a href="https://github.com/input-output-hk/hydra/issues/927" target="_blank" rel="noopener noreferrer">#927</a></li><li>Solved one user issue <a href="https://github.com/input-output-hk/hydra/issues/914" target="_blank" rel="noopener noreferrer">#914</a></li><li>Reduced significantly local state size and logs by removing the full scripts from it <a href="https://github.com/input-output-hk/hydra/pull/928" target="_blank" rel="noopener noreferrer">#928</a></li><li>(pending review) Reduced snapshot size in the API, by only including tx ids <a href="https://github.com/input-output-hk/hydra/pull/922" target="_blank" rel="noopener noreferrer">#922</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>New release 0.11.0</li><li>Monthly report &amp; review meeting.</li><li>Fix some minor bugs discovered when operating our head on mainnet</li><li>Complete journey for external commits using multiple script UTxOs <a href="https://github.com/input-output-hk/hydra/pull/903" target="_blank" rel="noopener noreferrer">#903</a></li><li>Publish benchmarks and provide regular benchmarks for Hydra <a href="https://github.com/input-output-hk/hydra/issues/186" target="_blank" rel="noopener noreferrer">#186</a></li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
         <item>
             <title><![CDATA[Mithril Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-06-15-mithril</link>

@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-06-15T00:00:00.000Z</updated>
+    <updated>2023-06-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-06-16-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-06-16-hydra"/>
+        <updated>2023-06-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team focused their efforts on continuing to investigate and
+experiment operating a head on mainnet. They collected several bugs and issues
+and worked on fixing them. Now the team is soon to release a new version,
+0.11.0, which comes with a lot of improvements and bug fixes.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Restored and fixed a bug which stalled our head on mainnet <a href="https://github.com/input-output-hk/hydra/issues/927" target="_blank" rel="noopener noreferrer">#927</a></li><li>Solved one user issue <a href="https://github.com/input-output-hk/hydra/issues/914" target="_blank" rel="noopener noreferrer">#914</a></li><li>Reduced significantly local state size and logs by removing the full scripts from it <a href="https://github.com/input-output-hk/hydra/pull/928" target="_blank" rel="noopener noreferrer">#928</a></li><li>(pending review) Reduced snapshot size in the API, by only including tx ids <a href="https://github.com/input-output-hk/hydra/pull/922" target="_blank" rel="noopener noreferrer">#922</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>New release 0.11.0</li><li>Monthly report &amp; review meeting.</li><li>Fix some minor bugs discovered when operating our head on mainnet</li><li>Complete journey for external commits using multiple script UTxOs <a href="https://github.com/input-output-hk/hydra/pull/903" target="_blank" rel="noopener noreferrer">#903</a></li><li>Publish benchmarks and provide regular benchmarks for Hydra <a href="https://github.com/input-output-hk/hydra/issues/186" target="_blank" rel="noopener noreferrer">#186</a></li></ul>]]></content>
+        <author>
+            <name>Franco Testagrossa</name>
+            <uri>https://github.com/ffakenz</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mithril Team Update]]></title>
         <id>2023-06-15-mithril</id>
