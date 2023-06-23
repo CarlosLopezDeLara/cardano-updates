@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-06-16T00:00:00.000Z</updated>
+    <updated>2023-06-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-06-23-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-06-23-hydra"/>
+        <updated>2023-06-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team shared progress updates during the monthly review
+meeting (monthly report and video recording available soon) and started
+experimenting on preview network with the new commit from external wallet
+feature.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Monthly report &amp; review meeting, demonstrating <a href="https://github.com/input-output-hk/hydra/pull/887" target="_blank" rel="noopener noreferrer">commit from external
+wallet</a></li><li>Published regular <a href="https://hydra.family/head-protocol/unstable/benchmarks/end-to-end-benchmarks" target="_blank" rel="noopener noreferrer">benchmarks for
+Hydra</a></li><li>Moved forward the journey for external commits using multiple script UTxOs
+<a href="https://github.com/input-output-hk/hydra/pull/903" target="_blank" rel="noopener noreferrer">#903</a></li><li>Changed the API to only put transaction id in snapshots, instead of the full
+transactions <a href="https://github.com/input-output-hk/hydra/pull/922" target="_blank" rel="noopener noreferrer">#922</a> -&gt; this
+is now evolved into fully addressing <a href="https://github.com/input-output-hk/hydra/issues/728" target="_blank" rel="noopener noreferrer">#728</a></li><li>Fuel marking is now optional as one can now commit from an external wallet
+<a href="https://github.com/input-output-hk/hydra/pull/924" target="_blank" rel="noopener noreferrer">#924</a></li><li>Add flag option to display node version on tui
+<a href="https://github.com/input-output-hk/hydra/pull/934" target="_blank" rel="noopener noreferrer">#934</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Complete external commits using multiple script UTxOs <a href="https://github.com/input-output-hk/hydra/pull/903" target="_blank" rel="noopener noreferrer">#903</a></li><li>New release 0.11.0</li><li>Dirtroad solution of improved persistence performance <a href="https://github.com/input-output-hk/hydra/pull/913" target="_blank" rel="noopener noreferrer">#913</a></li></ul>]]></content>
+        <author>
+            <name>Franco Testagrossa</name>
+            <uri>https://github.com/ffakenz</uri>
+        </author>
+        <author>
+            <name>Pascal Grange</name>
+            <uri>https://github.com/pgrange</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-06-16-hydra</id>
