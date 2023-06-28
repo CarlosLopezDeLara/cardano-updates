@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-06-23T00:00:00.000Z</updated>
+    <updated>2023-06-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-06-28-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-06-28-consensus"/>
+        <updated>2023-06-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>During the past two weeks the team working on the Genesis implementation continued to engage with the researchers, which resulted in various simplifications of the correctness argument for the historical Genesis window. They also decided on an approach for a syncing node to decide that it is (no longer) caught up. This functionality was requested by the networking team. </p><p>The team working on the UTxO-HD implementation ran ad-hoc benchmarks that showed performance issues, which are being investigated. They also merged several improvements required for the first UTxO-HD release, and added a package for easing integration with other downstream components.</p><p>Regarding our support activities, we integrated the latest Ledger changes into Consensus in preparation for release 8.2 of node. </p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="genesis">Genesis<a class="hash-link" href="#genesis" title="Direct link to heading">​</a></h3><ul><li><p>We continued to engage with the researchers on our probabilistic model for historical Genesis window, resulting in various simplifications that make the correctness argument more clear while not being excessively conservative.</p></li><li><p>We <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/101#issuecomment-1607767722" target="_blank" rel="noopener noreferrer">decided on an approach</a> of how to implement functionality requested by the Networking team; namely, how a syncing node can safely conclude that it is (no longer) caught up. Certain parameters are still subject to discussion with the researchers, and we have still have to agree on a concrete API for this functionality with the Networking team.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd">UTxO-HD<a class="hash-link" href="#utxo-hd" title="Direct link to heading">​</a></h3><ul><li>We merged the last of the PRs that were part of UTxO-HD improvements for version <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/149" target="_blank" rel="noopener noreferrer">0.1</a>: expose UTxO-HD configuration options in the node, refactor ledger tables, and expose a method of computing the UTxO set size.</li><li>We <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/87" target="_blank" rel="noopener noreferrer">added</a> a new "legacy" cardano block in a new <code>ouroboros-consensus-cardano-legacy-block</code> package that should ease the transition for some downstream packages to UTxO-HD, like <code>db-sync</code>. This is really only useful for downstream packages that use the parts of consensus that don't involve the storage components, in which case we can largely ignore ledger tables. Ignoring ledger tables could also make functionality like block (re-)application more performant for the legacy Cardano block as compared to the actual (UTxO-HD compatible) Cardano block.</li><li>We performed ad-hoc benchmarks of the UTxO-HD implementation, observing a regression in sync speed in the LMDB implementation as well as a regression in memory usage on the in-memory implementation. We are investigating this.</li></ul>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Goedel Team Update]]></title>
         <id>2023-06-23-goedel</id>
