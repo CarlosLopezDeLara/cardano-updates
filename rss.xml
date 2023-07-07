@@ -4,10 +4,20 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Tue, 04 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 07 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Crypto Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-07-07-crypto</link>
+            <guid>2023-07-07-crypto</guid>
+            <pubDate>Fri, 07 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The open fronts that the crypto team is working on are:</p><ul><li>Sidechains: First version of snark-based ATMS</li><li>mithril: Full node verifier</li><li>kes_agent: Keep progress, and prepare CIP and CPS</li><li>CIPs and community: Finishing BLS12-381 CIP and working on a KECCAK CIP</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kes_agent">kes_agent<a class="hash-link" href="#kes_agent" title="Direct link to heading">​</a></h3><ul><li>KES Agent CIP/CSP. Preparing documents. Will become public in the future.</li><li>KES Agent testsuite (<a href="https://github.com/input-output-hk/kes-agent/issues/14" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/kes-agent/issues/14</a>)</li><li>RawBearer abstraction in ouroboros-network-framework (<a href="https://github.com/input-output-hk/ouroboros-network/pull/4395" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/ouroboros-network/pull/4395</a>)</li><li>Maintaining required changes to cardano-base for KES Agent (<a href="https://github.com/input-output-hk/cardano-base/pull/317" target="_blank" rel="noopener noreferrer">https://github.com/input-output-hk/cardano-base/pull/317</a>)</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mithril">Mithril<a class="hash-link" href="#mithril" title="Direct link to heading">​</a></h3><ul><li>Final review of the implementation of Full Node Verifier <a href="https://github.com/input-output-hk/mithril/pull/939" target="_blank" rel="noopener noreferrer">#939</a>.
+Included benchmarks and further tests.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sidechains">Sidechains<a class="hash-link" href="#sidechains" title="Direct link to heading">​</a></h3><ul><li>Schnorr signature implemented</li><li>ATMS signature implemented</li><li>First benchmarks show that for the committe size we expect, we need 2^21 constraints. </li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cips-and-community">CIPs and community<a class="hash-link" href="#cips-and-community" title="Direct link to heading">​</a></h3><ul><li>Addressed some review comments in <a href="https://github.com/cardano-foundation/CIPs/pull/506" target="_blank" rel="noopener noreferrer">#PR506</a></li><li>Worked with the communityt on <a href="https://github.com/cardano-foundation/CIPs/pull/524" target="_blank" rel="noopener noreferrer">#PR524</a> to include Keccak as part of the next Plutus release.</li></ul>]]></content:encoded>
+            <category>crypto</category>
+        </item>
         <item>
             <title><![CDATA[DB-sync Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-04-db-sync</link>
