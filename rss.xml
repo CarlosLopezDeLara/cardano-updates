@@ -19,6 +19,22 @@ Included benchmarks and further tests.</li></ul><h3 class="anchor anchorWithStic
             <category>crypto</category>
         </item>
         <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-07-07-hydra</link>
+            <guid>2023-07-07-hydra</guid>
+            <pubDate>Fri, 07 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the Hydra team accomplished some nice progress. They secured the
+network layer further by implementing authentication of the messages between the
+peers in the Head protocol. In the process they also managed to separate
+HeartBeat messages from the protocol ones which somewhat improved the quality of
+code in Hydra. The team also finished work related to sending only transaction
+ids in ReqSn messages, fixed an issue in the smoke tests, and improved benchmark
+publishing on the website.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li><a href="https://github.com/input-output-hk/hydra/issues/727" target="_blank" rel="noopener noreferrer">Implemented</a> authenticated messages</li><li><a href="https://github.com/input-output-hk/hydra/issues/728" target="_blank" rel="noopener noreferrer">Implemented</a> send only transaction ids in ReqSn messages</li><li>Separate <a href="https://github.com/input-output-hk/hydra/pull/969" target="_blank" rel="noopener noreferrer">HeartBeat</a> messages from the core network protocol messages</li><li>Publish multiple pre-defined <a href="https://github.com/input-output-hk/hydra/pull/947" target="_blank" rel="noopener noreferrer">benchmarks</a></li><li><a href="https://github.com/input-output-hk/hydra/pull/967" target="_blank" rel="noopener noreferrer">Fixed</a> a smoke-test issue where funds would not be returned to the faucet</li><li>Found a bug in the <a href="https://github.com/input-output-hk/hydra-ghsa-c8qp-cv4h-vcc4/pull/1" target="_blank" rel="noopener noreferrer">off-chain signature
+verification</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Spike on performance improvements of event sourced persistence <a href="https://github.com/input-output-hk/hydra/issues/913" target="_blank" rel="noopener noreferrer">#913</a></li><li>Add new endpoint for submitting client transactions</li><li>Remove commit from internal wallet</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
+        <item>
             <title><![CDATA[SRE Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-07-sre</link>
             <guid>2023-07-07-sre</guid>
