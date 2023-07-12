@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-07-07T00:00:00.000Z</updated>
+    <updated>2023-07-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-07-12-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-07-12-consensus"/>
+        <updated>2023-07-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the team working on UTxO-HD discovered a space leak in the peer metrics code. This was communicated to the Networking team who has a <a href="https://github.com/input-output-hk/ouroboros-network/pull/4620" target="_blank" rel="noopener noreferrer">proposed fix</a>. The ad-hoc benchmarks that the team ran using a local immutable DB server showed good memory and time performance. We still have to check the performance on a memory constrained machine.</p><p>The team working on the Genesis design started onboarding the team of engineers that will implement the new Genesis protocol. This team is also finalizing the statistical model for historical Genesis feasibility.</p><p>On the support front, the team <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/200" target="_blank" rel="noopener noreferrer">drafted</a> an information exchange requirement (IER) for the Networking team to safely and efficiently control peer load.</p>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Crypto Team Update]]></title>
         <id>2023-07-07-crypto</id>

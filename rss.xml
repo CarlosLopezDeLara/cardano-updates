@@ -4,10 +4,19 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 07 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Consensus Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-07-12-consensus</link>
+            <guid>2023-07-12-consensus</guid>
+            <pubDate>Wed, 12 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the team working on UTxO-HD discovered a space leak in the peer metrics code. This was communicated to the Networking team who has a <a href="https://github.com/input-output-hk/ouroboros-network/pull/4620" target="_blank" rel="noopener noreferrer">proposed fix</a>. The ad-hoc benchmarks that the team ran using a local immutable DB server showed good memory and time performance. We still have to check the performance on a memory constrained machine.</p><p>The team working on the Genesis design started onboarding the team of engineers that will implement the new Genesis protocol. This team is also finalizing the statistical model for historical Genesis feasibility.</p><p>On the support front, the team <a href="https://github.com/input-output-hk/ouroboros-consensus/pull/200" target="_blank" rel="noopener noreferrer">drafted</a> an information exchange requirement (IER) for the Networking team to safely and efficiently control peer load.</p>]]></content:encoded>
+            <category>consensus</category>
+        </item>
         <item>
             <title><![CDATA[Crypto Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-07-crypto</link>
