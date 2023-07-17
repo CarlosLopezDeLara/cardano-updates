@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-07-13T00:00:00.000Z</updated>
+    <updated>2023-07-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-07-14-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-07-14-hydra"/>
+        <updated>2023-07-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week the team focused on exploring the event sourced persistence in order
+to improve <code>hydra-node</code> performance. Because of this work the team noticed we
+need to refactor the emit snapshot emission logic and update the spec in the
+light of new changes. They also took the time to revisit their goals and product
+plans for the next quarter as well as doing some security fixes related to
+multisignatures.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Finished spike about performance improvements of event sourced persistence <a href="https://github.com/input-output-hk/hydra/pull/963" target="_blank" rel="noopener noreferrer">#963</a>.</li><li>Refactor snapshot emission in protocol logic.</li><li>Revisited our roadmap and goals.</li><li>Prepared and conducated a learning session on lean-waste.</li><li>Improve security of multi-signature checks, see <a href="https://github.com/input-output-hk/hydra/security/advisories/GHSA-c8qp-cv4h-vcc4" target="_blank" rel="noopener noreferrer">this Github security advisory</a>.</li><li>Implemented a cache friendly way to version our binaries <a href="https://github.com/input-output-hk/hydra/pull/962" target="_blank" rel="noopener noreferrer">#962</a>.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Implement Event sourced persistence <a href="https://github.com/input-output-hk/hydra/pull/913" target="_blank" rel="noopener noreferrer">#913</a>.</li><li>Remove deprecated internal commit <a href="https://github.com/input-output-hk/hydra/pull/954" target="_blank" rel="noopener noreferrer">#954</a> and close <a href="https://github.com/input-output-hk/hydra/pull/728" target="_blank" rel="noopener noreferrer">#728</a>.</li></ul>]]></content>
+        <author>
+            <name>Franco Testagrossa</name>
+            <uri>https://github.com/ffakenz</uri>
+        </author>
+        <author>
+            <name>Sasha Bogicevic</name>
+            <uri>https://github.com/v0d1ch</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mithril Team Update]]></title>
         <id>2023-07-13-mithril</id>
