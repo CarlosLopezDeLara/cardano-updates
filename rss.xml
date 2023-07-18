@@ -60,6 +60,19 @@ Included benchmarks and further tests.</li></ul><h3 class="anchor anchorWithStic
             <category>crypto</category>
         </item>
         <item>
+            <title><![CDATA[Goedel Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-07-07-goedel</link>
+            <guid>2023-07-07-goedel</guid>
+            <pubDate>Fri, 07 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The team works on applied research and consulting in formal methods]]></description>
+            <content:encoded><![CDATA[<p>The team works on applied research and consulting in formal methods
+that is directly applicable to evidence based engineering in Core Tech
+and beyond.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This sprint the teams have been working on finalising their ICE papers
+for publication in EPTCS, formalising concensus, and investigating chain
+sync.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="details">Details<a class="hash-link" href="#details" title="Direct link to heading">​</a></h2><ul><li><p>Preparing final versions of ICE papers</p></li><li><p>Reviewing the chain sync design and documentation</p></li><li><p>Refactoring the thorn calculus</p></li><li><p>First draft of Praos specification</p></li><li><p>Developing bounding factors on timeouts</p></li></ul>]]></content:encoded>
+            <category>goedel</category>
+        </item>
+        <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-07-hydra</link>
             <guid>2023-07-07-hydra</guid>
