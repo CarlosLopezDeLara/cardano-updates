@@ -2,11 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-07-14T00:00:00.000Z</updated>
+    <updated>2023-07-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-07-21-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-07-21-hydra"/>
+        <updated>2023-07-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team updated the specification to align with recent
+off-chain protocol changes, completed refactoring the snapshot emission
+in preparation for event-sourced protocol logic, and updated to GHC
+9.2.7, resulting in improved compile times and slightly smaller Plutus
+scripts.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Updated the specification to match the recent off-chain protocol
+changes to complete
+<a href="https://github.com/input-output-hk/hydra/pull/728" target="_blank" rel="noopener noreferrer">#728</a></li><li>Refactored the snapshot emission logic in preparation for event
+sourced protocol logic.</li><li>Updated to GHC 9.2.7, which led to improved compile times and
+slightly smaller plutus scripts.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Monthly review meeting next wednesday and July report</li><li>Reflect latest information onto our roadmap.</li><li>Actual implemention of event-sourced persistence
+<a href="https://github.com/input-output-hk/hydra/pull/913" target="_blank" rel="noopener noreferrer">#913</a>.</li><li>Update the use cases section on <a href="https://hydra.family" target="_blank" rel="noopener noreferrer">https://hydra.family</a></li><li>Remove deprecated internal commit
+<a href="https://github.com/input-output-hk/hydra/pull/954" target="_blank" rel="noopener noreferrer">#954</a>.</li></ul>]]></content>
+        <author>
+            <name>Sebastian Nagel</name>
+            <uri>https://github.com/ch1bo</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-07-14-hydra</id>
