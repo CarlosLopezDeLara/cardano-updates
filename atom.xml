@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-07-21T00:00:00.000Z</updated>
+    <updated>2023-07-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-07-26-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-07-26-consensus"/>
+        <updated>2023-07-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The <code>db-sync</code> team confirmed that the adaptor module the Consensus team provided for UTxO-HD integration, shows no performance degradation. Other clients who wish to integrate with UTxO-HD without using a on-disk storage could use that same approach for now.
+We also focused on completing tracing support for UTxO-HD in <code>cardano-node</code>.
+Currently we are working on UTxO-HD documentation, both for downstream consumers and for the general public; and generalizing the implementation further. </p><p>The team working on Genesis decided on a Genesis-motivated change of the epoch structure with the researchers, wrote a self-contained description of the statistical model for historical Genesis windows and eclipse durations, and merged two small improvements to the <code>ChainSync</code> client as part of the onboarding efforts for the team that will implement Genesis.</p><p>The Consensus team also investigated an issue on sanchonet (the Conway testnet) manifesting in long syncing pauses; identified a ledger bug which was promptly fixed by the Ledger team.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="genesis-liaising">Genesis liaising<a class="hash-link" href="#genesis-liaising" title="Direct link to heading">​</a></h3><p>Improvements to the <code>ChainSync</code> client:</p><ul><li><a href="https://github.com/input-output-hk/ouroboros-consensus/pull/222" target="_blank" rel="noopener noreferrer">#222</a>.</li><li><a href="https://github.com/input-output-hk/ouroboros-consensus/pull/233" target="_blank" rel="noopener noreferrer">#233</a>.</li></ul>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-07-21-hydra</id>
