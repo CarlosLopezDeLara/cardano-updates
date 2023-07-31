@@ -4,10 +4,26 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 27 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 28 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-07-28-hydra</link>
+            <guid>2023-07-28-hydra</guid>
+            <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>During this week, the Hydra team achieved significant progress in various areas.
+They conducted the monthly review meeting for July, which continously ensures
+transparent communication and project evaluation. The team migrated the core
+logic of the node to an event-sourced architecture and incremental writes of
+events to persistence, enhancing the project<!-- -->’<!-- -->s performance and maintainability.
+Furthermore, the team added the ability to read protocol parameters via the API
+and fixed the CI workflows to support pull requests from forks of external
+contributors, streamlining the development process for community involvement.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Held the monthly review meeting for July (<a href="https://drive.google.com/file/d/14ANZ3efuxgXpYK94EBWxZLR9TtN7voru/" target="_blank" rel="noopener noreferrer">recording</a>)</li><li>Migrate the core logic of the node to an event-sourced architecture <a href="https://github.com/input-output-hk/hydra/pull/999" target="_blank" rel="noopener noreferrer">#999</a></li><li>Updated persistence to faster incremental writes of events <a href="https://github.com/input-output-hk/hydra/pull/1000" target="_blank" rel="noopener noreferrer">#1000</a></li><li>Added ability to read protocol parameters via API <a href="https://github.com/input-output-hk/hydra/issues/735" target="_blank" rel="noopener noreferrer">#735</a></li><li>Fix CI workflows to support pull requests from forks of external contributors <a href="https://github.com/input-output-hk/hydra/pull/993" target="_blank" rel="noopener noreferrer">#993</a></li><li>Updated to GHC 9.2.8 <a href="https://github.com/input-output-hk/hydra/pull/1005" target="_blank" rel="noopener noreferrer">#1005</a></li><li>Prepared an updated use cases section on <a href="https://hydra.family" target="_blank" rel="noopener noreferrer">https://hydra.family</a> (published with next release)</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Publish monthly report</li><li>Complete user transaction submission work <a href="https://github.com/input-output-hk/hydra/issues/966" target="_blank" rel="noopener noreferrer">#966</a></li><li>Remove commit from internal wallet (deprecated) <a href="https://github.com/input-output-hk/hydra/issues/954" target="_blank" rel="noopener noreferrer">#954</a></li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
         <item>
             <title><![CDATA[Mithril Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-27-mithril</link>
