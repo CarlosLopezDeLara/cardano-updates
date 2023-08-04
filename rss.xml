@@ -20,6 +20,31 @@ Should be merged in the coming week.</li></ul><h3 class="anchor anchorWithSticky
         </item>
         <item>
             <title><![CDATA[Network Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-08-04-network</link>
+            <guid>2023-08-04-network</guid>
+            <pubDate>Fri, 04 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level overview of sprint 41]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-overview-of-sprint-41">High-level overview of <a href="https://github.com/orgs/input-output-hk/projects/19/views/16?filterQuery=sprint%3A%22sprint+41%22" target="_blank" rel="noopener noreferrer">sprint 41</a><a class="hash-link" href="#high-level-overview-of-sprint-41" title="Direct link to heading">​</a></h2><p><em>24th July - 6th August 2023</em></p><p>We started the implementation of <strong>bootstrap peers</strong>.  Bootstrap peers are designed
+to provide a safety guarantee for nodes joining the network while still taking
+advantage of the distributed network for nodes that are synced.  This will be
+an intermediate step before Genesis which will allow for further distribute the
+system.  The bootstrap peers will be run by some trusted partners like CF,
+Emurgo or IOG.   They are primarily designed for leaf nodes (e.g. full node
+wallets), which often end up syncing and require access to the honest chain. See
+<a href="https://github.com/input-output-hk/ouroboros-network/issues/4615" target="_blank" rel="noopener noreferrer">ouroboros-network#4615</a> for a more detailed implementation plan.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-contributions">Other contributions<a class="hash-link" href="#other-contributions" title="Direct link to heading">​</a></h2><p>We started to use <code>nothunks</code> library to discover if we have any unevaluated
+thunks which can lead to memory leaks (<a href="https://github.com/input-output-hk/ouroboros-network/issues/4633" target="_blank" rel="noopener noreferrer">ouroboros-network#4633</a>.  We found a small one in the peer metric
+component of the P2P network.  Fixing it put us on a small detour of fixing the API
+of the <a href="https://github.com/input-output-hk/cardano-base/tree/master/strict-checked-vars" target="_blank" rel="noopener noreferrer"><code>strict-checked-vars</code></a> package: <a href="https://github.com/input-output-hk/cardano-base/pulls/431" target="_blank" rel="noopener noreferrer">cardano-base#431</a>, <a href="https://github.com/input-output-hk/cardano-base/pulls/432" target="_blank" rel="noopener noreferrer">cardano-base#432</a>,
+as well as adding <code>NFData</code> instance to <a href="https://github.com/input-output-hk/io-sim/pull/110" target="_blank" rel="noopener noreferrer"><code>io-classes</code></a>.</p><p>We released a new version of <code>io-classes</code> (version <code>1.2.0.0</code>) and related
+packages to <a href="https://hackage.haskell.org/package/io-classes-1.2.0.0io-classes-1.2.0.0" target="_blank" rel="noopener noreferrer">Hackage</a>.</p><p>We addressed all review comments on the eclipse evasion PR which introduces big
+ledger peers, <a href="https://github.com/input-output-hk/ouroboros-network/issues/3886" target="_blank" rel="noopener noreferrer">ouroboros-network#3886</a>.</p><p>We fixed how <code>SIGHUP</code> signal handlers are registered, so it's not possible to
+shutdown a node which was starting while trying to update network topology,
+see <a href="https://github.com/input-output-hk/cardano-node/pull/5421" target="_blank" rel="noopener noreferrer">cardano-node#5421</a>.</p><p>In the previous update, I didn't mention that in the previous sprint ( we released
+<a href="https://github.com/input-output-hk/ouroboros-network/blob/f84fcddce472d6cfc2b838b20a2ad085fe0896ed/ouroboros-network/CHANGELOG.md" target="_blank" rel="noopener noreferrer"><code>ouroboros-network-0.8.2.0</code></a> and <a href="https://github.com/input-output-hk/ouroboros-network/blob/ouroboros-network-framework-0.7.0.0/ouroboros-network-framework/CHANGELOG.md" target="_blank" rel="noopener noreferrer"><code>ouroboros-network-framework-0.7.0.0</code></a>.</p>]]></content:encoded>
+            <category>network</category>
+        </item>
+        <item>
+            <title><![CDATA[Network Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-31-network</link>
             <guid>2023-07-31-network</guid>
             <pubDate>Mon, 31 Jul 2023 00:00:00 GMT</pubDate>
