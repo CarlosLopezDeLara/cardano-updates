@@ -38,7 +38,10 @@ wallets), which often end up syncing and require access to the honest chain. See
 thunks which can lead to memory leaks (<a href="https://github.com/input-output-hk/ouroboros-network/issues/4633" target="_blank" rel="noopener noreferrer">ouroboros-network#4633</a>.  We found a small one in the peer metric
 component of the P2P network.  Fixing it put us on a small detour of fixing the API
 of the <a href="https://github.com/input-output-hk/cardano-base/tree/master/strict-checked-vars" target="_blank" rel="noopener noreferrer"><code>strict-checked-vars</code></a> package: <a href="https://github.com/input-output-hk/cardano-base/pulls/431" target="_blank" rel="noopener noreferrer">cardano-base#431</a>, <a href="https://github.com/input-output-hk/cardano-base/pulls/432" target="_blank" rel="noopener noreferrer">cardano-base#432</a>,
-as well as adding <code>NFData</code> instance to <a href="https://github.com/input-output-hk/io-sim/pull/110" target="_blank" rel="noopener noreferrer"><code>io-classes</code></a>.</p><p>We released a new version of <code>io-classes</code> (version <code>1.2.0.0</code>) and related
+as well as adding <code>NFData</code> instance to <a href="https://github.com/input-output-hk/io-sim/pull/110" target="_blank" rel="noopener noreferrer"><code>io-classes</code></a>.  We also
+improved <code>nothunks</code> library to make debugging easier and we provided a
+<code>NoThunks</code> instance for <code>ThreadId</code> which we will need in the future (see
+<a href="https://github.com/input-output-hk/nothunks/pull/33" target="_blank" rel="noopener noreferrer">nothunks#33</a>).</p><p>We released a new version of <code>io-classes</code> (version <code>1.2.0.0</code>) and related
 packages to <a href="https://hackage.haskell.org/package/io-classes-1.2.0.0io-classes-1.2.0.0" target="_blank" rel="noopener noreferrer">Hackage</a>.</p><p>We addressed all review comments on the eclipse evasion PR which introduces big
 ledger peers, <a href="https://github.com/input-output-hk/ouroboros-network/issues/3886" target="_blank" rel="noopener noreferrer">ouroboros-network#3886</a>.</p><p>We fixed how <code>SIGHUP</code> signal handlers are registered, so it's not possible to
 shutdown a node which was starting while trying to update network topology,
