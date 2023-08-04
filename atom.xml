@@ -54,6 +54,26 @@ see <a href="https://github.com/input-output-hk/cardano-node/pull/5421" target="
         <category label="network" term="network"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Performance & tracing update]]></title>
+        <id>2023-08-04-performance-and-tracing</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-08-04-performance-and-tracing"/>
+        <updated>2023-08-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><ul><li>Benchmarking: We're adjusting the benchmarking cluster to handle runs for node version <code>8.2.0</code>.</li><li>Tracing: We've finished optimization of the new tracing system and added extra robustness with regard to namespacing.</li><li>Infrastructure: We've been working on making all benchmarking code compliant with the latest GHC9.6.</li><li>Nomad backend: The new backend has seen adjustments due to a change of underlying hardware. Additionally, we've successfully performed various benchmarking runs on it.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-overview">Low level overview<a class="hash-link" href="#low-level-overview" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="benchmarking">Benchmarking<a class="hash-link" href="#benchmarking" title="Direct link to heading">​</a></h3><p>The <code>8.2.0</code> version of <code>cardano-node</code> required adjustment of some of the sanity checks that are part of our benchmarking
+cluster automation. We've pinpointed the necessary changes and are currently setting up the cluster for the new node version.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tracing">Tracing<a class="hash-link" href="#tracing" title="Direct link to heading">​</a></h3><p>The optimization efforts for the new tracing system have been completed and have significantly reduced the resource footprint
+when using it as default for a running node.  </p><p>A linchpin of the new system is the organization of traces into a namespace hierarchy. This affects configuration, self-documentation as well as rendering of desired trace messages. The new system is now equipped to detect any
+inconsistency in the whole set of tracers, defined across all components, even if they are never turned on in a running node.
+This feature adds another layer of robustness to the whole system.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="infrastructure">Infrastructure<a class="hash-link" href="#infrastructure" title="Direct link to heading">​</a></h3><p>A potential switch to GHC9.6 (or higher) required some work on our code bases to make it compliant with recent compiler
+versions. We've future-proofed our benchmarking code.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nomad-backend">Nomad backend<a class="hash-link" href="#nomad-backend" title="Direct link to heading">​</a></h3><p>The hardware cluster that our nomad backend was accessing has been changed, and we were able to adjust our backend
+accordingly without touching its higher level abstractions and functionality. Moreover, with the new hardware and cluster setup, certain tasks such as retrieving run artifacts or healthcheck monitoring have become more performant.  </p><p>The validation phase is ongoing. We were able to perform successful runs and analyses for various <code>8.x</code> node versions, including <code>8.2.0-pre</code>. With parallel runs on the current cluster, we hope to measure the same effects we've observed with the
+nomad backend - which will be a big step towards production use.</p>]]></content>
+        <author>
+            <name>Michael Karg</name>
+            <uri>https://github.com/mgmeier</uri>
+        </author>
+        <category label="performance-tracing" term="performance-tracing"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Network Team Update]]></title>
         <id>2023-07-31-network</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-07-31-network"/>
