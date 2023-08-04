@@ -4,10 +4,20 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Mon, 31 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Crypto Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-08-04-crypto</link>
+            <guid>2023-08-04-crypto</guid>
+            <pubDate>Fri, 04 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The open fronts that the crypto team is working on are:</p><ul><li>Sidechains: Analysis of Halo2 SNARK verifier to plan a plutus implementation</li><li>mithril: Full node verifier</li><li>musig2: Finalised the missing fuzz tests</li><li>kes_agent: engineer on PTO. Work halted </li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-summary">Low level summary<a class="hash-link" href="#low-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="mithril">Mithril<a class="hash-link" href="#mithril" title="Direct link to heading">​</a></h3><ul><li>Work on a mithril flaky test <a href="https://github.com/input-output-hk/mithril/pull/1105" target="_blank" rel="noopener noreferrer">#1105</a></li><li>Keep working on Full Node Verifier <a href="https://github.com/input-output-hk/mithril/pull/939" target="_blank" rel="noopener noreferrer">#939</a>.
+Should be merged in the coming week.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="musig2">MuSig2<a class="hash-link" href="#musig2" title="Direct link to heading">​</a></h3><ul><li>Finalised the fuzz tests <a href="https://github.com/input-output-hk/musig2/pull/43" target="_blank" rel="noopener noreferrer">#43</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sidechains">Sidechains<a class="hash-link" href="#sidechains" title="Direct link to heading">​</a></h3><ul><li>Analysis of Halo2 verifier. Necessary for a future implementation of a plutus verifier.</li></ul>]]></content:encoded>
+            <category>crypto</category>
+        </item>
         <item>
             <title><![CDATA[Network Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-31-network</link>
