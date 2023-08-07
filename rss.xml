@@ -92,6 +92,15 @@ nomad backend - which will be a big step towards production use.</p>]]></content
             <category>performance-tracing</category>
         </item>
         <item>
+            <title><![CDATA[SRE Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-08-04-sre</link>
+            <guid>2023-08-04-sre</guid>
+            <pubDate>Fri, 04 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>The SRE team continues work on cardano environment improvements and general environment maintenance.</p><p>Some notable recent updates or improvements include:</p><ul><li>Preprod and preview envionments were updated to 8.1.2.</li><li>Sanchonet and shelley-qa environments were updated to 8.2.0-pre.</li><li>Work on a new cardano performance repo which utilizes a lightweight Cloudformation/Rain to Terraform infra bootstrap and Nomad environment has begun.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cardano-ops">Cardano-ops<a class="hash-link" href="#cardano-ops" title="Direct link to heading">​</a></h3><ul><li>Deploy cardano-node 8.1.2, merge p2p modifications, script fixes and cleanup: <a href="https://github.com/input-output-hk/cardano-ops/pull/416" target="_blank" rel="noopener noreferrer">cardano-ops-pull-416</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cardano-perf">Cardano-perf<a class="hash-link" href="#cardano-perf" title="Direct link to heading">​</a></h3><ul><li>New repo: <a href="https://github.com/input-output-hk/cardano-perf" target="_blank" rel="noopener noreferrer">cardano-perf-repo</a></li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="cardano-world">Cardano-world<a class="hash-link" href="#cardano-world" title="Direct link to heading">​</a></h3><ul><li>Deploy cardano-node 8.1.2, emurgo p2p config, optimize faucet resources: <a href="https://github.com/input-output-hk/cardano-world/pull/104" target="_blank" rel="noopener noreferrer">cardano-world-pull-104</a></li><li>Resolve nomad segfaults via nix versioning and fixup dbSync metal job for iohkNix env update: <a href="https://github.com/input-output-hk/cardano-world/pull/105" target="_blank" rel="noopener noreferrer">cardano-world-pull-105</a></li><li>Add nomad dbSync fix for iohkNix env update: <a href="https://github.com/input-output-hk/cardano-world/pull/106" target="_blank" rel="noopener noreferrer">cardano-world-pull-106</a></li></ul>]]></content:encoded>
+            <category>sre</category>
+        </item>
+        <item>
             <title><![CDATA[Network Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-07-31-network</link>
             <guid>2023-07-31-network</guid>
