@@ -4,10 +4,23 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 10 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 11 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Performance & tracing update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-08-11-performance-and-tracing</link>
+            <guid>2023-08-11-performance-and-tracing</guid>
+            <pubDate>Fri, 11 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><ul><li>Benchmarking: We've concluded benchmarking node version <code>8.2.0</code>.</li><li>Tracing: Optimization of the new tracing system has been merged; we're currently working on self-documenting tracing configuration.</li><li>Nomad backend: A PR that makes our backend take advantage of added flexibility of the new hardware cluster has been merged.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-overview">Low level overview<a class="hash-link" href="#low-level-overview" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="benchmarking">Benchmarking<a class="hash-link" href="#benchmarking" title="Direct link to heading">​</a></h3><p>As part of our release benchmarking cycle, we've completed and analysed the runs for the <code>8.2.0</code> version of <code>cardano-node</code>. In addition to the adjustment of sanity checks in our automation, we had to implement small changes in the analysis pipeline as well to accomodate the new version.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tracing">Tracing<a class="hash-link" href="#tracing" title="Direct link to heading">​</a></h3><p>A significant amount of optimizations for the new tracing system has finally been merged to <code>master</code>. At the moment,
+we're working on having a trace message self-document the final tracing configuration of a running node. Apart from adding
+insight into the system, this feature also aims at making future hot reloading of tracing configuration explicit and straightforward.  </p><p>Furthermore, we're setting up a final round of system integration level benchmarks comparing new against legacy tracing.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nomad-backend">Nomad backend<a class="hash-link" href="#nomad-backend" title="Direct link to heading">​</a></h3><p>The new hardware cluster permits greater flexibility as far as SSH access is concerned. By using nomad for a consistent
+and reliable deployment, but taking advantage of direct connections for healthchecks and data transfer we believe we were
+able to reduce overall network latency in the nomad cluster. This improves confidence when capturing all network related measurements during our benchmarks.  </p><p>A PR that adds these capabalities to our nomad backend - along with very many quality-of-life improvements - has been merged to <code>master</code>.</p>]]></content:encoded>
+            <category>performance-tracing</category>
+        </item>
         <item>
             <title><![CDATA[Mithril Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-08-10-mithril</link>
