@@ -80,6 +80,21 @@
             ]
         },
         {
+            "id": "2023-08-04-goedel",
+            "content_html": "<p>The team works on applied research and consulting in formal methods\nthat is directly applicable to evidence based engineering in Core Tech\nand beyond.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>The team is formalising mini protocols and also further developing the\nperformance modelling prototype.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"details\">Details<a class=\"hash-link\" href=\"#details\" title=\"Direct link to heading\">​</a></h2><ul><li><p>Developing new framework for specification and verification of\nmini-protocols which is closer to the Haskell implementation.</p></li><li><p>Developed a new internal representation for the DeltaQ algebra that\nallows for more modularity in backend implementations</p></li><li><p>Discussions regarding the Cardano networking specification</p></li></ul>",
+            "url": "https://input-output-hk.github.io/cardano-updates/2023-08-04-goedel",
+            "title": "Goedel Team Update",
+            "summary": "The team works on applied research and consulting in formal methods",
+            "date_modified": "2023-08-04T00:00:00.000Z",
+            "author": {
+                "name": "James Chapman",
+                "url": "https://github.com/jmchapman"
+            },
+            "tags": [
+                "goedel"
+            ]
+        },
+        {
             "id": "2023-08-04-hydra",
             "content_html": "<h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High-level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>This week, the Hydra team achieved notable progress in various aspects of the\nproject. The team updated the use case section for auctions on the <a href=\"https://hydra.family/head-protocol/unstable/use-cases/\" target=\"_blank\" rel=\"noopener noreferrer\">/unstable</a>\nbranch of the website, improving the understanding of Hydra<!-- -->’<!-- -->s applicability.</p><p>From the development side, the team successfully completed event-sourced\npersistence, a key enhancement in the project<!-- -->’<!-- -->s architecture which improves\noff-chain transaction processing performance. They also added a\n<!-- -->“<!-- -->submit-transaction<!-- -->”<!-- --> endpoint to the API.</p><p>In addition to project-related progress, the team actively engaged in community\nreviews for several catalyst proposals related to Hydra and Mithril,\ncontributing to the wider Cardano ecosystem.</p><p>Finally, the full report for the month of July was also published <a href=\"https://hydra.family/head-protocol/monthly/2023-07\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"what-did-the-team-achieve-this-week\">What did the team achieve this week<a class=\"hash-link\" href=\"#what-did-the-team-achieve-this-week\" title=\"Direct link to heading\">​</a></h2><ul><li>Published the <a href=\"https://hydra.family/head-protocol/monthly/2023-07\" target=\"_blank\" rel=\"noopener noreferrer\">monthly report for July</a></li><li>Updated the use case section for auctions (published on <a href=\"https://hydra.family/head-protocol/unstable/use-cases/\" target=\"_blank\" rel=\"noopener noreferrer\">/unstable</a> branch)</li><li>Completed event sourced persistence <a href=\"https://github.com/input-output-hk/hydra/issues/913\" target=\"_blank\" rel=\"noopener noreferrer\">#913</a></li><li>Added a <!-- -->“<!-- -->submit-transaction<!-- -->”<!-- --> endpoint to the API <a href=\"https://github.com/input-output-hk/hydra/issues/966\" target=\"_blank\" rel=\"noopener noreferrer\">#966</a></li><li>Community reviews for several catalyst proposals related to Hydra and Mithril</li><li>Created a network testing tool (hydra-net) <a href=\"https://github.com/input-output-hk/hydra/pull/1006\" target=\"_blank\" rel=\"noopener noreferrer\">#1006</a></li></ul><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"what-are-the-goals-of-next-week\">What are the goals of next week<a class=\"hash-link\" href=\"#what-are-the-goals-of-next-week\" title=\"Direct link to heading\">​</a></h2><ul><li>Update hydra-node to work with cardano-node version 8.x</li><li>Remove the internal commit functionality</li><li>Release version 0.12.0</li><li>Update &amp; streamline tutorial to work with latest version of hydra-node</li></ul>",
             "url": "https://input-output-hk.github.io/cardano-updates/2023-08-04-hydra",
@@ -257,6 +272,21 @@
             },
             "tags": [
                 "sre"
+            ]
+        },
+        {
+            "id": "2023-07-20-goedel",
+            "content_html": "<p>The team works on applied research and consulting in formal methods\nthat is directly applicable to evidence based engineering in Core Tech\nand beyond.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"high-level-summary\">High level summary<a class=\"hash-link\" href=\"#high-level-summary\" title=\"Direct link to heading\">​</a></h2><p>The team is working on formalising mini protocols, the performance\nmodelling prototype and also finishing off their ICE papers.</p><h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"details\">Details<a class=\"hash-link\" href=\"#details\" title=\"Direct link to heading\">​</a></h2><ul><li><p>Formalization of the chain synchronization mini-protocol in the\nthorn calculus</p></li><li><p>Final pre-publication steps for ICE 2023 papers</p></li><li><p>Developing approach for specification and verification of\nmini-protocols</p></li><li><p>Started work on porting the DeltaQ framework to a new, more concrete\nbackend based on piecewise-polynomials</p></li></ul>",
+            "url": "https://input-output-hk.github.io/cardano-updates/2023-07-20-goedel",
+            "title": "Goedel Team Update",
+            "summary": "The team works on applied research and consulting in formal methods",
+            "date_modified": "2023-07-20T00:00:00.000Z",
+            "author": {
+                "name": "James Chapman",
+                "url": "https://github.com/jmchapman"
+            },
+            "tags": [
+                "goedel"
             ]
         },
         {
