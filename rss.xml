@@ -4,10 +4,27 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Fri, 11 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[DB-sync Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-08-17-db-sync</link>
+            <guid>2023-08-17-db-sync</guid>
+            <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We have integrated many new Conway feutures and allow db-sync to sync sanchonet.
+We also continued testing and improving the new db-sync options.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><ul><li>Conway integration
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1484" target="_blank" rel="noopener noreferrer">#1484</a></li><li>Support for Sanchonet
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1476" target="_blank" rel="noopener noreferrer">#1476</a></li><li>Stake distribution is computed earlier
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1484" target="_blank" rel="noopener noreferrer">#1484</a></li><li>Deposit ledger events are now used. This reduces the db queries and makes syncing faster
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1484" target="_blank" rel="noopener noreferrer">#1484</a></li><li>Testing new db-sync options
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1466" target="_blank" rel="noopener noreferrer">#1466</a></li><li>Added support for ghc-9.6
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1479" target="_blank" rel="noopener noreferrer">#1479</a></li><li>Tech debt: improve exceptions
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1471" target="_blank" rel="noopener noreferrer">#1471</a></li></ul>]]></content:encoded>
+            <category>db-sync</category>
+        </item>
         <item>
             <title><![CDATA[Hydra Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-08-11-hydra</link>

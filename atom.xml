@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-08-11T00:00:00.000Z</updated>
+    <updated>2023-08-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[DB-sync Team Update]]></title>
+        <id>2023-08-17-db-sync</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-08-17-db-sync"/>
+        <updated>2023-08-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We have integrated many new Conway feutures and allow db-sync to sync sanchonet.
+We also continued testing and improving the new db-sync options.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lower-level-summary">Lower level summary<a class="hash-link" href="#lower-level-summary" title="Direct link to heading">​</a></h2><ul><li>Conway integration
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1484" target="_blank" rel="noopener noreferrer">#1484</a></li><li>Support for Sanchonet
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1476" target="_blank" rel="noopener noreferrer">#1476</a></li><li>Stake distribution is computed earlier
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1484" target="_blank" rel="noopener noreferrer">#1484</a></li><li>Deposit ledger events are now used. This reduces the db queries and makes syncing faster
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1484" target="_blank" rel="noopener noreferrer">#1484</a></li><li>Testing new db-sync options
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1466" target="_blank" rel="noopener noreferrer">#1466</a></li><li>Added support for ghc-9.6
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1479" target="_blank" rel="noopener noreferrer">#1479</a></li><li>Tech debt: improve exceptions
+<a href="https://github.com/input-output-hk/cardano-db-sync/pull/1471" target="_blank" rel="noopener noreferrer">#1471</a></li></ul>]]></content>
+        <author>
+            <name>Kostas Dermentzis</name>
+            <uri>https://github.com/kderme</uri>
+        </author>
+        <category label="db-sync" term="db-sync"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-08-11-hydra</id>
