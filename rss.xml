@@ -4,10 +4,29 @@
         <title>Cardano Updates Feed</title>
         <link>https://input-output-hk.github.io/cardano-updates/</link>
         <description>Regular updates from Cardano Development Teams</description>
-        <lastBuildDate>Thu, 17 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Hydra Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-08-18-hydra</link>
+            <guid>2023-08-18-hydra</guid>
+            <pubDate>Fri, 18 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level summary]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team released version 0.12.0, a significant update that
+brings support for cardano-node 8.1.2, along with performance enhancements and
+various API improvements. Additionally, the team successfully onboarded a new
+contributor who is now actively participating in operating a Hydra Head. They
+took part in a meeting of the Intersect open source committee and prepared the
+Hydra master-class for RareEvo, an educational initiative for the community.</p><p>If you happen to be at RareEvo, register for the Hydra master-class <a href="https://docs.google.com/forms/d/1Q9KIxwKeyZeNrKDBiYWceYjnbxIxaEwC8Eo5LWxSa2g/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">using this
+form</a>.
+We hope to make it possible to follow along on-line as well and will announce
+details on the Hydra announcements channel on the <a href="https://discord.gg/Qq5vNTg9PT" target="_blank" rel="noopener noreferrer">IOG discord
+server</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Released version 0.12.0 which adds support for cardano-node 8.1.2, performance
+and several API improvements. <a href="https://github.com/input-output-hk/hydra/releases/tag/0.12.0" target="_blank" rel="noopener noreferrer">Release notes</a></li><li>Replaced commit via websocket with external draft + submit. <a href="https://github.com/input-output-hk/hydra/issues/954" target="_blank" rel="noopener noreferrer">#954</a></li><li>Onboarded new contributor to the point where he actively participates in operating a Head now.</li><li>Joined a first meeting of the Intersect open source committee</li><li>Prepared the Hydra master-class for RareEvo.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Monthly review meeting</li><li>Run the Hydra master-class at RareEvo!</li><li>Updated Hydra tutorial including Mithril and re-record demo/tutorial stuff</li><li>Clear out red bin items (technical debt)</li><li>Groom network resilience and explorer features</li></ul>]]></content:encoded>
+            <category>hydra</category>
+        </item>
         <item>
             <title><![CDATA[Crypto Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-08-17-crypto</link>
