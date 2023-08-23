@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-08-18T00:00:00.000Z</updated>
+    <updated>2023-08-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-08-23-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-08-23-consensus"/>
+        <updated>2023-08-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>On the UTxO-HD front we reached another important milestone, where we handed over the implementation for benchmarking and testing. We are working on addressing the first issues that were found during the integration tests.
+On the Genesis front we are finalizing the argument that a checkpoint is not necessary for the initial release, including supporting to support said argument. We are also working on the new node release, and several improvements to our code-base.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd">UTxO-HD<a class="hash-link" href="#utxo-hd" title="Direct link to heading">​</a></h2><ul><li>We addressed the issues that came from the benchmarking and testing phase (see <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/314" target="_blank" rel="noopener noreferrer">#314</a>).<ul><li>We fixed the operational-certificate update exception (<a href="https://github.com/input-output-hk/ouroboros-consensus/pull/305" target="_blank" rel="noopener noreferrer">#305</a>).</li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="tech-debt">Tech debt<a class="hash-link" href="#tech-debt" title="Direct link to heading">​</a></h2><ul><li>We elaborated an inventory of the symbols used by downstream clients in an effort to clearly define the Consensus API, which will help managing changes and their impact to the downstream clients (see <a href="https://github.com/input-output-hk/cardano-api/tree/jasagredo/consensus-api" target="_blank" rel="noopener noreferrer">this branch</a>).</li><li>We extracted the SOP modules to a separate package as part of our effort to reduce the Consensus API surface area (see <a href="https://github.com/input-output-hk/ouroboros-consensus/tree/jasagredo/test-sop" target="_blank" rel="noopener noreferrer">this branch</a>).</li><li>We took the first step towards improving how the Cardano hard-fork block is instantiated when running a node (see <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/275" target="_blank" rel="noopener noreferrer">#275</a>).</li><li>We decreased the flakiness for our test suite (<a href="https://github.com/input-output-hk/ouroboros-consensus/pull/284" target="_blank" rel="noopener noreferrer">#284</a>).</li><li>We incorporated and merged the pull-request on query versioning (<a href="https://github.com/input-output-hk/ouroboros-consensus/pull/273" target="_blank" rel="noopener noreferrer">#273</a>).</li><li>We started working on new performance-based regression tests for mempool operations.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h2><ul><li><a href="https://github.com/nfrisby" target="_blank" rel="noopener noreferrer">Nick Frisby</a> continues with his engineer responsibilities. Notably getting the Consensus release out for node <code>pre-release 8.3</code>. Nick also began integrating it into downstream branches (<code>cardano{-api,-cli,-node}</code>). The Node team has now taken over, since Nick had progressed up to the point where they needed to start making new design decisions. Related PRs:<ul><li><a href="https://github.com/input-output-hk/ouroboros-consensus/pull/283" target="_blank" rel="noopener noreferrer">#283</a></li><li><a href="https://github.com/input-output-hk/ouroboros-consensus/pull/301" target="_blank" rel="noopener noreferrer">#301</a></li><li><a href="https://github.com/input-output-hk/ouroboros-consensus/pull/304" target="_blank" rel="noopener noreferrer">#304</a></li><li><a href="https://github.com/input-output-hk/ouroboros-consensus/pull/308" target="_blank" rel="noopener noreferrer">#308</a></li></ul></li></ul>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-08-18-hydra</id>
