@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-08-24T00:00:00.000Z</updated>
+    <updated>2023-08-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Mithril Team Update]]></title>
+        <id>2023-08-28-mithril</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-08-28-mithril"/>
+        <updated>2023-08-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level overview]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-overview">High level overview<a class="hash-link" href="#high-level-overview" title="Direct link to heading">​</a></h2><p>The Mithril team created an explorer page with the registered signers to give recognition to the SPOs already running on mainnet. They also worked on refactoring and standardizing errors in the Mithril nodes, and they enhanced the clarity and reduced verbosity of the logs for the signer and aggregator nodes. Additionally, they started working on the implementation of <code>zstandard</code> compression of the snapshot archive, and streaming its download and decompression in the client.</p><p>Finally, they implemented machine readable progress information in the client, and streamlined the process of verifying the registration status of a signer. </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-overview">Low level overview<a class="hash-link" href="#low-level-overview" title="Direct link to heading">​</a></h2><ul><li>Completed the issue <code>Create explorer page with registered signers</code> <a href="https://github.com/input-output-hk/mithril/issues/1097" target="_blank" rel="noopener noreferrer">#1097</a></li><li>Completed the issue <code>Simplify logs on the Signer/Aggregator</code> <a href="https://github.com/input-output-hk/mithril/issues/1106" target="_blank" rel="noopener noreferrer">#1106</a></li><li>Completed the issue <code>Refactor (de)serialization of crypto entities</code> <a href="https://github.com/input-output-hk/mithril/issues/668" target="_blank" rel="noopener noreferrer">#668</a></li><li>Completed the issue <code>Mithril client last snapshot download</code> <a href="https://github.com/input-output-hk/mithril/issues/1078" target="_blank" rel="noopener noreferrer">#1078</a></li><li>Completed the issue <code>Use the '/signers/registered' route to verify if a signer is registered</code> <a href="https://github.com/input-output-hk/mithril/issues/1152" target="_blank" rel="noopener noreferrer">#1152</a></li><li>Worked on the issue <code>Provide progress information with '--json' option in Client</code> <a href="https://github.com/input-output-hk/mithril/issues/1095" target="_blank" rel="noopener noreferrer">#1095</a></li><li>Worked on the issue <code>Use 'zstandard' compression for snapshot archives</code> <a href="https://github.com/input-output-hk/mithril/issues/876" target="_blank" rel="noopener noreferrer">#876</a></li><li>Worked on the issue <code>Make client download and extract the archive simultaneously</code> <a href="https://github.com/input-output-hk/mithril/issues/1115" target="_blank" rel="noopener noreferrer">#1115</a></li></ul>]]></content>
+        <author>
+            <name>Jean-Philippe Raynaud</name>
+            <uri>https://github.com/jpraynaud</uri>
+        </author>
+        <category label="mithril" term="mithril"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Performance & tracing update]]></title>
         <id>2023-08-24-performance-and-tracing</id>
