@@ -21,6 +21,25 @@
         <category label="mithril" term="mithril"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-08-25-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-08-25-hydra"/>
+        <updated>2023-08-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team conducted the monthly review meeting for Agust,which
+continously ensures transparent communication and project evaluation.</p><p>In terms of community engagement, the Hydra team gave a Hydra master-class at
+RareEvo workshop as an educational initiative for the community.
+Additionally, the team updated the Hydra demo and tutorial to include Mithril
+and latest release changes.</p><p>They also focused on exploring the Hydra network resiliance in order to improve
+<code>hydra-node</code> availability, as it becomes stuck very easily and that leads to a
+bad user experience.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Hydra master-class at RareEvo workshop!</li><li>Monthly report &amp; review meeting</li><li>Updated Hydra tutorial including Mithril and re-record demo/tutorial stuff</li><li>Groomed network resilience and explorer features <a href="https://github.com/input-output-hk/hydra/issues/188" target="_blank" rel="noopener noreferrer">#188</a></li><li>New ADR for “Resourced based API” <a href="https://github.com/input-output-hk/hydra/pull/1028" target="_blank" rel="noopener noreferrer">#1028</a></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Have a poc on network resilience working <a href="https://github.com/input-output-hk/hydra/issues/188" target="_blank" rel="noopener noreferrer">#188</a></li><li>Fix issue <a href="https://github.com/input-output-hk/hydra/issues/931" target="_blank" rel="noopener noreferrer">#931</a>: “Chain state in head state not updated on replayed observation”</li><li>Fix issue <a href="https://github.com/input-output-hk/hydra/issues/1039" target="_blank" rel="noopener noreferrer">#1039</a>: "Close transaction dropped from cardano-node"</li></ul>]]></content>
+        <author>
+            <name>Franco Testagrossa</name>
+            <uri>https://github.com/ffakenz</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Performance & tracing update]]></title>
         <id>2023-08-24-performance-and-tracing</id>
         <link href="https://input-output-hk.github.io/cardano-updates/2023-08-24-performance-and-tracing"/>
