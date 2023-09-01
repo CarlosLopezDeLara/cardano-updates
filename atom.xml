@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-08-28T00:00:00.000Z</updated>
+    <updated>2023-09-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hydra Team Update]]></title>
+        <id>2023-09-01-hydra</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-09-01-hydra"/>
+        <updated>2023-09-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High-level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High-level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>This week, the Hydra team focused primarily on changes needed in the network
+layer and have the first draft document related to needed design. They also
+improved the user experience by allowing a commit using inline datums.
+Discussed the off-chain governance with researchers and improved internal model
+tests. </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-achieve-this-week">What did the team achieve this week<a class="hash-link" href="#what-did-the-team-achieve-this-week" title="Direct link to heading">​</a></h2><ul><li>Monthly report published</li><li>Small changes to hydraw and tutorial in light of the Masterclass</li><li>Investigated a bug and saw it was solved by recent developments</li><li>Improved the model tests by fully validating L1 transactions</li><li>Enhanced the /commit API to also allow commit from scripts with inline datums (user request)</li><li>Discussed off-chain governance with IOG and CF researchers</li><li>Drafted a first network specification document in the context of Network resilience</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-the-goals-of-next-week">What are the goals of next week<a class="hash-link" href="#what-are-the-goals-of-next-week" title="Direct link to heading">​</a></h2><ul><li>Have a clear understanding of the changes we need for the "Improve network resiliency" feature</li><li>Groomed and agreed plan on incremental commits/decommits</li><li>Updated tutorials including CI workflows to check consistency</li><li>Update to GHC 9.6 and latest cardano dependencies (ledger/plutus)</li></ul>]]></content>
+        <author>
+            <name>Sasha Bogicevic</name>
+            <uri>https://github.com/v0d1ch</uri>
+        </author>
+        <category label="hydra" term="hydra"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mithril Team Update]]></title>
         <id>2023-08-28-mithril</id>
