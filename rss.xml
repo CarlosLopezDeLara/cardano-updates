@@ -22,6 +22,44 @@ tests. </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-did-the-team-
             <category>hydra</category>
         </item>
         <item>
+            <title><![CDATA[Network Team Update]]></title>
+            <link>https://input-output-hk.github.io/cardano-updates/2023-09-01-network</link>
+            <guid>2023-09-01-network</guid>
+            <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[High-level overview of sprint 43]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-overview-of-sprint-43">High-level overview of <a href="https://github.com/orgs/input-output-hk/projects/19/views/16?filterQuery=sprint%3A%22sprint+43%22" target="_blank" rel="noopener noreferrer">sprint 43</a><a class="hash-link" href="#high-level-overview-of-sprint-43" title="Direct link to heading">​</a></h2><p>In this sprint, we received contributions from <a href="https://cardanofoundation.org/" target="_blank" rel="noopener noreferrer">CF</a> &amp; <a href="https://galois.com/" target="_blank" rel="noopener noreferrer">Galois</a>.  Karl Knutsson
+(<a href="https://cardanofoundation.org/" target="_blank" rel="noopener noreferrer">CF</a>) has addressed various issues regarding peer churning in P2P, timeouts
+and our <code>WireShark</code> dissector.  While the <a href="https://galois.com/" target="_blank" rel="noopener noreferrer">Galois</a> developers focused on
+addressing issues from their review last year. See below for more details.</p><p>We continued working on bootstrap peers <a href="https://github.com/input-output-hk/ouroboros-network/pull/4661" target="_blank" rel="noopener noreferrer">ouroboros-network-#4661</a>.</p><p>We refactored our test suites: they are split into <code>io-tests</code> which require to
+be run natively on all platforms (these tests mostly contain tests that
+require <code>IO</code> system calls) and <code>sim-tests</code> which are platform independent.  We
+run <code>io-tests</code> on all supported platforms (e.g. <code>x86_64-linux</code>,
+<code>x86-64-darwin</code>, <code>aarch64-darwin</code> and <code>x86_64-w64-mingw32</code> (Windows)) natively.
+The <code>sim-tests</code> are not executed on <code>Windows</code> due to memory limitations on
+GitHub Actions runners. <a href="https://github.com/input-output-hk/ouroboros-network/issues/4653" target="_blank" rel="noopener noreferrer">ouroboros-network-#4653</a></p><p>We also started rebasing <code>typed-protocols</code> refactoring branches.</p><p>Marcin was appointed as the <code>cardano-node</code> release engineer for the <code>8.4.0-pre</code>
+version.  So far he integrated <code>cardano-ledger-conway-1.8</code> and
+<code>ouroboros-network-0.9.1.0</code> to <code>ouroboros-consensus</code>, <code>cardano-cli</code> and
+<code>cardano-api</code>.  Once we will have an integration branch for <code>cardano-node</code>,
+<code>cardano-ledger-conway-1.8</code> and <code>ouroboros-consensus</code> packages can be released
+to <code>CHaP</code> and PRs can be merged once they go through review &amp; CI.</p><p>We also fixed some smaller issues regarding peer sharing (both were discovered
+by Karl from <a href="https://cardanofoundation.org/" target="_blank" rel="noopener noreferrer">CF</a>). More details are included below.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="progress-on-p2p-addoption">Progress on P2P addoption<a class="hash-link" href="#progress-on-p2p-addoption" title="Direct link to heading">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="spo-relays">SPO relays<a class="hash-link" href="#spo-relays" title="Direct link to heading">​</a></h4><p>There are currently ~2000 relays running P2P
+enabled nodes that belong to 557 pools with a combined stake of 7900Mil Ada. On
+16th of August it was ~1700 relays, 531 pools with a combined stake of 7700Mil
+Ada.</p><p><img loading="lazy" alt="P2P relays" src="/cardano-updates/assets/images/2023-08-31-p2p-relays-8e5be189ad8437375c5067026c003556.png" width="2034" height="1588" class="img_ev3q"></p><p>The following graphs show several different versions of relays running on the mainnet.  The
+green line <code>NodeToNodeVersionV10.True</code> denotes P2P relays, which slowly
+increase over time.  The <code>V9</code> and earlier versions of the <code>node-to-node</code>
+the protocol indicates nodes version <code>1.35.x</code> or earlier.
+<img loading="lazy" alt="node versions" src="/cardano-updates/assets/images/2023-08-31-relay-versions-0a8d445e1b0f3a793ccdd94f4aacd421.png" width="2038" height="1594" class="img_ev3q"></p><p>Data has been kindly provided by <a href="https://cardanofoundation.org/" target="_blank" rel="noopener noreferrer">CF</a> and their mainnet monitoring
+infrastructure.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="iog-relays">IOG relays<a class="hash-link" href="#iog-relays" title="Direct link to heading">​</a></h4><p>As of this week, 90% of IOG relays are running a P2P setup. In the next sprint all
+IOG relays will be running P2P.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="detailed-description">Detailed description<a class="hash-link" href="#detailed-description" title="Direct link to heading">​</a></h2><p>In this sprint, we got a few contributions from <a href="https://cardanofoundation.org/" target="_blank" rel="noopener noreferrer">CF</a>:</p><ul><li>Karl made peer churning mechanism less aggressive <a href="https://github.com/input-output-hk/ouroboros-network/pull/4656" target="_blank" rel="noopener noreferrer">ouroboros-network-#4656</a>; and</li><li>he added timeouts for idle states in <code>ChainSync</code> &amp; <code>KeepAlive</code>
+miniprotocols.  These timeouts help a node remove idle connections from the
+responder (server) side <a href="https://github.com/input-output-hk/ouroboros-network/pull/4648" target="_blank" rel="noopener noreferrer">ouroboros-network-#4648</a>.</li><li>he improved the <code>WireShark</code> dissector by adding support for the <code>peer-sharing</code> mini-protocol <a href="https://github.com/input-output-hk/ouroboros-network/pull/4656" target="_blank" rel="noopener noreferrer">ouroboros-network-#4656</a>.</li></ul><p><a href="https://galois.com/" target="_blank" rel="noopener noreferrer">Galois</a> has been making progress in addressing some of the issues they raised in their review (last year):</p><ul><li>Mark Tullsen (<a href="https://galois.com/" target="_blank" rel="noopener noreferrer">Galois</a>) has been working on refactoring the main entry function of P2P <a href="https://github.com/input-output-hk/ouroboros-network/pull/4661" target="_blank" rel="noopener noreferrer">ouroboros-network-#4661</a> (in review);</li><li>Sam Cowger (<a href="https://galois.com/" target="_blank" rel="noopener noreferrer">Galois</a>) has been reviewing all use cases of <code>error</code> and <code>unsafe</code> calls
+<a href="https://github.com/input-output-hk/ouroboros-network/pull/4661" target="_blank" rel="noopener noreferrer">ouroboros-network-#4661</a> (in review).</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="peer-sharing">Peer Sharing<a class="hash-link" href="#peer-sharing" title="Direct link to heading">​</a></h2><ul><li>Light peer sharing is only enabled when peer sharing is turned on <a href="https://github.com/input-output-hk/ouroboros-network/pull/4652" target="_blank" rel="noopener noreferrer">ouroboros-network-#4652</a>;</li><li>Handshake incorrectly reports peer sharing value.  It's supposed to relay the
+remote value, but instead, it returns the local value. <a href="https://github.com/input-output-hk/ouroboros-network/issues/4642" target="_blank" rel="noopener noreferrer">ouroboros-network-#4642</a> (in review).</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="async-demotion-test-fix">Async Demotion Test Fix<a class="hash-link" href="#async-demotion-test-fix" title="Direct link to heading">​</a></h2><ul><li>We fixed an async demotion test failure which turned out to be a weakness of
+the test itself rather than a bug in the connection manager. <a href="https://github.com/input-output-hk/ouroboros-network/issues/4655" target="_blank" rel="noopener noreferrer">ouroboros-network-#4655</a></li></ul>]]></content:encoded>
+            <category>network</category>
+        </item>
+        <item>
             <title><![CDATA[SRE Team Update]]></title>
             <link>https://input-output-hk.github.io/cardano-updates/2023-09-01-sre</link>
             <guid>2023-09-01-sre</guid>
