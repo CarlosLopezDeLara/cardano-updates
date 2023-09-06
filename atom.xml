@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-09-01T00:00:00.000Z</updated>
+    <updated>2023-09-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Consensus Team Update]]></title>
+        <id>2023-09-06-consensus</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-09-06-consensus"/>
+        <updated>2023-09-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><p>We were able to successfully run the system-level benchmarks for the UTxO-HD implementation, for the first time. There was an important regression in block forging performance that will have to be addressed before UTxO-HD is released. We also revisited the implementation of our query processing logic, which was needed to address the performance regression found in the query-by-address command. The preliminary performance results show that now the performance of this query is on-par with the Cardano baseline version, but we need further confirmation.
+On the Genesis front, we presented the grinding-aware safety argument for the proposed historical Cardano Genesis windows to the IOG Researchers.
+The Consensus release engineer finished his rotation: version <code>8.3.0-pre</code> of <code>cardano-node</code> is releasing 2023 September 5.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="utxo-hd">UTxO-HD<a class="hash-link" href="#utxo-hd" title="Direct link to heading">​</a></h2><ul><li><p>We ran the first successful system-level benchmarks for UTxO-HD (see <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/203" target="_blank" rel="noopener noreferrer">#203</a>). We observed a factor 12 regression in the forging performance, which we will have to address.</p></li><li><p>We implemented a new way of processing queries at the hard-fork block level, which resolves the performance regression observed in <code>GetUTxOByAddress</code> (see <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/205#issuecomment-1706878418" target="_blank" rel="noopener noreferrer">this comment</a>). Preliminary results are promising.</p></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="tech-debt">Tech debt<a class="hash-link" href="#tech-debt" title="Direct link to heading">​</a></h2><ul><li>We added tests that Consensus emits valid CBOR (<a href="https://github.com/input-output-hk/ouroboros-network/issues/3099" target="_blank" rel="noopener noreferrer">#3099</a>). This helped us detect a couple of serialization bugs. The tests still need to be merged into the <code>main</code> branch (<a href="https://github.com/input-output-hk/ouroboros-consensus/pull/323" target="_blank" rel="noopener noreferrer">#323</a>).</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="support">Support<a class="hash-link" href="#support" title="Direct link to heading">​</a></h2><ul><li><a href="https://github.com/nfrisby" target="_blank" rel="noopener noreferrer">Nick Frisby</a> finished his release engineer rotation; <code>cardano-node 8.3.0-pre</code> is releasing 2023 September 5.</li><li>We helped to investigate a protocol version bug in Sanchonet (see <a href="https://github.com/input-output-hk/cardano-ledger/issues/3491" target="_blank" rel="noopener noreferrer">#3491</a>).</li><li>We started to implement the Network interface for bootstrap peer functionality, from which Genesis will benefit as well (see <a href="https://github.com/input-output-hk/ouroboros-consensus/issues/91" target="_blank" rel="noopener noreferrer">#91</a>.</li></ul>]]></content>
+        <author>
+            <name>Damian Nadales</name>
+            <uri>https://github.com/dnadales</uri>
+        </author>
+        <category label="consensus" term="consensus"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hydra Team Update]]></title>
         <id>2023-09-01-hydra</id>
