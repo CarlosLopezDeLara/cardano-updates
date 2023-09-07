@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://input-output-hk.github.io/cardano-updates/</id>
     <title>Cardano Updates Feed</title>
-    <updated>2023-09-06T00:00:00.000Z</updated>
+    <updated>2023-09-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://input-output-hk.github.io/cardano-updates/"/>
     <subtitle>Regular updates from Cardano Development Teams</subtitle>
     <icon>https://input-output-hk.github.io/cardano-updates/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Performance & tracing update]]></title>
+        <id>2023-09-07-performance-and-tracing</id>
+        <link href="https://input-output-hk.github.io/cardano-updates/2023-09-07-performance-and-tracing"/>
+        <updated>2023-09-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[High level summary]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="high-level-summary">High level summary<a class="hash-link" href="#high-level-summary" title="Direct link to heading">​</a></h2><ul><li>Benchmarking: We've performed and analysed feature benchmarks for both UTxO-HD and the current P2P stack.</li><li>Infrastructure: Various improvements of our analysis pipeline have been merged to <code>master</code>, supporting safe log truncation.</li><li>Tracing: Namespace consistency checks have been merged to <code>master</code> along with a curated configuration for benchmarking.</li><li>Nomad backend: We're productively using the new backend to measure new vs. legacy tracing system, adding many quality-of-life improvements.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="low-level-overview">Low level overview<a class="hash-link" href="#low-level-overview" title="Direct link to heading">​</a></h2><h3 class="anchor anchorWithStickyNavbar_LWe7" id="benchmarking">Benchmarking<a class="hash-link" href="#benchmarking" title="Direct link to heading">​</a></h3><p>We've completed various runs and analyses targeting two distinct features of the node: UTxO-HD and Peer2Peer.  </p><p>With our UTxO-HD benchmark we could clearly localize one point where this new way of maintaining ledger state is still costly, but at the same time confirm that in basically all other aspects UTxO-HD makes no difference in performance.  </p><p>The Peer2Peer benchmarks focused on the effects that enabling this feature on a block producing node has on propagation times, as well as scrutinized a proposed change to the Peer2Peer network stack.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="infrastructure">Infrastructure<a class="hash-link" href="#infrastructure" title="Direct link to heading">​</a></h3><p>As a result of optimizing in-memory representation of log objects, which are constructed from a node's traces, we can now analyse runs that last longer in total. For runs that exceed their expected duration, analysis now supports a truncation
+operation that keeps the interdependencies of block events intact.  </p><p>Truncation might happen at a slightly different point
+in time - and therefore in its log object stream - for each node in the cluster. An additional step validating the block hash timeline of the cluster has been implemented for the pipeline. It provides early feedback on whether a specific truncation will lead to a valid full analysis, which requires much more time.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="tracing">Tracing<a class="hash-link" href="#tracing" title="Direct link to heading">​</a></h3><p>Consistency checking of namespace implementation and configuration when using the new system has been completed.
+This feature enables feedback on when tracer implementation details in some component might have changed. It's also able to detect when a configuration used for operating a <code>cardano-node</code> shows inconsistencies with the namespaces the system provides - and hence needs attention.  </p><p>Furthermore, we've created a fine-grained configuration of the new system that caters to benchmarking's need of very many
+detailed trace messages. It's aimed at mirroring the same amount of trace messages, and information, we're seeing from our usage of the legacy system; an important step in making benchmarks between systems comparable.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nomad-backend">Nomad backend<a class="hash-link" href="#nomad-backend" title="Direct link to heading">​</a></h3><p>The new backend is currently being used for further validation with regard to the existing cluster. Additionally, we're using it in production mode to comparatively benchmark both tracing systems after merging past month's optimizations - which is the
+first real-life application of the nomad cluster. Hands-on experience in that phase translates into many small improvements which can be immediately applied to enhance user experience for the new backend.</p>]]></content>
+        <author>
+            <name>Michael Karg</name>
+            <uri>https://github.com/mgmeier</uri>
+        </author>
+        <category label="performance-tracing" term="performance-tracing"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Consensus Team Update]]></title>
         <id>2023-09-06-consensus</id>
